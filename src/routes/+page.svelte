@@ -1,6 +1,6 @@
 <script>
-	import { onMount } from 'svelte';
-	import Prediction from './components/Prediction.svelte';
+	// import { onMount } from 'svelte';
+	// import Prediction from './components/Prediction.svelte';
 	const description = 'Phosformer: an explainable transformer model for protein kinase-specific phosphorylation predictions';
 	const title = 'Phosformer Predictions';
 	
@@ -103,8 +103,8 @@
 						editor={Martelli, Pier Luigi}, 
 						year={2023}, 
 						month={Feb}, 
-						language={en} 
-				}
+						language={en}
+					}
 					`}
 				</pre>
 			</code>
