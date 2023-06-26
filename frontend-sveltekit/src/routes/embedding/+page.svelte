@@ -1,29 +1,73 @@
 <script>
     import { onMount } from "svelte";
     import * as d3 from "d3";
-    import * as proteins from "./proteins.js";
-    import * as genesNfamily from "./genesNfamily.js";
+    // import * as proteins from "./proteins.js";
+    // import * as genesNfamily from "./genesNfamily.json";
+    import kinaseData from "$lib/kinase_data.json";
 
     let container;
-    let slider;
 
+    function getImagePath(id) {
+        let data = kinaseData.find((item) => item.gene === id);
+        if (data) {
+            return "/weblogos/" + data.weblogo;
+        } else {
+            console.log("No matching gene found for id: " + id);
+            return "/weblogos/empty.png";
+        }
+    }
+    function get_id(idHtml)
+    {
+        let idParts = idHtml.split("_");
+        let id = idParts[idParts.length - 1]; //eg., MYO3A
+        return id;
+    }
     function handleClick(event) {
-        alert(event.target.id);
+        const id = get_id(event.target.id);
+        const imagePath = getImagePath(id);
+        console.log("imagepath", imagePath);
+        let imageDiv = document.getElementById("weblogo_container");
+        imageDiv.innerHTML = ""; // clear the container
+        let newImg = document.createElement("img");
+        newImg.src = imagePath;
+        newImg.style.width = "100%";
+        newImg.style.height = "100%";
+        newImg.alt = id;
+        imageDiv.appendChild(newImg);
+
+        //Scroll to a div after the new image
+        let emptyDiv = document.createElement("div");
+        imageDiv.appendChild(emptyDiv);
+        emptyDiv.scrollIntoView({ behavior: "smooth" });
+
+
     }
-    function handleHoverEnter(event)
-    {
+
+    function handleHoverEnter(event) {
+    const hoverDiv = document.querySelector("#hover-div");
+    let id = get_id(event.target.id);
+    let data = kinaseData.find((item) => item.gene === id) || {};
+    const cardHTML = `
+        <div class="bg-white p-6">
+            <h2 class="text-xl font-bold mb-2">${event.target.textContent}</h2>
+            <p class="mb-2 overflow-auto break-words"><strong>Uniprot:</strong> ${data.uniprot ?? "N/A"}</p>
+            <p class="mb-2 overflow-auto break-words"><strong>Specificity:</strong> ${data.specificity ?? "N/A"}</p>
+            <p class="mb-2 overflow-auto break-words"><strong>Family:</strong> ${data.family ?? "N/A"}</p>
+            <p class="mb-2 overflow-auto break-words"><strong>Kinase Domain:</strong><span class="text-sm"> ${data.kinase_domain ?? "N/A"}</span></p>
+            <p class="mb-2 text-sm italic">Click on the image to view the weblogo.</p>
+        </div>
+    `;
+
+    hoverDiv.innerHTML = cardHTML;
+    hoverDiv.classList.remove("hidden");
+}
+
+
+    function handleHoverLeave(event) {
         const hoverDiv = document.querySelector("#hover-div");
-        // const hoverText = element.textContent;
-        hoverDiv.textContent = event.target.textContent;
-        hoverDiv.classList.remove("hidden");
-    }
-    function handleHoverLeave(event)
-    {
-        const hoverDiv = document.querySelector("#hover-div");
-        hoverDiv.classList.add("hidden");
+        // hoverDiv.classList.add("hidden");
     }
     function handleZoom(e) {
-        // d3.select("svg g").attr("transform", e.transform);
         d3.selectAll("svg g").attr("transform", e.transform);
     }
     let zoom = d3.zoom().on("zoom", handleZoom);
@@ -71,75 +115,21 @@
                     element.style.cursor = "pointer";
                 });
             });
-
-
-  });
-
-            // Slider
-    //         function handleSliderDrag(draggedValue) {
-    //     zoom.scaleTo(d3.select(svg), draggedValue);
-    // }
-    //         const sliderWidth = 300;
-    //         const sliderHeight = 50;
-    //         const sliderMargin = { top: 10, right: 50, bottom: 10, left: 50 };
-    //         const xScale = d3
-    //             .scaleLinear()
-    //             .domain([1, 10])
-    //             .range([0, sliderWidth])
-    //             .clamp(true);
-
-        //     const drag = d3.drag().on("drag", (event) => {
-        //         handleSliderDrag(xScale.invert(event.x));
-        //     });
-
-        //     const sliderSvg = d3
-        //         .select(slider)
-        //         .attr(
-        //             "width",
-        //             sliderWidth + sliderMargin.left + sliderMargin.right
-        //         )
-        //         .attr(
-        //             "height",
-        //             sliderHeight + sliderMargin.top + sliderMargin.bottom
-        //         );
-
-        //     const sliderGroup = sliderSvg
-        //         .append("g")
-        //         .attr(
-        //             "transform",
-        //             `translate(${sliderMargin.left}, ${sliderMargin.top})`
-        //         );
-
-        //     sliderGroup
-        //         .append("rect")
-        //         .attr("class", "track")
-        //         .attr("x", xScale.range()[0])
-        //         .attr("y", sliderHeight / 2 - 2)
-        //         .attr("width", xScale.range()[1] - xScale.range()[0])
-        //         .attr("height", 4);
-
-        //     sliderGroup
-        //         .append("circle")
-        //         .attr("class", "handle")
-        //         .attr("cx", xScale.range()[0])
-        //         .attr("cy", sliderHeight / 2)
-        //         .attr("r", 9)
-        //         .call(drag);
-        //  });
+        });
     });
 </script>
 
 <div class="flex flex-col">
-    <!--<div class="w-full bg-red-100">
-        <svg bind:this={slider} />
-    </div>-->
-    <div class="w-full bg-blue-50">
-        <div id="svg-container" bind:this={container} class="relative">
-     
-              <div id="hover-div" class="absolute top-0 right-0 p-4 bg-white rounded-lg shadow-md">
-                Content to show on hover
-              </div>
+    <div class="flex flex-row w-full bg-blue-50">
+        <div id="svg-container" bind:this={container} class="w-full relative">
+            <!-- SVG content here -->
         </div>
+        <div id="hover-div" class="w-1/3 p-4 bg-white rounded-lg shadow-md h-1/4">
+            <!-- Content to show on hover -->
+        </div>
+    </div>
+    <div id="weblogo_container" class="w-full rounded-lg shadow-md">
+        <!-- Put your second row content here -->
     </div>
 </div>
 

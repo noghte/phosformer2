@@ -20,3 +20,5 @@ vite.config.js.timestamp-*
 .test-tmp
 symlink-from
 *.bin
+
+__pycache__/

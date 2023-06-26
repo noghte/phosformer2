@@ -1,17 +1,46 @@
 <script>
-    import { createEventDispatcher,onMount } from "svelte";
-    import TreeView from 'svelte-tree-view';
+    import { createEventDispatcher, onMount } from "svelte";
+    import { PUBLIC_FLASK_SERVER_ADDRESS } from "$env/static/public";
+    import TreeView from "svelte-tree-view";
     import kinaseData from "$lib/kinase_data.json";
+
     const dispatch = createEventDispatcher();
 
-    let a = 0.8;
-    let b = 0.15;
+    // let a = 0.8;
+    // let b = 0.15;
     let predResponse = null;
     let subtradeOpen = false;
-    let subtrade = "1234567T1234567";
+    let subtrade = "ABCDEFGTABCDEFG";
     let subtradeError;
-
+    let selectedSubtrades = [];
     let kinaseOpen = false;
+    const aminoAcids = [
+        "L",
+        "A",
+        "G",
+        "V",
+        "S",
+        "E",
+        "R",
+        "T",
+        "I",
+        "D",
+        "P",
+        "K",
+        "Q",
+        "N",
+        "F",
+        "Y",
+        "M",
+        "H",
+        "W",
+        "C",
+        "X",
+        "B",
+        "U",
+        "Z",
+        "O",
+    ];
     let kinase =
         "HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC";
     let kinaseError;
@@ -23,8 +52,14 @@
     $: {
         predResponse = null;
         // Subtrade validation
-        if (subtrade.length != 15) {
+        subtrade = subtrade.toUpperCase();
+        if (subtrade.length !== 15) {
             subtradeError = "Subtrade should be 15 characters long.";
+        } else if (
+            ![...subtrade].every((char) => allowedCharacters.includes(char))
+        ) {
+            subtradeError =
+                "Subtrade should contain only the allowed characters: L, A, G, V, S, E, R, T, I, D, P, K, Q, N, F, Y, M, H, W, C, X, B, U, Z, O.";
         } else if (subtrade.charAt(7) !== "T") {
             subtradeError = "Subtrade should have a T in the middle.";
         } else {
@@ -34,9 +69,15 @@
         // Kinase validation
         kinaseError = "";
     }
+    // function handleSubtradeInput(event) {
+    //     subtrade = event.target.value;
+    //     dispatch("input", subtrade);
+    // }
     function handleSubtradeInput(event) {
-        subtrade = event.target.value;
-        dispatch("input", subtrade);
+        selectedSubtrades = Array.from(event.target.selectedOptions).map(
+            (option) => option.value
+        );
+        dispatch("input", selectedSubtrades);
     }
 
     function handleKinaseInput(event) {
@@ -53,42 +94,37 @@
 
     async function predict() {
         processing = true;
-        const response = await fetch("/api/predict", {
-            method: "POST",
-            body: JSON.stringify({ a, b }),
-            headers: {
-                "content-type": "application/json",
-            },
-        });
+        const response = await fetch(
+            `${PUBLIC_FLASK_SERVER_ADDRESS}/api/predict`,
+            {
+                method: "POST",
+                body: JSON.stringify({ kinase, subtrade }),
+                headers: {
+                    "content-type": "application/json",
+                },
+            }
+        );
 
         predResponse = await response.json();
         processing = false;
     }
 
     onMount(async () => {
-        console.log(kinaseData);
         treeData = kinaseData.reduce((acc, item) => {
-        const family = item.family;
-        const kinaseDomain = item["kinase domain"];
-        if (!acc.has(family)) {
-            acc.set(family, []);
-        }
-        acc.get(family).push(kinaseDomain);
-        return acc;
-    }, new Map());
-    console.log(treeData);
+            const family = item.family;
+            const kinaseDomain = item["kinase domain"];
+            if (!acc.has(family)) {
+                acc.set(family, []);
+            }
+            acc.get(family).push(kinaseDomain);
+            return acc;
+        }, new Map());
+        // console.log(treeData);
     });
-
 </script>
 
-<!-- <input type="number" bind:value={a} /> +
-<input type="number" bind:value={b} /> =
-{total}
-
-<button on:click={add}>Calculate</button> -->
-
 <div class="flex">
-    <div class="p-2 bg-white rounded w-1/3">
+    <div class="p-2 bg-white rounded w-1/2">
         <p class="text-blue-800 font-bold text-md">Subtrade</p>
 
         {#if !subtradeOpen}
@@ -108,15 +144,38 @@
         {#if subtradeOpen}
             <div x-show="open" class="flex justify-between items-center">
                 <div class="flex items-center">
+                    <!-- <select
+                        bind:value={subtrade}
+                        on:change|preventDefault={handleSubtradeInput}
+                        class=" bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
+                    > -->
+                    <select
+                        multiple
+                        bind:value={selectedSubtrades}
+                        class="bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
+                    >
+                        {#each aminoAcids as item}
+                            <option value={item.value}>{item.name}</option>
+                        {/each}
+                    </select>
+
+                    <!-- {#each aminoAcids as item}
+                            <option value={item.value}
+                                >{item.name}</option
+                            >
+                        {/each}
+                    </select> -->
+
                     <input
                         type="text"
                         bind:value={subtrade}
                         on:input|preventDefault={handleSubtradeInput}
-                        class="w-full bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
+                        class="flex-grow bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
                     />
+
                     {#if subtradeError !== ""}
                         <!-- <div class="ml-2 text-red-500">❌ </div> -->
-                        <p class="text-sm text-gray-500 w-full">
+                        <p class="text-sm text-gray-500">
                             {subtradeError}
                         </p>
                     {/if}
@@ -140,7 +199,7 @@
 </div>
 
 <div class="flex">
-    <div class="p-2 bg-white rounded w-1/3">
+    <div class="p-2 bg-white rounded w-1/2">
         <p class="text-blue-800 font-bold text-md">Kinase</p>
 
         {#if !kinaseOpen}
@@ -163,14 +222,28 @@
                     <!-- <TreeView
                     data={treeData}
                 /> -->
-                    <textarea
-                        type="text"
-                        rows="10"
-                        cols="50"
-                        bind:value={kinase}
-                        on:input|preventDefault={handleKinaseInput}
-                        class="w-full bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
-                    />
+                    <div class="flex items-center">
+                        <select
+                            bind:value={kinase}
+                            class=" bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
+                        >
+                            {#each kinaseData as item}
+                                <option value={item.kinase_domain}
+                                    >{item.gene} - {item.uniprot}</option
+                                >
+                            {/each}
+                        </select>
+
+                        <textarea
+                            type="text"
+                            rows="10"
+                            cols="50"
+                            bind:value={kinase}
+                            on:input|preventDefault={handleKinaseInput}
+                            class="flex-grow bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
+                        />
+                    </div>
+
                     <!-- <input
                         type="text"
                         bind:value={kinase}
@@ -179,7 +252,7 @@
                     /> -->
                     {#if kinaseError !== ""}
                         <!-- <div class="ml-2 text-red-500">❌ </div> -->
-                        <p class="text-sm text-gray-500 w-full">
+                        <p class="text-sm text-gray-500">
                             {kinaseError}
                         </p>
                     {/if}

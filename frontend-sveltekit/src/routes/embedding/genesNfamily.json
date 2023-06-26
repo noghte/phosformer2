@@ -1,0 +1,7760 @@
+[
+    {
+        "fname": "PK",
+        "genes": [
+            "AAK1",
+            "ABL1",
+            "ABL2",
+            "ABR",
+            "ACK",
+            "ACTR2",
+            "ACTR2B",
+            "ADCK1",
+            "ADCK2",
+            "ADCK3",
+            "ADCK4",
+            "ADCK5",
+            "AKT1",
+            "AKT2",
+            "AKT3",
+            "ALK",
+            "ALK1",
+            "ALK2",
+            "ALK4",
+            "ALK7",
+            "AMPKa1",
+            "AMPKa2",
+            "ANKRD3",
+            "ANPa",
+            "ANPb",
+            "ARAF",
+            "ATM",
+            "ATR",
+            "AXL",
+            "AlphaK1",
+            "AlphaK2",
+            "AlphaK3",
+            "AurA",
+            "AurB",
+            "AurC",
+            "BARK1",
+            "BARK2",
+            "BAZ1A",
+            "BAZ1B",
+            "BCKDK",
+            "BCR",
+            "BIKE",
+            "BLK",
+            "BLVRA",
+            "BMPR1A",
+            "BMPR1B",
+            "BMPR2",
+            "BMX",
+            "BRAF",
+            "BRD2",
+            "BRD3",
+            "BRD4",
+            "BRDT",
+            "BRK",
+            "BRSK1",
+            "BRSK2",
+            "BTK",
+            "BUB1",
+            "BUBR1",
+            "CASK",
+            "CCK4",
+            "CCRK",
+            "CDC2",
+            "CDC7",
+            "CDK10",
+            "CDK11",
+            "CDK2",
+            "CDK3",
+            "CDK4",
+            "CDK5",
+            "CDK6",
+            "CDK7",
+            "CDK8",
+            "CDK9",
+            "CDKL1",
+            "CDKL2",
+            "CDKL3",
+            "CDKL4",
+            "CDKL5",
+            "CHED",
+            "CHK1",
+            "CHK2",
+            "CK1a",
+            "CK1a2",
+            "CK1d",
+            "CK1e",
+            "CK1g1",
+            "CK1g2",
+            "CK1g3",
+            "CK2a1",
+            "CK2a2",
+            "CLIK1",
+            "CLIK1L",
+            "CLK1",
+            "CLK2",
+            "CLK3",
+            "CLK4",
+            "COT",
+            "CRIK",
+            "CRK7",
+            "CSK",
+            "CTK",
+            "CYGD",
+            "CYGF",
+            "CaMK1a",
+            "CaMK1b",
+            "CaMK1d",
+            "CaMK1g",
+            "CaMK2a",
+            "CaMK2b",
+            "CaMK2d",
+            "CaMK2g",
+            "CaMK4",
+            "CaMKK1",
+            "CaMKK2",
+            "ChaK1",
+            "ChaK2",
+            "Col4A3BP",
+            "DAPK1",
+            "DAPK2",
+            "DAPK3",
+            "DCAMKL1",
+            "DCAMKL2",
+            "DCAMKL3",
+            "DDR1",
+            "DDR2",
+            "DLK",
+            "DMPK1",
+            "DMPK2",
+            "DNAPK",
+            "DRAK1",
+            "DRAK2",
+            "DYRK1A",
+            "DYRK1B",
+            "DYRK2",
+            "DYRK3",
+            "DYRK4",
+            "EGFR",
+            "EphA1",
+            "EphA10",
+            "EphA2",
+            "EphA3",
+            "EphA4",
+            "EphA5",
+            "EphA6",
+            "EphA7",
+            "EphA8",
+            "EphB1",
+            "EphB2",
+            "EphB3",
+            "EphB4",
+            "EphB6",
+            "ErbB2",
+            "ErbB3",
+            "ErbB4",
+            "Erk1",
+            "Erk2",
+            "Erk3",
+            "Erk4",
+            "Erk5",
+            "Erk7",
+            "FAK",
+            "FASTK",
+            "FER",
+            "FES",
+            "FGFR1",
+            "FGFR2",
+            "FGFR3",
+            "FGFR4",
+            "FGR",
+            "FLT1",
+            "FLT3",
+            "FLT4",
+            "FMS",
+            "FRAP",
+            "FRK",
+            "FYN",
+            "Fused",
+            "G11",
+            "GAK",
+            "GCK",
+            "GCN2",
+            "GCN2_b",
+            "GPRK4",
+            "GPRK5",
+            "GPRK6",
+            "GPRK7",
+            "GSK3A",
+            "GSK3B",
+            "GTF2F1",
+            "HCK",
+            "HGK",
+            "HH498",
+            "HIPK1",
+            "HIPK2",
+            "HIPK3",
+            "HIPK4",
+            "HPK1",
+            "HRI",
+            "HSER",
+            "HUNK",
+            "Haspin",
+            "ICK",
+            "IGF1R",
+            "IKKa",
+            "IKKb",
+            "IKKe",
+            "ILK",
+            "INSR",
+            "IRAK1",
+            "IRAK2",
+            "IRAK3",
+            "IRAK4",
+            "IRE1",
+            "IRE2",
+            "IRR",
+            "ITK",
+            "JAK1",
+            "JAK1_b",
+            "JAK2",
+            "JAK2_b",
+            "JAK3",
+            "JAK3_b",
+            "JNK1",
+            "JNK2",
+            "JNK3",
+            "KDR",
+            "KHS1",
+            "KHS2",
+            "KIS",
+            "KIT",
+            "KSR1",
+            "KSR2",
+            "LATS1",
+            "LATS2",
+            "LCK",
+            "LIMK1",
+            "LIMK2",
+            "LKB1",
+            "LMR1",
+            "LMR2",
+            "LMR3",
+            "LOK",
+            "LRRK1",
+            "LRRK2",
+            "LTK",
+            "LYN",
+            "LZK",
+            "MAK",
+            "MAP2K1",
+            "MAP2K2",
+            "MAP2K3",
+            "MAP2K4",
+            "MAP2K5",
+            "MAP2K6",
+            "MAP2K7",
+            "MAP3K1",
+            "MAP3K19",
+            "MAP3K2",
+            "MAP3K3",
+            "MAP3K4",
+            "MAP3K5",
+            "MAP3K6",
+            "MAP3K7",
+            "MAPKAPK2",
+            "MAPKAPK3",
+            "MAPKAPK5",
+            "MARK1",
+            "MARK2",
+            "MARK3",
+            "MARK4",
+            "MAST1",
+            "MAST2",
+            "MAST3",
+            "MAST4",
+            "MASTL",
+            "MELK",
+            "MER",
+            "MET",
+            "MINK",
+            "MISR2",
+            "MLK1",
+            "MLK2",
+            "MLK3",
+            "MLK4",
+            "MLKL",
+            "MNK1",
+            "MNK2",
+            "MOK",
+            "MOS",
+            "MPSK1",
+            "MRCKa",
+            "MRCKb",
+            "MSK1",
+            "MSK1_b",
+            "MSK2",
+            "MSK2_b",
+            "MSSK1",
+            "MST1",
+            "MST2",
+            "MST3",
+            "MST4",
+            "MUSK",
+            "MYO3A",
+            "MYO3B",
+            "MYT1",
+            "NDR1",
+            "NDR2",
+            "NEK1",
+            "NEK10",
+            "NEK11",
+            "NEK2",
+            "NEK3",
+            "NEK4",
+            "NEK5",
+            "NEK6",
+            "NEK7",
+            "NEK8",
+            "NEK9",
+            "NIK",
+            "NIM1",
+            "NLK",
+            "NRBP1",
+            "NRBP2",
+            "NRK",
+            "NuaK1",
+            "NuaK2",
+            "OSR1",
+            "Obscn",
+            "Obscn_b",
+            "PAK1",
+            "PAK2",
+            "PAK3",
+            "PAK4",
+            "PAK5",
+            "PAK6",
+            "PAN3",
+            "PASK",
+            "PBK",
+            "PCTAIRE1",
+            "PCTAIRE2",
+            "PCTAIRE3",
+            "PDGFRa",
+            "PDGFRb",
+            "PDHK1",
+            "PDHK2",
+            "PDHK3",
+            "PDHK4",
+            "PDK1",
+            "PEK",
+            "PFTAIRE1",
+            "PFTAIRE2",
+            "PHKg1",
+            "PHKg2",
+            "PIK3R4",
+            "PIM1",
+            "PIM2",
+            "PIM3",
+            "PINK1",
+            "PITSLRE",
+            "PKACa",
+            "PKACb",
+            "PKACg",
+            "PKCa",
+            "PKCb",
+            "PKCd",
+            "PKCe",
+            "PKCg",
+            "PKCh",
+            "PKCi",
+            "PKCt",
+            "PKCz",
+            "PKD1",
+            "PKD2",
+            "PKD3",
+            "PKG1",
+            "PKG2",
+            "PKN1",
+            "PKN2",
+            "PKN3",
+            "PKR",
+            "PLK1",
+            "PLK2",
+            "PLK3",
+            "PLK4",
+            "PRKX",
+            "PRKY",
+            "PRP4",
+            "PRPK",
+            "PSKH1",
+            "PSKH2",
+            "PYK2",
+            "QIK",
+            "QSK",
+            "RAF1",
+            "RET",
+            "RHOK",
+            "RIOK1",
+            "RIOK2",
+            "RIOK3",
+            "RIPK1",
+            "RIPK2",
+            "RIPK3",
+            "RNAseL",
+            "ROCK1",
+            "ROCK2",
+            "RON",
+            "ROR1",
+            "ROR2",
+            "ROS",
+            "RSK1",
+            "RSK1_b",
+            "RSK2",
+            "RSK2_b",
+            "RSK3",
+            "RSK3_b",
+            "RSK4",
+            "RSK4_b",
+            "RSKL1",
+            "RSKL2",
+            "RYK",
+            "SBK",
+            "SCYL1",
+            "SCYL2",
+            "SCYL3",
+            "SGK1",
+            "SGK2",
+            "SGK3",
+            "SIK",
+            "SLK",
+            "SMG1",
+            "SNRK",
+            "SPEG",
+            "SPEG_b",
+            "SRC",
+            "SRM",
+            "SRPK1",
+            "SRPK2",
+            "SSTK",
+            "STK33",
+            "STLK3",
+            "STLK5",
+            "STLK6",
+            "SYK",
+            "SgK069",
+            "SgK071",
+            "SgK085",
+            "SgK110",
+            "SgK196",
+            "SgK223",
+            "SgK269",
+            "SgK288",
+            "SgK307",
+            "SgK396",
+            "SgK424",
+            "SgK493",
+            "SgK494",
+            "SgK495",
+            "SgK496",
+            "Slob",
+            "SuRTK106",
+            "TAF1",
+            "TAF1L",
+            "TAK1",
+            "TAO1",
+            "TAO2",
+            "TAO3",
+            "TBCK",
+            "TBK1",
+            "TEC",
+            "TESK1",
+            "TESK2",
+            "TGFbR1",
+            "TGFbR2",
+            "TIE1",
+            "TIE2",
+            "TIF1D",
+            "TIF1a",
+            "TIF1b",
+            "TIF1g",
+            "TLK1",
+            "TLK2",
+            "TNIK",
+            "TNK1",
+            "TRKA",
+            "TRKB",
+            "TRKC",
+            "TRRAP",
+            "TSSK1",
+            "TSSK2",
+            "TSSK3",
+            "TSSK4",
+            "TTBK1",
+            "TTBK2",
+            "TTK",
+            "TTN",
+            "TXK",
+            "TYK2",
+            "TYK2_b",
+            "TYRO3",
+            "Trad",
+            "Trb1",
+            "Trb2",
+            "Trb3",
+            "Trio",
+            "ULK1",
+            "ULK2",
+            "ULK3",
+            "ULK4",
+            "VACAMKL",
+            "VRK1",
+            "VRK2",
+            "VRK3",
+            "Wee1",
+            "Wee1B",
+            "Wnk1",
+            "Wnk2",
+            "Wnk3",
+            "Wnk4",
+            "YANK1",
+            "YANK2",
+            "YANK3",
+            "YES",
+            "YSK1",
+            "ZAK",
+            "ZAP70",
+            "caMLCK",
+            "eEF2K",
+            "p38a",
+            "p38b",
+            "p38d",
+            "p38g",
+            "p70S6K",
+            "p70S6Kb",
+            "skMLCK",
+            "smMLCK"
+        ],
+        "weblogo": "PK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "AGC",
+        "genes": [
+            "AKT1",
+            "AKT2",
+            "AKT3",
+            "BARK1",
+            "BARK2",
+            "CRIK",
+            "DMPK1",
+            "DMPK2",
+            "GPRK4",
+            "GPRK5",
+            "GPRK6",
+            "GPRK7",
+            "LATS1",
+            "LATS2",
+            "MAST1",
+            "MAST2",
+            "MAST3",
+            "MAST4",
+            "MASTL",
+            "MRCKa",
+            "MRCKb",
+            "MSK1",
+            "MSK2",
+            "NDR1",
+            "NDR2",
+            "PDK1",
+            "PKACa",
+            "PKACb",
+            "PKACg",
+            "PKCa",
+            "PKCb",
+            "PKCd",
+            "PKCe",
+            "PKCg",
+            "PKCh",
+            "PKCi",
+            "PKCt",
+            "PKCz",
+            "PKG1",
+            "PKG2",
+            "PKN1",
+            "PKN2",
+            "PKN3",
+            "PRKX",
+            "PRKY",
+            "RHOK",
+            "ROCK1",
+            "ROCK2",
+            "RSK1",
+            "RSK2",
+            "RSK3",
+            "RSK4",
+            "RSKL1",
+            "RSKL2",
+            "SGK1",
+            "SGK2",
+            "SGK3",
+            "SgK494",
+            "YANK1",
+            "YANK2",
+            "YANK3",
+            "p70S6K",
+            "p70S6Kb"
+        ],
+        "weblogo": "PK_AGC.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Akt",
+        "genes": [
+            "AKT1",
+            "AKT2",
+            "AKT3"
+        ],
+        "weblogo": "PK_AGC_Akt.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "AKT1",
+        "genes": [
+            "AKT1"
+        ],
+        "weblogo": "PK_AGC_Akt__AKT1.png",
+        "uniprot": "P31749"
+    },
+    {
+        "fname": "AKT2",
+        "genes": [
+            "AKT2"
+        ],
+        "weblogo": "PK_AGC_Akt__AKT2.png",
+        "uniprot": "P31751"
+    },
+    {
+        "fname": "AKT3",
+        "genes": [
+            "AKT3"
+        ],
+        "weblogo": "PK_AGC_Akt__AKT3.png",
+        "uniprot": "Q9Y243"
+    },
+    {
+        "fname": "DMPK",
+        "genes": [
+            "CRIK",
+            "DMPK1",
+            "DMPK2",
+            "MRCKa",
+            "MRCKb",
+            "ROCK1",
+            "ROCK2"
+        ],
+        "weblogo": "PK_AGC_DMPK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "GEK",
+        "genes": [
+            "DMPK1",
+            "DMPK2",
+            "MRCKa",
+            "MRCKb"
+        ],
+        "weblogo": "PK_AGC_DMPK_GEK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DMPK1 (DMPK)",
+        "genes": [
+            "DMPK1"
+        ],
+        "weblogo": "PK_AGC_DMPK_GEK_DMPK1.png",
+        "uniprot": "Q09013"
+    },
+    {
+        "fname": "DMPK2 (CDC42BPG)",
+        "genes": [
+            "DMPK2"
+        ],
+        "weblogo": "PK_AGC_DMPK_GEK_DMPK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MRCKa (CDC42BPA)",
+        "genes": [
+            "MRCKa"
+        ],
+        "weblogo": "PK_AGC_DMPK_GEK_MRCKa.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MRCKb (CDC42BPB)",
+        "genes": [
+            "MRCKb"
+        ],
+        "weblogo": "PK_AGC_DMPK_GEK_MRCKb.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ROCK",
+        "genes": [
+            "ROCK1",
+            "ROCK2"
+        ],
+        "weblogo": "PK_AGC_DMPK_ROCK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ROCK1",
+        "genes": [
+            "ROCK1"
+        ],
+        "weblogo": "PK_AGC_DMPK_ROCK_ROCK1.png",
+        "uniprot": "Q13464"
+    },
+    {
+        "fname": "ROCK2",
+        "genes": [
+            "ROCK2"
+        ],
+        "weblogo": "PK_AGC_DMPK_ROCK_ROCK2.png",
+        "uniprot": "O75116"
+    },
+    {
+        "fname": "CRIK (CIT)",
+        "genes": [
+            "CRIK"
+        ],
+        "weblogo": "PK_AGC_DMPK__CRIK.png",
+        "uniprot": "O14578"
+    },
+    {
+        "fname": "GRK",
+        "genes": [
+            "BARK1",
+            "BARK2",
+            "GPRK4",
+            "GPRK5",
+            "GPRK6",
+            "GPRK7",
+            "RHOK"
+        ],
+        "weblogo": "PK_AGC_GRK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BARK",
+        "genes": [
+            "BARK1",
+            "BARK2"
+        ],
+        "weblogo": "PK_AGC_GRK_BARK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BARK1 (GRK2)",
+        "genes": [
+            "BARK1"
+        ],
+        "weblogo": "PK_AGC_GRK_BARK_BARK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BARK2 (GRK3)",
+        "genes": [
+            "BARK2"
+        ],
+        "weblogo": "PK_AGC_GRK_BARK_BARK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "GRK",
+        "genes": [
+            "GPRK4",
+            "GPRK5",
+            "GPRK6",
+            "GPRK7",
+            "RHOK"
+        ],
+        "weblogo": "PK_AGC_GRK_GRK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "GPRK4 (GRK4)",
+        "genes": [
+            "GPRK4"
+        ],
+        "weblogo": "PK_AGC_GRK_GRK_GPRK4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "GPRK5 (GRK5)",
+        "genes": [
+            "GPRK5"
+        ],
+        "weblogo": "PK_AGC_GRK_GRK_GPRK5.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "GPRK6 (GRK6)",
+        "genes": [
+            "GPRK6"
+        ],
+        "weblogo": "PK_AGC_GRK_GRK_GPRK6.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "GPRK7 (GRK7)",
+        "genes": [
+            "GPRK7"
+        ],
+        "weblogo": "PK_AGC_GRK_GRK_GPRK7.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RHOK (GRK1)",
+        "genes": [
+            "RHOK"
+        ],
+        "weblogo": "PK_AGC_GRK_GRK_RHOK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAST",
+        "genes": [
+            "MAST1",
+            "MAST2",
+            "MAST3",
+            "MAST4",
+            "MASTL"
+        ],
+        "weblogo": "PK_AGC_MAST.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAST1",
+        "genes": [
+            "MAST1"
+        ],
+        "weblogo": "PK_AGC_MAST__MAST1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAST2",
+        "genes": [
+            "MAST2"
+        ],
+        "weblogo": "PK_AGC_MAST__MAST2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAST3",
+        "genes": [
+            "MAST3"
+        ],
+        "weblogo": "PK_AGC_MAST__MAST3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAST4",
+        "genes": [
+            "MAST4"
+        ],
+        "weblogo": "PK_AGC_MAST__MAST4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MASTL",
+        "genes": [
+            "MASTL"
+        ],
+        "weblogo": "PK_AGC_MAST__MASTL.png",
+        "uniprot": "Q96GX5"
+    },
+    {
+        "fname": "NDR",
+        "genes": [
+            "LATS1",
+            "LATS2",
+            "NDR1",
+            "NDR2"
+        ],
+        "weblogo": "PK_AGC_NDR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LATS1",
+        "genes": [
+            "LATS1"
+        ],
+        "weblogo": "PK_AGC_NDR__LATS1.png",
+        "uniprot": "O95835"
+    },
+    {
+        "fname": "LATS2",
+        "genes": [
+            "LATS2"
+        ],
+        "weblogo": "PK_AGC_NDR__LATS2.png",
+        "uniprot": "Q9NRM7"
+    },
+    {
+        "fname": "NDR1 (STK38)",
+        "genes": [
+            "NDR1"
+        ],
+        "weblogo": "PK_AGC_NDR__NDR1.png",
+        "uniprot": "Q15208"
+    },
+    {
+        "fname": "NDR2 (STK38L)",
+        "genes": [
+            "NDR2"
+        ],
+        "weblogo": "PK_AGC_NDR__NDR2.png",
+        "uniprot": "Q9Y2H1"
+    },
+    {
+        "fname": "PDK1",
+        "genes": [
+            "PDK1"
+        ],
+        "weblogo": "PK_AGC_PDK1.png",
+        "uniprot": "O15530"
+    },
+    {
+        "fname": "PDK1 (PDPK1)",
+        "genes": [
+            "PDK1"
+        ],
+        "weblogo": "PK_AGC_PDK1__PDK1.png",
+        "uniprot": "O15530"
+    },
+    {
+        "fname": "PKA",
+        "genes": [
+            "PKACa",
+            "PKACb",
+            "PKACg",
+            "PRKX",
+            "PRKY"
+        ],
+        "weblogo": "PK_AGC_PKA.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKACa (PRKACA)",
+        "genes": [
+            "PKACa"
+        ],
+        "weblogo": "PK_AGC_PKA__PKACa.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKACb (PRKACB)",
+        "genes": [
+            "PKACb"
+        ],
+        "weblogo": "PK_AGC_PKA__PKACb.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKACg (PRKACG)",
+        "genes": [
+            "PKACg"
+        ],
+        "weblogo": "PK_AGC_PKA__PKACg.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PRKX",
+        "genes": [
+            "PRKX"
+        ],
+        "weblogo": "PK_AGC_PKA__PRKX.png",
+        "uniprot": "P51817"
+    },
+    {
+        "fname": "PRKY",
+        "genes": [
+            "PRKY"
+        ],
+        "weblogo": "PK_AGC_PKA__PRKY.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKC",
+        "genes": [
+            "PKCa",
+            "PKCb",
+            "PKCd",
+            "PKCe",
+            "PKCg",
+            "PKCh",
+            "PKCi",
+            "PKCt",
+            "PKCz"
+        ],
+        "weblogo": "PK_AGC_PKC.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCa",
+        "genes": [
+            "PKCa",
+            "PKCb",
+            "PKCg"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCa.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCa (PRKCA)",
+        "genes": [
+            "PKCa"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCa_PKCa.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCb (PRKCB)",
+        "genes": [
+            "PKCb"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCa_PKCb.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCg (PRKCG)",
+        "genes": [
+            "PKCg"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCa_PKCg.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCd",
+        "genes": [
+            "PKCd",
+            "PKCt"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCd.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCd (PRKCD)",
+        "genes": [
+            "PKCd"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCd_PKCd.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCt (PRKCQ)",
+        "genes": [
+            "PKCt"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCd_PKCt.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCh",
+        "genes": [
+            "PKCe",
+            "PKCh"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCh.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCe (PRKCE)",
+        "genes": [
+            "PKCe"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCh_PKCe.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCh (PRKCH)",
+        "genes": [
+            "PKCh"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCh_PKCh.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCi",
+        "genes": [
+            "PKCi",
+            "PKCz"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCi.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCi (PRKCI)",
+        "genes": [
+            "PKCi"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCi_PKCi.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKCz (PRKCZ)",
+        "genes": [
+            "PKCz"
+        ],
+        "weblogo": "PK_AGC_PKC_PKCi_PKCz.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKG",
+        "genes": [
+            "PKG1",
+            "PKG2"
+        ],
+        "weblogo": "PK_AGC_PKG.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKG1 (PRKG1)",
+        "genes": [
+            "PKG1"
+        ],
+        "weblogo": "PK_AGC_PKG__PKG1.png",
+        "uniprot": "Q13976"
+    },
+    {
+        "fname": "PKG2 (PRKG2)",
+        "genes": [
+            "PKG2"
+        ],
+        "weblogo": "PK_AGC_PKG__PKG2.png",
+        "uniprot": "Q13237"
+    },
+    {
+        "fname": "PKN",
+        "genes": [
+            "PKN1",
+            "PKN2",
+            "PKN3"
+        ],
+        "weblogo": "PK_AGC_PKN.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKN1",
+        "genes": [
+            "PKN1"
+        ],
+        "weblogo": "PK_AGC_PKN__PKN1.png",
+        "uniprot": "Q16512"
+    },
+    {
+        "fname": "PKN2",
+        "genes": [
+            "PKN2"
+        ],
+        "weblogo": "PK_AGC_PKN__PKN2.png",
+        "uniprot": "Q16513"
+    },
+    {
+        "fname": "PKN3",
+        "genes": [
+            "PKN3"
+        ],
+        "weblogo": "PK_AGC_PKN__PKN3.png",
+        "uniprot": "Q6P5Z2"
+    },
+    {
+        "fname": "RSK",
+        "genes": [
+            "MSK1",
+            "MSK2",
+            "RSK1",
+            "RSK2",
+            "RSK3",
+            "RSK4",
+            "p70S6K",
+            "p70S6Kb"
+        ],
+        "weblogo": "PK_AGC_RSK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MSK",
+        "genes": [
+            "MSK1",
+            "MSK2"
+        ],
+        "weblogo": "PK_AGC_RSK_MSK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MSK1 (RPS6KA5)",
+        "genes": [
+            "MSK1"
+        ],
+        "weblogo": "PK_AGC_RSK_MSK_MSK1.png",
+        "uniprot": "O75582"
+    },
+    {
+        "fname": "MSK2 (RPS6KA4)",
+        "genes": [
+            "MSK2"
+        ],
+        "weblogo": "PK_AGC_RSK_MSK_MSK2.png",
+        "uniprot": "O75676"
+    },
+    {
+        "fname": "RSKp70",
+        "genes": [
+            "p70S6K",
+            "p70S6Kb"
+        ],
+        "weblogo": "PK_AGC_RSK_RSKp70.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "p70S6K (RPS6KB1)",
+        "genes": [
+            "p70S6K"
+        ],
+        "weblogo": "PK_AGC_RSK_RSKp70_p70S6K.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "p70S6Kb (RPS6KB2)",
+        "genes": [
+            "p70S6Kb"
+        ],
+        "weblogo": "PK_AGC_RSK_RSKp70_p70S6Kb.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RSKp90",
+        "genes": [
+            "RSK1",
+            "RSK2",
+            "RSK3",
+            "RSK4"
+        ],
+        "weblogo": "PK_AGC_RSK_RSKp90.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RSK1 (RPS6KA1)",
+        "genes": [
+            "RSK1"
+        ],
+        "weblogo": "PK_AGC_RSK_RSKp90_RSK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RSK2 (RPS6KA3)",
+        "genes": [
+            "RSK2"
+        ],
+        "weblogo": "PK_AGC_RSK_RSKp90_RSK2.png",
+        "uniprot": "P51812"
+    },
+    {
+        "fname": "RSK3 (RPS6KA2)",
+        "genes": [
+            "RSK3"
+        ],
+        "weblogo": "PK_AGC_RSK_RSKp90_RSK3.png",
+        "uniprot": "Q15349"
+    },
+    {
+        "fname": "RSK4 (RPS6KA6)",
+        "genes": [
+            "RSK4"
+        ],
+        "weblogo": "PK_AGC_RSK_RSKp90_RSK4.png",
+        "uniprot": "Q9UK32"
+    },
+    {
+        "fname": "RSKL",
+        "genes": [
+            "RSKL1",
+            "RSKL2"
+        ],
+        "weblogo": "PK_AGC_RSKL.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RSKL1 (RPS6KC1)",
+        "genes": [
+            "RSKL1"
+        ],
+        "weblogo": "PK_AGC_RSKL__RSKL1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RSKL2 (RPS6KL1)",
+        "genes": [
+            "RSKL2"
+        ],
+        "weblogo": "PK_AGC_RSKL__RSKL2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RSKR",
+        "genes": [
+            "SgK494"
+        ],
+        "weblogo": "PK_AGC_RSKR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK494 (SGK494)",
+        "genes": [
+            "SgK494"
+        ],
+        "weblogo": "PK_AGC_RSKR__SgK494.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SGK",
+        "genes": [
+            "SGK1",
+            "SGK2",
+            "SGK3"
+        ],
+        "weblogo": "PK_AGC_SGK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SGK1",
+        "genes": [
+            "SGK1"
+        ],
+        "weblogo": "PK_AGC_SGK__SGK1.png",
+        "uniprot": "O00141"
+    },
+    {
+        "fname": "SGK2",
+        "genes": [
+            "SGK2"
+        ],
+        "weblogo": "PK_AGC_SGK__SGK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SGK3",
+        "genes": [
+            "SGK3"
+        ],
+        "weblogo": "PK_AGC_SGK__SGK3.png",
+        "uniprot": "Q96BR1"
+    },
+    {
+        "fname": "YANK",
+        "genes": [
+            "YANK1",
+            "YANK2",
+            "YANK3"
+        ],
+        "weblogo": "PK_AGC_YANK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "YANK1 (STK32A)",
+        "genes": [
+            "YANK1"
+        ],
+        "weblogo": "PK_AGC_YANK__YANK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "YANK2 (STK32B)",
+        "genes": [
+            "YANK2"
+        ],
+        "weblogo": "PK_AGC_YANK__YANK2.png",
+        "uniprot": "Q9NY57"
+    },
+    {
+        "fname": "YANK3 (STK32C)",
+        "genes": [
+            "YANK3"
+        ],
+        "weblogo": "PK_AGC_YANK__YANK3.png",
+        "uniprot": "Q86UX6"
+    },
+    {
+        "fname": "CAMK",
+        "genes": [
+            "AMPKa1",
+            "AMPKa2",
+            "BRSK1",
+            "BRSK2",
+            "CASK",
+            "CHK1",
+            "CHK2",
+            "CaMK1a",
+            "CaMK1b",
+            "CaMK1d",
+            "CaMK1g",
+            "CaMK2a",
+            "CaMK2b",
+            "CaMK2d",
+            "CaMK2g",
+            "CaMK4",
+            "DAPK1",
+            "DAPK2",
+            "DAPK3",
+            "DCAMKL1",
+            "DCAMKL2",
+            "DCAMKL3",
+            "DRAK1",
+            "DRAK2",
+            "HUNK",
+            "LKB1",
+            "MAPKAPK2",
+            "MAPKAPK3",
+            "MAPKAPK5",
+            "MARK1",
+            "MARK2",
+            "MARK3",
+            "MARK4",
+            "MELK",
+            "MNK1",
+            "MNK2",
+            "MSK1_b",
+            "MSK2_b",
+            "NIM1",
+            "NuaK1",
+            "NuaK2",
+            "Obscn",
+            "Obscn_b",
+            "PASK",
+            "PHKg1",
+            "PHKg2",
+            "PIM1",
+            "PIM2",
+            "PIM3",
+            "PKD1",
+            "PKD2",
+            "PKD3",
+            "PSKH1",
+            "PSKH2",
+            "QIK",
+            "QSK",
+            "RSK1_b",
+            "RSK2_b",
+            "RSK3_b",
+            "RSK4_b",
+            "SIK",
+            "SNRK",
+            "SPEG",
+            "SPEG_b",
+            "SSTK",
+            "STK33",
+            "SgK085",
+            "SgK495",
+            "TSSK1",
+            "TSSK2",
+            "TSSK3",
+            "TSSK4",
+            "TTN",
+            "Trad",
+            "Trb1",
+            "Trb2",
+            "Trb3",
+            "Trio",
+            "VACAMKL",
+            "caMLCK",
+            "skMLCK",
+            "smMLCK"
+        ],
+        "weblogo": "PK_CAMK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CAMK1",
+        "genes": [
+            "CaMK1a",
+            "CaMK1b",
+            "CaMK1d",
+            "CaMK1g",
+            "CaMK4"
+        ],
+        "weblogo": "PK_CAMK_CAMK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CaMK1a (CAMK1)",
+        "genes": [
+            "CaMK1a"
+        ],
+        "weblogo": "PK_CAMK_CAMK1__CaMK1a.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CaMK1b (PNCK)",
+        "genes": [
+            "CaMK1b"
+        ],
+        "weblogo": "PK_CAMK_CAMK1__CaMK1b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CaMK1d (CAMK1D)",
+        "genes": [
+            "CaMK1d"
+        ],
+        "weblogo": "PK_CAMK_CAMK1__CaMK1d.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CaMK1g (CAMK1G)",
+        "genes": [
+            "CaMK1g"
+        ],
+        "weblogo": "PK_CAMK_CAMK1__CaMK1g.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CaMK4 (CAMK4)",
+        "genes": [
+            "CaMK4"
+        ],
+        "weblogo": "PK_CAMK_CAMK1__CaMK4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CAMK2",
+        "genes": [
+            "CaMK2a",
+            "CaMK2b",
+            "CaMK2d",
+            "CaMK2g"
+        ],
+        "weblogo": "PK_CAMK_CAMK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CaMK2a (CAMK2A)",
+        "genes": [
+            "CaMK2a"
+        ],
+        "weblogo": "PK_CAMK_CAMK2__CaMK2a.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CaMK2b (CAMK2B)",
+        "genes": [
+            "CaMK2b"
+        ],
+        "weblogo": "PK_CAMK_CAMK2__CaMK2b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CaMK2d (CAMK2D)",
+        "genes": [
+            "CaMK2d"
+        ],
+        "weblogo": "PK_CAMK_CAMK2__CaMK2d.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CaMK2g (CAMK2G)",
+        "genes": [
+            "CaMK2g"
+        ],
+        "weblogo": "PK_CAMK_CAMK2__CaMK2g.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CAMKL",
+        "genes": [
+            "AMPKa1",
+            "AMPKa2",
+            "BRSK1",
+            "BRSK2",
+            "CHK1",
+            "HUNK",
+            "LKB1",
+            "MARK1",
+            "MARK2",
+            "MARK3",
+            "MARK4",
+            "MELK",
+            "NIM1",
+            "NuaK1",
+            "NuaK2",
+            "PASK",
+            "QIK",
+            "QSK",
+            "SIK",
+            "SNRK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "AMPK",
+        "genes": [
+            "AMPKa1",
+            "AMPKa2"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_AMPK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "AMPKa1 (PRKAA1)",
+        "genes": [
+            "AMPKa1"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_AMPK_AMPKa1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "AMPKa2 (PRKAA2)",
+        "genes": [
+            "AMPKa2"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_AMPK_AMPKa2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BRSK",
+        "genes": [
+            "BRSK1",
+            "BRSK2"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_BRSK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BRSK1",
+        "genes": [
+            "BRSK1"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_BRSK_BRSK1.png",
+        "uniprot": "Q8TDC3"
+    },
+    {
+        "fname": "BRSK2",
+        "genes": [
+            "BRSK2"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_BRSK_BRSK2.png",
+        "uniprot": "Q8IWQ3"
+    },
+    {
+        "fname": "CHK1",
+        "genes": [
+            "CHK1"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_CHK1.png",
+        "uniprot": "O14757"
+    },
+    {
+        "fname": "CHK1 (CHEK1)",
+        "genes": [
+            "CHK1"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_CHK1_CHK1.png",
+        "uniprot": "O14757"
+    },
+    {
+        "fname": "HUNK",
+        "genes": [
+            "HUNK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_HUNK.png",
+        "uniprot": "P57058"
+    },
+    {
+        "fname": "HUNK",
+        "genes": [
+            "HUNK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_HUNK_HUNK.png",
+        "uniprot": "P57058"
+    },
+    {
+        "fname": "LKB",
+        "genes": [
+            "LKB1"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_LKB.png",
+        "uniprot": "Q15831"
+    },
+    {
+        "fname": "LKB1 (STK11)",
+        "genes": [
+            "LKB1"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_LKB_LKB1.png",
+        "uniprot": "Q15831"
+    },
+    {
+        "fname": "MARK",
+        "genes": [
+            "MARK1",
+            "MARK2",
+            "MARK3",
+            "MARK4"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_MARK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MARK1",
+        "genes": [
+            "MARK1"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_MARK_MARK1.png",
+        "uniprot": "Q9P0L2"
+    },
+    {
+        "fname": "MARK2",
+        "genes": [
+            "MARK2"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_MARK_MARK2.png",
+        "uniprot": "Q7KZI7"
+    },
+    {
+        "fname": "MARK3",
+        "genes": [
+            "MARK3"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_MARK_MARK3.png",
+        "uniprot": "P27448"
+    },
+    {
+        "fname": "MARK4",
+        "genes": [
+            "MARK4"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_MARK_MARK4.png",
+        "uniprot": "Q96L34"
+    },
+    {
+        "fname": "MELK",
+        "genes": [
+            "MELK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_MELK.png",
+        "uniprot": "Q14680"
+    },
+    {
+        "fname": "MELK",
+        "genes": [
+            "MELK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_MELK_MELK.png",
+        "uniprot": "Q14680"
+    },
+    {
+        "fname": "NIM1",
+        "genes": [
+            "NIM1"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_NIM1.png",
+        "uniprot": "Q8IY84"
+    },
+    {
+        "fname": "NIM1 (NIM1K)",
+        "genes": [
+            "NIM1"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_NIM1_NIM1.png",
+        "uniprot": "Q8IY84"
+    },
+    {
+        "fname": "NuaK",
+        "genes": [
+            "NuaK1",
+            "NuaK2"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_NuaK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "NuaK1 (NUAK1)",
+        "genes": [
+            "NuaK1"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_NuaK_NuaK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "NuaK2 (NUAK2)",
+        "genes": [
+            "NuaK2"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_NuaK_NuaK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PASK",
+        "genes": [
+            "PASK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_PASK.png",
+        "uniprot": "Q96RG2"
+    },
+    {
+        "fname": "PASK",
+        "genes": [
+            "PASK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_PASK_PASK.png",
+        "uniprot": "Q96RG2"
+    },
+    {
+        "fname": "QIK",
+        "genes": [
+            "QIK",
+            "QSK",
+            "SIK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_QIK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "QIK (SIK2)",
+        "genes": [
+            "QIK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_QIK_QIK.png",
+        "uniprot": "Q9H0K1"
+    },
+    {
+        "fname": "QSK (SIK3)",
+        "genes": [
+            "QSK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_QIK_QSK.png",
+        "uniprot": "Q9Y2K2"
+    },
+    {
+        "fname": "SIK (SIK1)",
+        "genes": [
+            "SIK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_QIK_SIK.png",
+        "uniprot": "P57059"
+    },
+    {
+        "fname": "SNRK",
+        "genes": [
+            "SNRK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_SNRK.png",
+        "uniprot": "Q9NRH2"
+    },
+    {
+        "fname": "SNRK",
+        "genes": [
+            "SNRK"
+        ],
+        "weblogo": "PK_CAMK_CAMKL_SNRK_SNRK.png",
+        "uniprot": "Q9NRH2"
+    },
+    {
+        "fname": "CASK",
+        "genes": [
+            "CASK"
+        ],
+        "weblogo": "PK_CAMK_CASK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CASK",
+        "genes": [
+            "CASK"
+        ],
+        "weblogo": "PK_CAMK_CASK__CASK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DAPK",
+        "genes": [
+            "DAPK1",
+            "DAPK2",
+            "DAPK3",
+            "DRAK1",
+            "DRAK2"
+        ],
+        "weblogo": "PK_CAMK_DAPK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DAPK1",
+        "genes": [
+            "DAPK1"
+        ],
+        "weblogo": "PK_CAMK_DAPK__DAPK1.png",
+        "uniprot": "P53355"
+    },
+    {
+        "fname": "DAPK2",
+        "genes": [
+            "DAPK2"
+        ],
+        "weblogo": "PK_CAMK_DAPK__DAPK2.png",
+        "uniprot": "Q9UIK4"
+    },
+    {
+        "fname": "DAPK3",
+        "genes": [
+            "DAPK3"
+        ],
+        "weblogo": "PK_CAMK_DAPK__DAPK3.png",
+        "uniprot": "O43293"
+    },
+    {
+        "fname": "DRAK1 (STK17A)",
+        "genes": [
+            "DRAK1"
+        ],
+        "weblogo": "PK_CAMK_DAPK__DRAK1.png",
+        "uniprot": "Q9UEE5"
+    },
+    {
+        "fname": "DRAK2 (STK17B)",
+        "genes": [
+            "DRAK2"
+        ],
+        "weblogo": "PK_CAMK_DAPK__DRAK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DCAMKL",
+        "genes": [
+            "DCAMKL1",
+            "DCAMKL2",
+            "DCAMKL3"
+        ],
+        "weblogo": "PK_CAMK_DCAMKL.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DCAMKL1 (DCLK1)",
+        "genes": [
+            "DCAMKL1"
+        ],
+        "weblogo": "PK_CAMK_DCAMKL__DCAMKL1.png",
+        "uniprot": "O15075"
+    },
+    {
+        "fname": "DCAMKL2 (DCLK2)",
+        "genes": [
+            "DCAMKL2"
+        ],
+        "weblogo": "PK_CAMK_DCAMKL__DCAMKL2.png",
+        "uniprot": "Q8N568"
+    },
+    {
+        "fname": "DCAMKL3 (DCLK3)",
+        "genes": [
+            "DCAMKL3"
+        ],
+        "weblogo": "PK_CAMK_DCAMKL__DCAMKL3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAPKAPK",
+        "genes": [
+            "MAPKAPK2",
+            "MAPKAPK3",
+            "MAPKAPK5",
+            "MNK1",
+            "MNK2"
+        ],
+        "weblogo": "PK_CAMK_MAPKAPK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MK2",
+        "genes": [
+            "MAPKAPK2",
+            "MAPKAPK3"
+        ],
+        "weblogo": "PK_CAMK_MAPKAPK_MK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAPKAPK2",
+        "genes": [
+            "MAPKAPK2"
+        ],
+        "weblogo": "PK_CAMK_MAPKAPK_MK2_MAPKAPK2.png",
+        "uniprot": "P49137"
+    },
+    {
+        "fname": "MAPKAPK3",
+        "genes": [
+            "MAPKAPK3"
+        ],
+        "weblogo": "PK_CAMK_MAPKAPK_MK2_MAPKAPK3.png",
+        "uniprot": "Q16644"
+    },
+    {
+        "fname": "MK5",
+        "genes": [
+            "MAPKAPK5"
+        ],
+        "weblogo": "PK_CAMK_MAPKAPK_MK5.png",
+        "uniprot": "Q8IW41"
+    },
+    {
+        "fname": "MAPKAPK5",
+        "genes": [
+            "MAPKAPK5"
+        ],
+        "weblogo": "PK_CAMK_MAPKAPK_MK5_MAPKAPK5.png",
+        "uniprot": "Q8IW41"
+    },
+    {
+        "fname": "MNK",
+        "genes": [
+            "MNK1",
+            "MNK2"
+        ],
+        "weblogo": "PK_CAMK_MAPKAPK_MNK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MNK1 (MKNK1)",
+        "genes": [
+            "MNK1"
+        ],
+        "weblogo": "PK_CAMK_MAPKAPK_MNK_MNK1.png",
+        "uniprot": "Q9BUB5"
+    },
+    {
+        "fname": "MNK2 (MKNK2)",
+        "genes": [
+            "MNK2"
+        ],
+        "weblogo": "PK_CAMK_MAPKAPK_MNK_MNK2.png",
+        "uniprot": "Q9HBH9"
+    },
+    {
+        "fname": "MLCK",
+        "genes": [
+            "SgK085",
+            "TTN",
+            "caMLCK",
+            "skMLCK",
+            "smMLCK"
+        ],
+        "weblogo": "PK_CAMK_MLCK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK085 (MYLK4)",
+        "genes": [
+            "SgK085"
+        ],
+        "weblogo": "PK_CAMK_MLCK__SgK085.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TTN",
+        "genes": [
+            "TTN"
+        ],
+        "weblogo": "PK_CAMK_MLCK__TTN.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "caMLCK (MYLK3)",
+        "genes": [
+            "caMLCK"
+        ],
+        "weblogo": "PK_CAMK_MLCK__caMLCK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "skMLCK (MYLK2)",
+        "genes": [
+            "skMLCK"
+        ],
+        "weblogo": "PK_CAMK_MLCK__skMLCK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "smMLCK (MYLK)",
+        "genes": [
+            "smMLCK"
+        ],
+        "weblogo": "PK_CAMK_MLCK__smMLCK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PHK",
+        "genes": [
+            "PHKg1",
+            "PHKg2"
+        ],
+        "weblogo": "PK_CAMK_PHK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PHKg1 (PHKG1)",
+        "genes": [
+            "PHKg1"
+        ],
+        "weblogo": "PK_CAMK_PHK__PHKg1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PHKg2 (PHKG2)",
+        "genes": [
+            "PHKg2"
+        ],
+        "weblogo": "PK_CAMK_PHK__PHKg2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PIM",
+        "genes": [
+            "PIM1",
+            "PIM2",
+            "PIM3"
+        ],
+        "weblogo": "PK_CAMK_PIM.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PIM1",
+        "genes": [
+            "PIM1"
+        ],
+        "weblogo": "PK_CAMK_PIM__PIM1.png",
+        "uniprot": "P11309"
+    },
+    {
+        "fname": "PIM2",
+        "genes": [
+            "PIM2"
+        ],
+        "weblogo": "PK_CAMK_PIM__PIM2.png",
+        "uniprot": "Q9P1W9"
+    },
+    {
+        "fname": "PIM3",
+        "genes": [
+            "PIM3"
+        ],
+        "weblogo": "PK_CAMK_PIM__PIM3.png",
+        "uniprot": "Q86V86"
+    },
+    {
+        "fname": "PKD",
+        "genes": [
+            "PKD1",
+            "PKD2",
+            "PKD3"
+        ],
+        "weblogo": "PK_CAMK_PKD.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKD1 (PRKD1)",
+        "genes": [
+            "PKD1"
+        ],
+        "weblogo": "PK_CAMK_PKD__PKD1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKD2 (PRKD2)",
+        "genes": [
+            "PKD2"
+        ],
+        "weblogo": "PK_CAMK_PKD__PKD2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PKD3 (PRKD3)",
+        "genes": [
+            "PKD3"
+        ],
+        "weblogo": "PK_CAMK_PKD__PKD3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PSK",
+        "genes": [
+            "PSKH1",
+            "PSKH2"
+        ],
+        "weblogo": "PK_CAMK_PSK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PSKH1",
+        "genes": [
+            "PSKH1"
+        ],
+        "weblogo": "PK_CAMK_PSK__PSKH1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PSKH2",
+        "genes": [
+            "PSKH2"
+        ],
+        "weblogo": "PK_CAMK_PSK__PSKH2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RAD53",
+        "genes": [
+            "CHK2"
+        ],
+        "weblogo": "PK_CAMK_RAD53.png",
+        "uniprot": "O96017"
+    },
+    {
+        "fname": "CHK2 (CHEK2)",
+        "genes": [
+            "CHK2"
+        ],
+        "weblogo": "PK_CAMK_RAD53__CHK2.png",
+        "uniprot": "O96017"
+    },
+    {
+        "fname": "RSKb",
+        "genes": [
+            "MSK1_b",
+            "MSK2_b",
+            "RSK1_b",
+            "RSK2_b",
+            "RSK3_b",
+            "RSK4_b"
+        ],
+        "weblogo": "PK_CAMK_RSKb.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MSKb",
+        "genes": [
+            "MSK1_b",
+            "MSK2_b"
+        ],
+        "weblogo": "PK_CAMK_RSKb_MSKb.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MSK1_b (RPS6KA5)",
+        "genes": [
+            "MSK1_b"
+        ],
+        "weblogo": "PK_CAMK_RSKb_MSKb_MSK1-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MSK2_b (RPS6KA4)",
+        "genes": [
+            "MSK2_b"
+        ],
+        "weblogo": "PK_CAMK_RSKb_MSKb_MSK2-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RSKb",
+        "genes": [
+            "RSK1_b",
+            "RSK2_b",
+            "RSK3_b",
+            "RSK4_b"
+        ],
+        "weblogo": "PK_CAMK_RSKb_RSKb.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RSK1_b (RPS6KA1)",
+        "genes": [
+            "RSK1_b"
+        ],
+        "weblogo": "PK_CAMK_RSKb_RSKb_RSK1-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RSK2_b (RPS6KA3)",
+        "genes": [
+            "RSK2_b"
+        ],
+        "weblogo": "PK_CAMK_RSKb_RSKb_RSK2-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RSK3_b (RPS6KA2)",
+        "genes": [
+            "RSK3_b"
+        ],
+        "weblogo": "PK_CAMK_RSKb_RSKb_RSK3-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RSK4_b (RPS6KA6)",
+        "genes": [
+            "RSK4_b"
+        ],
+        "weblogo": "PK_CAMK_RSKb_RSKb_RSK4-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK495",
+        "genes": [
+            "SgK495"
+        ],
+        "weblogo": "PK_CAMK_SgK495.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK495 (STK40)",
+        "genes": [
+            "SgK495"
+        ],
+        "weblogo": "PK_CAMK_SgK495__SgK495.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "STK33",
+        "genes": [
+            "STK33"
+        ],
+        "weblogo": "PK_CAMK_STK33.png",
+        "uniprot": "Q9BYT3"
+    },
+    {
+        "fname": "STK33",
+        "genes": [
+            "STK33"
+        ],
+        "weblogo": "PK_CAMK_STK33__STK33.png",
+        "uniprot": "Q9BYT3"
+    },
+    {
+        "fname": "Trbl",
+        "genes": [
+            "Trb1",
+            "Trb2",
+            "Trb3"
+        ],
+        "weblogo": "PK_CAMK_Trbl.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Trb1 (TRIB1)",
+        "genes": [
+            "Trb1"
+        ],
+        "weblogo": "PK_CAMK_Trbl__Trb1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Trb2 (TRIB2)",
+        "genes": [
+            "Trb2"
+        ],
+        "weblogo": "PK_CAMK_Trbl__Trb2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Trb3 (TRIB3)",
+        "genes": [
+            "Trb3"
+        ],
+        "weblogo": "PK_CAMK_Trbl__Trb3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Trio",
+        "genes": [
+            "Obscn",
+            "Obscn_b",
+            "SPEG",
+            "SPEG_b",
+            "Trad",
+            "Trio"
+        ],
+        "weblogo": "PK_CAMK_Trio.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Obscn (OBSCN)",
+        "genes": [
+            "Obscn"
+        ],
+        "weblogo": "PK_CAMK_Trio__Obscn.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Obscn_b (OBSCN)",
+        "genes": [
+            "Obscn_b"
+        ],
+        "weblogo": "PK_CAMK_Trio__Obscn-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SPEG",
+        "genes": [
+            "SPEG"
+        ],
+        "weblogo": "PK_CAMK_Trio__SPEG.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SPEG_b (SPEG)",
+        "genes": [
+            "SPEG_b"
+        ],
+        "weblogo": "PK_CAMK_Trio__SPEG-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Trad (KALRN)",
+        "genes": [
+            "Trad"
+        ],
+        "weblogo": "PK_CAMK_Trio__Trad.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Trio (TRIO)",
+        "genes": [
+            "Trio"
+        ],
+        "weblogo": "PK_CAMK_Trio__Trio.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TSSK",
+        "genes": [
+            "SSTK",
+            "TSSK1",
+            "TSSK2",
+            "TSSK3",
+            "TSSK4"
+        ],
+        "weblogo": "PK_CAMK_TSSK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SSTK (TSSK6)",
+        "genes": [
+            "SSTK"
+        ],
+        "weblogo": "PK_CAMK_TSSK__SSTK.png",
+        "uniprot": "Q9BXA6"
+    },
+    {
+        "fname": "TSSK1 (TSSK1B)",
+        "genes": [
+            "TSSK1"
+        ],
+        "weblogo": "PK_CAMK_TSSK__TSSK1.png",
+        "uniprot": "Q9BXA7"
+    },
+    {
+        "fname": "TSSK2",
+        "genes": [
+            "TSSK2"
+        ],
+        "weblogo": "PK_CAMK_TSSK__TSSK2.png",
+        "uniprot": "Q96PF2"
+    },
+    {
+        "fname": "TSSK3",
+        "genes": [
+            "TSSK3"
+        ],
+        "weblogo": "PK_CAMK_TSSK__TSSK3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TSSK4",
+        "genes": [
+            "TSSK4"
+        ],
+        "weblogo": "PK_CAMK_TSSK__TSSK4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CAMK-Unique",
+        "genes": [
+            "VACAMKL"
+        ],
+        "weblogo": "PK_CAMK_CAMK-Unique.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "VACAMKL (CAMKV)",
+        "genes": [
+            "VACAMKL"
+        ],
+        "weblogo": "PK_CAMK_CAMK-Unique__VACAMKL.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CK1",
+        "genes": [
+            "CK1a",
+            "CK1a2",
+            "CK1d",
+            "CK1e",
+            "CK1g1",
+            "CK1g2",
+            "CK1g3",
+            "TTBK1",
+            "TTBK2",
+            "VRK1",
+            "VRK2",
+            "VRK3"
+        ],
+        "weblogo": "PK_CK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CK1a (CSNK1A1)",
+        "genes": [
+            "CK1a"
+        ],
+        "weblogo": "PK_CK1_CK1__CK1a.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CK1a2 (CSNK1A1L)",
+        "genes": [
+            "CK1a2"
+        ],
+        "weblogo": "PK_CK1_CK1__CK1a2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CK1d (CSNK1D)",
+        "genes": [
+            "CK1d"
+        ],
+        "weblogo": "PK_CK1_CK1__CK1d.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CK1e (CSNK1E)",
+        "genes": [
+            "CK1e"
+        ],
+        "weblogo": "PK_CK1_CK1__CK1e.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CK1g1 (CSNK1G1)",
+        "genes": [
+            "CK1g1"
+        ],
+        "weblogo": "PK_CK1_CK1__CK1g1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CK1g2 (CSNK1G2)",
+        "genes": [
+            "CK1g2"
+        ],
+        "weblogo": "PK_CK1_CK1__CK1g2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CK1g3 (CSNK1G3)",
+        "genes": [
+            "CK1g3"
+        ],
+        "weblogo": "PK_CK1_CK1__CK1g3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TTBK",
+        "genes": [
+            "TTBK1",
+            "TTBK2"
+        ],
+        "weblogo": "PK_CK1_TTBK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TTBK1",
+        "genes": [
+            "TTBK1"
+        ],
+        "weblogo": "PK_CK1_TTBK__TTBK1.png",
+        "uniprot": "Q5TCY1"
+    },
+    {
+        "fname": "TTBK2",
+        "genes": [
+            "TTBK2"
+        ],
+        "weblogo": "PK_CK1_TTBK__TTBK2.png",
+        "uniprot": "Q6IQ55"
+    },
+    {
+        "fname": "VRK",
+        "genes": [
+            "VRK1",
+            "VRK2",
+            "VRK3"
+        ],
+        "weblogo": "PK_CK1_VRK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "VRK1",
+        "genes": [
+            "VRK1"
+        ],
+        "weblogo": "PK_CK1_VRK__VRK1.png",
+        "uniprot": "Q99986"
+    },
+    {
+        "fname": "VRK2",
+        "genes": [
+            "VRK2"
+        ],
+        "weblogo": "PK_CK1_VRK__VRK2.png",
+        "uniprot": "Q86Y07"
+    },
+    {
+        "fname": "VRK3",
+        "genes": [
+            "VRK3"
+        ],
+        "weblogo": "PK_CK1_VRK__VRK3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CMGC",
+        "genes": [
+            "CCRK",
+            "CDC2",
+            "CDK10",
+            "CDK11",
+            "CDK2",
+            "CDK3",
+            "CDK4",
+            "CDK5",
+            "CDK6",
+            "CDK7",
+            "CDK8",
+            "CDK9",
+            "CDKL1",
+            "CDKL2",
+            "CDKL3",
+            "CDKL4",
+            "CDKL5",
+            "CHED",
+            "CK2a1",
+            "CK2a2",
+            "CLK1",
+            "CLK2",
+            "CLK3",
+            "CLK4",
+            "CRK7",
+            "DYRK1A",
+            "DYRK1B",
+            "DYRK2",
+            "DYRK3",
+            "DYRK4",
+            "Erk1",
+            "Erk2",
+            "Erk3",
+            "Erk4",
+            "Erk5",
+            "Erk7",
+            "GSK3A",
+            "GSK3B",
+            "HIPK1",
+            "HIPK2",
+            "HIPK3",
+            "HIPK4",
+            "ICK",
+            "JNK1",
+            "JNK2",
+            "JNK3",
+            "MAK",
+            "MOK",
+            "MSSK1",
+            "NLK",
+            "PCTAIRE1",
+            "PCTAIRE2",
+            "PCTAIRE3",
+            "PFTAIRE1",
+            "PFTAIRE2",
+            "PITSLRE",
+            "PRP4",
+            "SRPK1",
+            "SRPK2",
+            "p38a",
+            "p38b",
+            "p38d",
+            "p38g"
+        ],
+        "weblogo": "PK_CMGC.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDK",
+        "genes": [
+            "CCRK",
+            "CDC2",
+            "CDK10",
+            "CDK11",
+            "CDK2",
+            "CDK3",
+            "CDK4",
+            "CDK5",
+            "CDK6",
+            "CDK7",
+            "CDK8",
+            "CDK9",
+            "CHED",
+            "CRK7",
+            "PCTAIRE1",
+            "PCTAIRE2",
+            "PCTAIRE3",
+            "PFTAIRE1",
+            "PFTAIRE2",
+            "PITSLRE"
+        ],
+        "weblogo": "PK_CMGC_CDK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDC2",
+        "genes": [
+            "CDC2"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDC2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDC2 (CDK1)",
+        "genes": [
+            "CDC2"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDC2_CDC2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDK2",
+        "genes": [
+            "CDK2",
+            "CDK3"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDK2",
+        "genes": [
+            "CDK2"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK2_CDK2.png",
+        "uniprot": "P24941"
+    },
+    {
+        "fname": "CDK3",
+        "genes": [
+            "CDK3"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK2_CDK3.png",
+        "uniprot": "Q00526"
+    },
+    {
+        "fname": "CDK4",
+        "genes": [
+            "CDK4",
+            "CDK6"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDK4",
+        "genes": [
+            "CDK4"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK4_CDK4.png",
+        "uniprot": "P11802"
+    },
+    {
+        "fname": "CDK6",
+        "genes": [
+            "CDK6"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK4_CDK6.png",
+        "uniprot": "Q00534"
+    },
+    {
+        "fname": "CDK5",
+        "genes": [
+            "CDK5"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK5.png",
+        "uniprot": "Q00535"
+    },
+    {
+        "fname": "CDK5",
+        "genes": [
+            "CDK5"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK5_CDK5.png",
+        "uniprot": "Q00535"
+    },
+    {
+        "fname": "CDK7",
+        "genes": [
+            "CDK7"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK7.png",
+        "uniprot": "P50613"
+    },
+    {
+        "fname": "CDK7",
+        "genes": [
+            "CDK7"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK7_CDK7.png",
+        "uniprot": "P50613"
+    },
+    {
+        "fname": "CDK8",
+        "genes": [
+            "CDK11",
+            "CDK8"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK8.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDK11 (CDK19)",
+        "genes": [
+            "CDK11"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK8_CDK11.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDK8",
+        "genes": [
+            "CDK8"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK8_CDK8.png",
+        "uniprot": "P49336"
+    },
+    {
+        "fname": "CDK9",
+        "genes": [
+            "CDK9"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK9.png",
+        "uniprot": "P50750"
+    },
+    {
+        "fname": "CDK9",
+        "genes": [
+            "CDK9"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK9_CDK9.png",
+        "uniprot": "P50750"
+    },
+    {
+        "fname": "CDK10",
+        "genes": [
+            "CDK10"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK10.png",
+        "uniprot": "Q15131"
+    },
+    {
+        "fname": "CDK10",
+        "genes": [
+            "CDK10"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK10_CDK10.png",
+        "uniprot": "Q15131"
+    },
+    {
+        "fname": "CDK11",
+        "genes": [
+            "PITSLRE"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK11.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PITSLRE (CDK11B)",
+        "genes": [
+            "PITSLRE"
+        ],
+        "weblogo": "PK_CMGC_CDK_CDK11_PITSLRE.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CRK7",
+        "genes": [
+            "CHED",
+            "CRK7"
+        ],
+        "weblogo": "PK_CMGC_CDK_CRK7.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CHED (CDK13)",
+        "genes": [
+            "CHED"
+        ],
+        "weblogo": "PK_CMGC_CDK_CRK7_CHED.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CRK7 (CDK12)",
+        "genes": [
+            "CRK7"
+        ],
+        "weblogo": "PK_CMGC_CDK_CRK7_CRK7.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PCTAIRE",
+        "genes": [
+            "PCTAIRE1",
+            "PCTAIRE2",
+            "PCTAIRE3"
+        ],
+        "weblogo": "PK_CMGC_CDK_PCTAIRE.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PCTAIRE1 (CDK16)",
+        "genes": [
+            "PCTAIRE1"
+        ],
+        "weblogo": "PK_CMGC_CDK_PCTAIRE_PCTAIRE1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PCTAIRE2 (CDK17)",
+        "genes": [
+            "PCTAIRE2"
+        ],
+        "weblogo": "PK_CMGC_CDK_PCTAIRE_PCTAIRE2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PCTAIRE3 (CDK18)",
+        "genes": [
+            "PCTAIRE3"
+        ],
+        "weblogo": "PK_CMGC_CDK_PCTAIRE_PCTAIRE3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PFTAIRE",
+        "genes": [
+            "PFTAIRE1",
+            "PFTAIRE2"
+        ],
+        "weblogo": "PK_CMGC_CDK_PFTAIRE.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PFTAIRE1 (CDK14)",
+        "genes": [
+            "PFTAIRE1"
+        ],
+        "weblogo": "PK_CMGC_CDK_PFTAIRE_PFTAIRE1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PFTAIRE2 (CDK15)",
+        "genes": [
+            "PFTAIRE2"
+        ],
+        "weblogo": "PK_CMGC_CDK_PFTAIRE_PFTAIRE2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CCRK (CDK20)",
+        "genes": [
+            "CCRK"
+        ],
+        "weblogo": "PK_CMGC_CDK__CCRK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDKL",
+        "genes": [
+            "CDKL1",
+            "CDKL2",
+            "CDKL3",
+            "CDKL4",
+            "CDKL5"
+        ],
+        "weblogo": "PK_CMGC_CDKL.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDKL1",
+        "genes": [
+            "CDKL1"
+        ],
+        "weblogo": "PK_CMGC_CDKL__CDKL1.png",
+        "uniprot": "Q00532"
+    },
+    {
+        "fname": "CDKL2",
+        "genes": [
+            "CDKL2"
+        ],
+        "weblogo": "PK_CMGC_CDKL__CDKL2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDKL3",
+        "genes": [
+            "CDKL3"
+        ],
+        "weblogo": "PK_CMGC_CDKL__CDKL3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDKL4",
+        "genes": [
+            "CDKL4"
+        ],
+        "weblogo": "PK_CMGC_CDKL__CDKL4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDKL5",
+        "genes": [
+            "CDKL5"
+        ],
+        "weblogo": "PK_CMGC_CDKL__CDKL5.png",
+        "uniprot": "Q3UTQ8"
+    },
+    {
+        "fname": "CK2",
+        "genes": [
+            "CK2a1",
+            "CK2a2"
+        ],
+        "weblogo": "PK_CMGC_CK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CK2a1 (CSNK2A1)",
+        "genes": [
+            "CK2a1"
+        ],
+        "weblogo": "PK_CMGC_CK2__CK2a1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CK2a2 (CSNK2A2)",
+        "genes": [
+            "CK2a2"
+        ],
+        "weblogo": "PK_CMGC_CK2__CK2a2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CLK",
+        "genes": [
+            "CLK1",
+            "CLK2",
+            "CLK3",
+            "CLK4"
+        ],
+        "weblogo": "PK_CMGC_CLK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CLK1",
+        "genes": [
+            "CLK1"
+        ],
+        "weblogo": "PK_CMGC_CLK__CLK1.png",
+        "uniprot": "P49759"
+    },
+    {
+        "fname": "CLK2",
+        "genes": [
+            "CLK2"
+        ],
+        "weblogo": "PK_CMGC_CLK__CLK2.png",
+        "uniprot": "P49760"
+    },
+    {
+        "fname": "CLK3",
+        "genes": [
+            "CLK3"
+        ],
+        "weblogo": "PK_CMGC_CLK__CLK3.png",
+        "uniprot": "P49761"
+    },
+    {
+        "fname": "CLK4",
+        "genes": [
+            "CLK4"
+        ],
+        "weblogo": "PK_CMGC_CLK__CLK4.png",
+        "uniprot": "Q9HAZ1"
+    },
+    {
+        "fname": "DYRK",
+        "genes": [
+            "DYRK1A",
+            "DYRK1B",
+            "DYRK2",
+            "DYRK3",
+            "DYRK4",
+            "HIPK1",
+            "HIPK2",
+            "HIPK3",
+            "HIPK4",
+            "PRP4"
+        ],
+        "weblogo": "PK_CMGC_DYRK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DYRK1",
+        "genes": [
+            "DYRK1A",
+            "DYRK1B"
+        ],
+        "weblogo": "PK_CMGC_DYRK_DYRK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DYRK1A",
+        "genes": [
+            "DYRK1A"
+        ],
+        "weblogo": "PK_CMGC_DYRK_DYRK1_DYRK1A.png",
+        "uniprot": "Q13627"
+    },
+    {
+        "fname": "DYRK1B",
+        "genes": [
+            "DYRK1B"
+        ],
+        "weblogo": "PK_CMGC_DYRK_DYRK1_DYRK1B.png",
+        "uniprot": "Q9Y463"
+    },
+    {
+        "fname": "DYRK2",
+        "genes": [
+            "DYRK2",
+            "DYRK3",
+            "DYRK4"
+        ],
+        "weblogo": "PK_CMGC_DYRK_DYRK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DYRK2",
+        "genes": [
+            "DYRK2"
+        ],
+        "weblogo": "PK_CMGC_DYRK_DYRK2_DYRK2.png",
+        "uniprot": "Q92630"
+    },
+    {
+        "fname": "DYRK3",
+        "genes": [
+            "DYRK3"
+        ],
+        "weblogo": "PK_CMGC_DYRK_DYRK2_DYRK3.png",
+        "uniprot": "O43781"
+    },
+    {
+        "fname": "DYRK4",
+        "genes": [
+            "DYRK4"
+        ],
+        "weblogo": "PK_CMGC_DYRK_DYRK2_DYRK4.png",
+        "uniprot": "Q9NR20"
+    },
+    {
+        "fname": "HIPK",
+        "genes": [
+            "HIPK1",
+            "HIPK2",
+            "HIPK3",
+            "HIPK4"
+        ],
+        "weblogo": "PK_CMGC_DYRK_HIPK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "HIPK1",
+        "genes": [
+            "HIPK1"
+        ],
+        "weblogo": "PK_CMGC_DYRK_HIPK_HIPK1.png",
+        "uniprot": "Q86Z02"
+    },
+    {
+        "fname": "HIPK2",
+        "genes": [
+            "HIPK2"
+        ],
+        "weblogo": "PK_CMGC_DYRK_HIPK_HIPK2.png",
+        "uniprot": "Q9H2X6"
+    },
+    {
+        "fname": "HIPK3",
+        "genes": [
+            "HIPK3"
+        ],
+        "weblogo": "PK_CMGC_DYRK_HIPK_HIPK3.png",
+        "uniprot": "Q9H422"
+    },
+    {
+        "fname": "HIPK4",
+        "genes": [
+            "HIPK4"
+        ],
+        "weblogo": "PK_CMGC_DYRK_HIPK_HIPK4.png",
+        "uniprot": "Q8NE63"
+    },
+    {
+        "fname": "PRP4",
+        "genes": [
+            "PRP4"
+        ],
+        "weblogo": "PK_CMGC_DYRK_PRP4.png",
+        "uniprot": "Q13523"
+    },
+    {
+        "fname": "PRP4 (PRPF4B)",
+        "genes": [
+            "PRP4"
+        ],
+        "weblogo": "PK_CMGC_DYRK_PRP4_PRP4.png",
+        "uniprot": "Q13523"
+    },
+    {
+        "fname": "GSK",
+        "genes": [
+            "GSK3A",
+            "GSK3B"
+        ],
+        "weblogo": "PK_CMGC_GSK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "GSK3A",
+        "genes": [
+            "GSK3A"
+        ],
+        "weblogo": "PK_CMGC_GSK__GSK3A.png",
+        "uniprot": "P49840"
+    },
+    {
+        "fname": "GSK3B",
+        "genes": [
+            "GSK3B"
+        ],
+        "weblogo": "PK_CMGC_GSK__GSK3B.png",
+        "uniprot": "P49841"
+    },
+    {
+        "fname": "MAPK",
+        "genes": [
+            "Erk1",
+            "Erk2",
+            "Erk3",
+            "Erk4",
+            "Erk5",
+            "Erk7",
+            "JNK1",
+            "JNK2",
+            "JNK3",
+            "NLK",
+            "p38a",
+            "p38b",
+            "p38d",
+            "p38g"
+        ],
+        "weblogo": "PK_CMGC_MAPK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ERK1",
+        "genes": [
+            "Erk1",
+            "Erk2"
+        ],
+        "weblogo": "PK_CMGC_MAPK_ERK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Erk1 (MAPK3)",
+        "genes": [
+            "Erk1"
+        ],
+        "weblogo": "PK_CMGC_MAPK_ERK1_Erk1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Erk2 (MAPK1)",
+        "genes": [
+            "Erk2"
+        ],
+        "weblogo": "PK_CMGC_MAPK_ERK1_Erk2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ERK3",
+        "genes": [
+            "Erk3",
+            "Erk4"
+        ],
+        "weblogo": "PK_CMGC_MAPK_ERK3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Erk3 (MAPK6)",
+        "genes": [
+            "Erk3"
+        ],
+        "weblogo": "PK_CMGC_MAPK_ERK3_Erk3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Erk4 (MAPK4)",
+        "genes": [
+            "Erk4"
+        ],
+        "weblogo": "PK_CMGC_MAPK_ERK3_Erk4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ERK5",
+        "genes": [
+            "Erk5"
+        ],
+        "weblogo": "PK_CMGC_MAPK_ERK5.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Erk5 (MAPK7)",
+        "genes": [
+            "Erk5"
+        ],
+        "weblogo": "PK_CMGC_MAPK_ERK5_Erk5.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ERK7",
+        "genes": [
+            "Erk7"
+        ],
+        "weblogo": "PK_CMGC_MAPK_ERK7.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Erk7 (MAPK15)",
+        "genes": [
+            "Erk7"
+        ],
+        "weblogo": "PK_CMGC_MAPK_ERK7_Erk7.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "JNK",
+        "genes": [
+            "JNK1",
+            "JNK2",
+            "JNK3"
+        ],
+        "weblogo": "PK_CMGC_MAPK_JNK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "JNK1 (MAPK8)",
+        "genes": [
+            "JNK1"
+        ],
+        "weblogo": "PK_CMGC_MAPK_JNK_JNK1.png",
+        "uniprot": "P45983"
+    },
+    {
+        "fname": "JNK2 (MAPK9)",
+        "genes": [
+            "JNK2"
+        ],
+        "weblogo": "PK_CMGC_MAPK_JNK_JNK2.png",
+        "uniprot": "P45984"
+    },
+    {
+        "fname": "JNK3 (MAPK10)",
+        "genes": [
+            "JNK3"
+        ],
+        "weblogo": "PK_CMGC_MAPK_JNK_JNK3.png",
+        "uniprot": "P53779"
+    },
+    {
+        "fname": "nmo",
+        "genes": [
+            "NLK"
+        ],
+        "weblogo": "PK_CMGC_MAPK_nmo.png",
+        "uniprot": "Q9UBE8"
+    },
+    {
+        "fname": "NLK",
+        "genes": [
+            "NLK"
+        ],
+        "weblogo": "PK_CMGC_MAPK_nmo_NLK.png",
+        "uniprot": "Q9UBE8"
+    },
+    {
+        "fname": "p38",
+        "genes": [
+            "p38a",
+            "p38b",
+            "p38d",
+            "p38g"
+        ],
+        "weblogo": "PK_CMGC_MAPK_p38.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "p38a (MAPK14)",
+        "genes": [
+            "p38a"
+        ],
+        "weblogo": "PK_CMGC_MAPK_p38_p38a.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "p38b (MAPK11)",
+        "genes": [
+            "p38b"
+        ],
+        "weblogo": "PK_CMGC_MAPK_p38_p38b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "p38d (MAPK13)",
+        "genes": [
+            "p38d"
+        ],
+        "weblogo": "PK_CMGC_MAPK_p38_p38d.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "p38g (MAPK12)",
+        "genes": [
+            "p38g"
+        ],
+        "weblogo": "PK_CMGC_MAPK_p38_p38g.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RCK",
+        "genes": [
+            "ICK",
+            "MAK",
+            "MOK"
+        ],
+        "weblogo": "PK_CMGC_RCK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ICK",
+        "genes": [
+            "ICK"
+        ],
+        "weblogo": "PK_CMGC_RCK__ICK.png",
+        "uniprot": "Q9UPZ9"
+    },
+    {
+        "fname": "MAK",
+        "genes": [
+            "MAK"
+        ],
+        "weblogo": "PK_CMGC_RCK__MAK.png",
+        "uniprot": "P20794"
+    },
+    {
+        "fname": "MOK",
+        "genes": [
+            "MOK"
+        ],
+        "weblogo": "PK_CMGC_RCK__MOK.png",
+        "uniprot": "Q9UQ07"
+    },
+    {
+        "fname": "SRPK",
+        "genes": [
+            "MSSK1",
+            "SRPK1",
+            "SRPK2"
+        ],
+        "weblogo": "PK_CMGC_SRPK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MSSK1 (SRPK3)",
+        "genes": [
+            "MSSK1"
+        ],
+        "weblogo": "PK_CMGC_SRPK__MSSK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SRPK1",
+        "genes": [
+            "SRPK1"
+        ],
+        "weblogo": "PK_CMGC_SRPK__SRPK1.png",
+        "uniprot": "Q96SB4"
+    },
+    {
+        "fname": "SRPK2",
+        "genes": [
+            "SRPK2"
+        ],
+        "weblogo": "PK_CMGC_SRPK__SRPK2.png",
+        "uniprot": "P78362"
+    },
+    {
+        "fname": "RGC",
+        "genes": [
+            "ANPa",
+            "ANPb",
+            "CYGD",
+            "CYGF",
+            "HSER"
+        ],
+        "weblogo": "PK_RGC.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RGC",
+        "genes": [
+            "ANPa",
+            "ANPb",
+            "CYGD",
+            "CYGF",
+            "HSER"
+        ],
+        "weblogo": "PK_RGC_RGC.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ANPa (NPR1)",
+        "genes": [
+            "ANPa"
+        ],
+        "weblogo": "PK_RGC_RGC__ANPa.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ANPb (NPR2)",
+        "genes": [
+            "ANPb"
+        ],
+        "weblogo": "PK_RGC_RGC__ANPb.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CYGD (GUCY2D)",
+        "genes": [
+            "CYGD"
+        ],
+        "weblogo": "PK_RGC_RGC__CYGD.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CYGF (GUCY2F)",
+        "genes": [
+            "CYGF"
+        ],
+        "weblogo": "PK_RGC_RGC__CYGF.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "HSER (GUCY2C)",
+        "genes": [
+            "HSER"
+        ],
+        "weblogo": "PK_RGC_RGC__HSER.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "STE",
+        "genes": [
+            "COT",
+            "GCK",
+            "GCN2_b",
+            "HGK",
+            "HPK1",
+            "KHS1",
+            "KHS2",
+            "LOK",
+            "MAP2K1",
+            "MAP2K2",
+            "MAP2K3",
+            "MAP2K4",
+            "MAP2K5",
+            "MAP2K6",
+            "MAP2K7",
+            "MAP3K1",
+            "MAP3K19",
+            "MAP3K2",
+            "MAP3K3",
+            "MAP3K4",
+            "MAP3K5",
+            "MAP3K6",
+            "MAP3K7",
+            "MINK",
+            "MST1",
+            "MST2",
+            "MST3",
+            "MST4",
+            "MYO3A",
+            "MYO3B",
+            "NIK",
+            "NRK",
+            "OSR1",
+            "PAK1",
+            "PAK2",
+            "PAK3",
+            "PAK4",
+            "PAK5",
+            "PAK6",
+            "SLK",
+            "STLK3",
+            "STLK5",
+            "STLK6",
+            "TAO1",
+            "TAO2",
+            "TAO3",
+            "TNIK",
+            "YSK1"
+        ],
+        "weblogo": "PK_STE.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "STE7",
+        "genes": [
+            "MAP2K1",
+            "MAP2K2",
+            "MAP2K3",
+            "MAP2K4",
+            "MAP2K5",
+            "MAP2K6",
+            "MAP2K7"
+        ],
+        "weblogo": "PK_STE_STE7.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP2K1",
+        "genes": [
+            "MAP2K1"
+        ],
+        "weblogo": "PK_STE_STE7__MAP2K1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP2K2",
+        "genes": [
+            "MAP2K2"
+        ],
+        "weblogo": "PK_STE_STE7__MAP2K2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP2K3",
+        "genes": [
+            "MAP2K3"
+        ],
+        "weblogo": "PK_STE_STE7__MAP2K3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP2K4",
+        "genes": [
+            "MAP2K4"
+        ],
+        "weblogo": "PK_STE_STE7__MAP2K4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP2K5",
+        "genes": [
+            "MAP2K5"
+        ],
+        "weblogo": "PK_STE_STE7__MAP2K5.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP2K6",
+        "genes": [
+            "MAP2K6"
+        ],
+        "weblogo": "PK_STE_STE7__MAP2K6.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP2K7",
+        "genes": [
+            "MAP2K7"
+        ],
+        "weblogo": "PK_STE_STE7__MAP2K7.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "STE11",
+        "genes": [
+            "MAP3K1",
+            "MAP3K19",
+            "MAP3K2",
+            "MAP3K3",
+            "MAP3K4",
+            "MAP3K5",
+            "MAP3K6",
+            "MAP3K7"
+        ],
+        "weblogo": "PK_STE_STE11.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP3K1",
+        "genes": [
+            "MAP3K1"
+        ],
+        "weblogo": "PK_STE_STE11__MAP3K1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP3K2",
+        "genes": [
+            "MAP3K2"
+        ],
+        "weblogo": "PK_STE_STE11__MAP3K2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP3K3",
+        "genes": [
+            "MAP3K3"
+        ],
+        "weblogo": "PK_STE_STE11__MAP3K3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP3K4",
+        "genes": [
+            "MAP3K4"
+        ],
+        "weblogo": "PK_STE_STE11__MAP3K4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP3K5",
+        "genes": [
+            "MAP3K5"
+        ],
+        "weblogo": "PK_STE_STE11__MAP3K5.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP3K6",
+        "genes": [
+            "MAP3K6"
+        ],
+        "weblogo": "PK_STE_STE11__MAP3K6.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP3K7 (MAP3K15)",
+        "genes": [
+            "MAP3K7"
+        ],
+        "weblogo": "PK_STE_STE11__MAP3K7.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MAP3K19",
+        "genes": [
+            "MAP3K19"
+        ],
+        "weblogo": "PK_STE_STE11__MAP3K19.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "STE20",
+        "genes": [
+            "GCK",
+            "HGK",
+            "HPK1",
+            "KHS1",
+            "KHS2",
+            "LOK",
+            "MINK",
+            "MST1",
+            "MST2",
+            "MST3",
+            "MST4",
+            "MYO3A",
+            "MYO3B",
+            "NRK",
+            "OSR1",
+            "PAK1",
+            "PAK2",
+            "PAK3",
+            "PAK4",
+            "PAK5",
+            "PAK6",
+            "SLK",
+            "STLK3",
+            "STLK5",
+            "STLK6",
+            "TAO1",
+            "TAO2",
+            "TAO3",
+            "TNIK",
+            "YSK1"
+        ],
+        "weblogo": "PK_STE_STE20.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FRAY",
+        "genes": [
+            "OSR1",
+            "STLK3"
+        ],
+        "weblogo": "PK_STE_STE20_FRAY.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "OSR1 (OXSR1)",
+        "genes": [
+            "OSR1"
+        ],
+        "weblogo": "PK_STE_STE20_FRAY_OSR1.png",
+        "uniprot": "O95747"
+    },
+    {
+        "fname": "STLK3 (STK39)",
+        "genes": [
+            "STLK3"
+        ],
+        "weblogo": "PK_STE_STE20_FRAY_STLK3.png",
+        "uniprot": "Q9UEW8"
+    },
+    {
+        "fname": "KHS",
+        "genes": [
+            "GCK",
+            "HPK1",
+            "KHS1",
+            "KHS2"
+        ],
+        "weblogo": "PK_STE_STE20_KHS.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "GCK (MAP4K2)",
+        "genes": [
+            "GCK"
+        ],
+        "weblogo": "PK_STE_STE20_KHS_GCK.png",
+        "uniprot": "Q12851"
+    },
+    {
+        "fname": "HPK1 (MAP4K1)",
+        "genes": [
+            "HPK1"
+        ],
+        "weblogo": "PK_STE_STE20_KHS_HPK1.png",
+        "uniprot": "Q92918"
+    },
+    {
+        "fname": "KHS1 (MAP4K5)",
+        "genes": [
+            "KHS1"
+        ],
+        "weblogo": "PK_STE_STE20_KHS_KHS1.png",
+        "uniprot": "Q9Y4K4"
+    },
+    {
+        "fname": "KHS2 (MAP4K3)",
+        "genes": [
+            "KHS2"
+        ],
+        "weblogo": "PK_STE_STE20_KHS_KHS2.png",
+        "uniprot": "Q8IVH8"
+    },
+    {
+        "fname": "MSN",
+        "genes": [
+            "HGK",
+            "MINK",
+            "NRK",
+            "TNIK"
+        ],
+        "weblogo": "PK_STE_STE20_MSN.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "HGK (MAP4K4)",
+        "genes": [
+            "HGK"
+        ],
+        "weblogo": "PK_STE_STE20_MSN_HGK.png",
+        "uniprot": "O95819"
+    },
+    {
+        "fname": "MINK (MINK1)",
+        "genes": [
+            "MINK"
+        ],
+        "weblogo": "PK_STE_STE20_MSN_MINK.png",
+        "uniprot": "Q8N4C8"
+    },
+    {
+        "fname": "NRK",
+        "genes": [
+            "NRK"
+        ],
+        "weblogo": "PK_STE_STE20_MSN_NRK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TNIK",
+        "genes": [
+            "TNIK"
+        ],
+        "weblogo": "PK_STE_STE20_MSN_TNIK.png",
+        "uniprot": "Q9UKE5"
+    },
+    {
+        "fname": "MST",
+        "genes": [
+            "MST1",
+            "MST2"
+        ],
+        "weblogo": "PK_STE_STE20_MST.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MST1 (STK4)",
+        "genes": [
+            "MST1"
+        ],
+        "weblogo": "PK_STE_STE20_MST_MST1.png",
+        "uniprot": "Q13043"
+    },
+    {
+        "fname": "MST2 (STK3)",
+        "genes": [
+            "MST2"
+        ],
+        "weblogo": "PK_STE_STE20_MST_MST2.png",
+        "uniprot": "Q13188"
+    },
+    {
+        "fname": "NinaC",
+        "genes": [
+            "MYO3A",
+            "MYO3B"
+        ],
+        "weblogo": "PK_STE_STE20_NinaC.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MYO3A",
+        "genes": [
+            "MYO3A"
+        ],
+        "weblogo": "PK_STE_STE20_NinaC_MYO3A.png",
+        "uniprot": "Q8NEV4"
+    },
+    {
+        "fname": "MYO3B",
+        "genes": [
+            "MYO3B"
+        ],
+        "weblogo": "PK_STE_STE20_NinaC_MYO3B.png",
+        "uniprot": "Q8WXR4"
+    },
+    {
+        "fname": "PAKA",
+        "genes": [
+            "PAK1",
+            "PAK2",
+            "PAK3"
+        ],
+        "weblogo": "PK_STE_STE20_PAKA.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PAK1",
+        "genes": [
+            "PAK1"
+        ],
+        "weblogo": "PK_STE_STE20_PAKA_PAK1.png",
+        "uniprot": "Q13153"
+    },
+    {
+        "fname": "PAK2",
+        "genes": [
+            "PAK2"
+        ],
+        "weblogo": "PK_STE_STE20_PAKA_PAK2.png",
+        "uniprot": "Q13177"
+    },
+    {
+        "fname": "PAK3",
+        "genes": [
+            "PAK3"
+        ],
+        "weblogo": "PK_STE_STE20_PAKA_PAK3.png",
+        "uniprot": "O75914"
+    },
+    {
+        "fname": "PAKB",
+        "genes": [
+            "PAK4",
+            "PAK5",
+            "PAK6"
+        ],
+        "weblogo": "PK_STE_STE20_PAKB.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PAK4",
+        "genes": [
+            "PAK4"
+        ],
+        "weblogo": "PK_STE_STE20_PAKB_PAK4.png",
+        "uniprot": "O96013"
+    },
+    {
+        "fname": "PAK5",
+        "genes": [
+            "PAK5"
+        ],
+        "weblogo": "PK_STE_STE20_PAKB_PAK5.png",
+        "uniprot": "Q9P286"
+    },
+    {
+        "fname": "PAK6",
+        "genes": [
+            "PAK6"
+        ],
+        "weblogo": "PK_STE_STE20_PAKB_PAK6.png",
+        "uniprot": "Q9NQU5"
+    },
+    {
+        "fname": "SLK",
+        "genes": [
+            "LOK",
+            "SLK"
+        ],
+        "weblogo": "PK_STE_STE20_SLK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LOK (STK10)",
+        "genes": [
+            "LOK"
+        ],
+        "weblogo": "PK_STE_STE20_SLK_LOK.png",
+        "uniprot": "O94804"
+    },
+    {
+        "fname": "SLK",
+        "genes": [
+            "SLK"
+        ],
+        "weblogo": "PK_STE_STE20_SLK_SLK.png",
+        "uniprot": "Q9H2G2"
+    },
+    {
+        "fname": "STLK",
+        "genes": [
+            "STLK5",
+            "STLK6"
+        ],
+        "weblogo": "PK_STE_STE20_STLK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "STLK5 (STRADA)",
+        "genes": [
+            "STLK5"
+        ],
+        "weblogo": "PK_STE_STE20_STLK_STLK5.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "STLK6 (STRADB)",
+        "genes": [
+            "STLK6"
+        ],
+        "weblogo": "PK_STE_STE20_STLK_STLK6.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TAO",
+        "genes": [
+            "TAO1",
+            "TAO2",
+            "TAO3"
+        ],
+        "weblogo": "PK_STE_STE20_TAO.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TAO1 (TAOK1)",
+        "genes": [
+            "TAO1"
+        ],
+        "weblogo": "PK_STE_STE20_TAO_TAO1.png",
+        "uniprot": "Q7L7X3"
+    },
+    {
+        "fname": "TAO2 (TAOK2)",
+        "genes": [
+            "TAO2"
+        ],
+        "weblogo": "PK_STE_STE20_TAO_TAO2.png",
+        "uniprot": "Q9UL54"
+    },
+    {
+        "fname": "TAO3 (TAOK3)",
+        "genes": [
+            "TAO3"
+        ],
+        "weblogo": "PK_STE_STE20_TAO_TAO3.png",
+        "uniprot": "Q9H2K8"
+    },
+    {
+        "fname": "YSK",
+        "genes": [
+            "MST3",
+            "MST4",
+            "YSK1"
+        ],
+        "weblogo": "PK_STE_STE20_YSK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MST3 (STK24)",
+        "genes": [
+            "MST3"
+        ],
+        "weblogo": "PK_STE_STE20_YSK_MST3.png",
+        "uniprot": "Q9Y6E0"
+    },
+    {
+        "fname": "MST4 (STK26)",
+        "genes": [
+            "MST4"
+        ],
+        "weblogo": "PK_STE_STE20_YSK_MST4.png",
+        "uniprot": "Q9P289"
+    },
+    {
+        "fname": "YSK1 (STK25)",
+        "genes": [
+            "YSK1"
+        ],
+        "weblogo": "PK_STE_STE20_YSK_YSK1.png",
+        "uniprot": "O00506"
+    },
+    {
+        "fname": "STE-Unique",
+        "genes": [
+            "COT",
+            "GCN2_b",
+            "NIK"
+        ],
+        "weblogo": "PK_STE_STE-Unique.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "COT (MAP3K8)",
+        "genes": [
+            "COT"
+        ],
+        "weblogo": "PK_STE_STE-Unique__COT.png",
+        "uniprot": "P41279"
+    },
+    {
+        "fname": "GCN2_b (EIF2AK4)",
+        "genes": [
+            "GCN2_b"
+        ],
+        "weblogo": "PK_STE_STE-Unique__GCN2-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "NIK (MAP3K14)",
+        "genes": [
+            "NIK"
+        ],
+        "weblogo": "PK_STE_STE-Unique__NIK.png",
+        "uniprot": "Q99558"
+    },
+    {
+        "fname": "TK",
+        "genes": [
+            "ABL1",
+            "ABL2",
+            "ACK",
+            "ALK",
+            "AXL",
+            "BLK",
+            "BMX",
+            "BRK",
+            "BTK",
+            "CCK4",
+            "CSK",
+            "CTK",
+            "DDR1",
+            "DDR2",
+            "EGFR",
+            "EphA1",
+            "EphA10",
+            "EphA2",
+            "EphA3",
+            "EphA4",
+            "EphA5",
+            "EphA6",
+            "EphA7",
+            "EphA8",
+            "EphB1",
+            "EphB2",
+            "EphB3",
+            "EphB4",
+            "EphB6",
+            "ErbB2",
+            "ErbB3",
+            "ErbB4",
+            "FAK",
+            "FER",
+            "FES",
+            "FGFR1",
+            "FGFR2",
+            "FGFR3",
+            "FGFR4",
+            "FGR",
+            "FLT1",
+            "FLT3",
+            "FLT4",
+            "FMS",
+            "FRK",
+            "FYN",
+            "HCK",
+            "IGF1R",
+            "INSR",
+            "IRR",
+            "ITK",
+            "JAK1",
+            "JAK1_b",
+            "JAK2",
+            "JAK2_b",
+            "JAK3",
+            "JAK3_b",
+            "KDR",
+            "KIT",
+            "LCK",
+            "LMR1",
+            "LMR2",
+            "LMR3",
+            "LTK",
+            "LYN",
+            "MER",
+            "MET",
+            "MUSK",
+            "PDGFRa",
+            "PDGFRb",
+            "PYK2",
+            "RET",
+            "RON",
+            "ROR1",
+            "ROR2",
+            "ROS",
+            "RYK",
+            "SRC",
+            "SRM",
+            "SYK",
+            "SuRTK106",
+            "TEC",
+            "TIE1",
+            "TIE2",
+            "TNK1",
+            "TRKA",
+            "TRKB",
+            "TRKC",
+            "TXK",
+            "TYK2",
+            "TYK2_b",
+            "TYRO3",
+            "YES",
+            "ZAP70"
+        ],
+        "weblogo": "PK_TK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Abl",
+        "genes": [
+            "ABL1",
+            "ABL2"
+        ],
+        "weblogo": "PK_TK_Abl.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ABL1",
+        "genes": [
+            "ABL1"
+        ],
+        "weblogo": "PK_TK_Abl__ABL1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ABL2",
+        "genes": [
+            "ABL2"
+        ],
+        "weblogo": "PK_TK_Abl__ABL2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Ack",
+        "genes": [
+            "ACK",
+            "TNK1"
+        ],
+        "weblogo": "PK_TK_Ack.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ACK (TNK2)",
+        "genes": [
+            "ACK"
+        ],
+        "weblogo": "PK_TK_Ack__ACK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TNK1",
+        "genes": [
+            "TNK1"
+        ],
+        "weblogo": "PK_TK_Ack__TNK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ALK",
+        "genes": [
+            "ALK",
+            "LTK"
+        ],
+        "weblogo": "PK_TK_ALK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ALK",
+        "genes": [
+            "ALK"
+        ],
+        "weblogo": "PK_TK_ALK__ALK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LTK",
+        "genes": [
+            "LTK"
+        ],
+        "weblogo": "PK_TK_ALK__LTK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Axl",
+        "genes": [
+            "AXL",
+            "MER",
+            "TYRO3"
+        ],
+        "weblogo": "PK_TK_Axl.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "AXL",
+        "genes": [
+            "AXL"
+        ],
+        "weblogo": "PK_TK_Axl__AXL.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MER (MERTK)",
+        "genes": [
+            "MER"
+        ],
+        "weblogo": "PK_TK_Axl__MER.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TYRO3",
+        "genes": [
+            "TYRO3"
+        ],
+        "weblogo": "PK_TK_Axl__TYRO3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CCK4",
+        "genes": [
+            "CCK4"
+        ],
+        "weblogo": "PK_TK_CCK4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CCK4 (PTK7)",
+        "genes": [
+            "CCK4"
+        ],
+        "weblogo": "PK_TK_CCK4__CCK4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Csk",
+        "genes": [
+            "CSK",
+            "CTK"
+        ],
+        "weblogo": "PK_TK_Csk.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CSK",
+        "genes": [
+            "CSK"
+        ],
+        "weblogo": "PK_TK_Csk__CSK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CTK (MATK)",
+        "genes": [
+            "CTK"
+        ],
+        "weblogo": "PK_TK_Csk__CTK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DDR",
+        "genes": [
+            "DDR1",
+            "DDR2"
+        ],
+        "weblogo": "PK_TK_DDR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DDR1",
+        "genes": [
+            "DDR1"
+        ],
+        "weblogo": "PK_TK_DDR__DDR1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DDR2",
+        "genes": [
+            "DDR2"
+        ],
+        "weblogo": "PK_TK_DDR__DDR2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EGFR Family",
+        "genes": [
+            "EGFR",
+            "ErbB2",
+            "ErbB3",
+            "ErbB4"
+        ],
+        "weblogo": "PK_TK_EGFR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EGFR",
+        "genes": [
+            "EGFR"
+        ],
+        "weblogo": "PK_TK_EGFR__EGFR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ErbB2 (ERBB2)",
+        "genes": [
+            "ErbB2"
+        ],
+        "weblogo": "PK_TK_EGFR__ErbB2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ErbB3 (ERBB3)",
+        "genes": [
+            "ErbB3"
+        ],
+        "weblogo": "PK_TK_EGFR__ErbB3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ErbB4 (ERBB4)",
+        "genes": [
+            "ErbB4"
+        ],
+        "weblogo": "PK_TK_EGFR__ErbB4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Eph",
+        "genes": [
+            "EphA1",
+            "EphA10",
+            "EphA2",
+            "EphA3",
+            "EphA4",
+            "EphA5",
+            "EphA6",
+            "EphA7",
+            "EphA8",
+            "EphB1",
+            "EphB2",
+            "EphB3",
+            "EphB4",
+            "EphB6"
+        ],
+        "weblogo": "PK_TK_Eph.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphA1 (EPHA1)",
+        "genes": [
+            "EphA1"
+        ],
+        "weblogo": "PK_TK_Eph__EphA1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphA2 (EPHA2)",
+        "genes": [
+            "EphA2"
+        ],
+        "weblogo": "PK_TK_Eph__EphA2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphA3 (EPHA3)",
+        "genes": [
+            "EphA3"
+        ],
+        "weblogo": "PK_TK_Eph__EphA3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphA4 (EPHA4)",
+        "genes": [
+            "EphA4"
+        ],
+        "weblogo": "PK_TK_Eph__EphA4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphA5 (EPHA5)",
+        "genes": [
+            "EphA5"
+        ],
+        "weblogo": "PK_TK_Eph__EphA5.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphA6 (EPHA6)",
+        "genes": [
+            "EphA6"
+        ],
+        "weblogo": "PK_TK_Eph__EphA6.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphA7 (EPHA7)",
+        "genes": [
+            "EphA7"
+        ],
+        "weblogo": "PK_TK_Eph__EphA7.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphA8 (EPHA8)",
+        "genes": [
+            "EphA8"
+        ],
+        "weblogo": "PK_TK_Eph__EphA8.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphA10 (EPHA10)",
+        "genes": [
+            "EphA10"
+        ],
+        "weblogo": "PK_TK_Eph__EphA10.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphB1 (EPHB1)",
+        "genes": [
+            "EphB1"
+        ],
+        "weblogo": "PK_TK_Eph__EphB1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphB2 (EPHB2)",
+        "genes": [
+            "EphB2"
+        ],
+        "weblogo": "PK_TK_Eph__EphB2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphB3 (EPHB3)",
+        "genes": [
+            "EphB3"
+        ],
+        "weblogo": "PK_TK_Eph__EphB3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphB4 (EPHB4)",
+        "genes": [
+            "EphB4"
+        ],
+        "weblogo": "PK_TK_Eph__EphB4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "EphB6 (EPHB6)",
+        "genes": [
+            "EphB6"
+        ],
+        "weblogo": "PK_TK_Eph__EphB6.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FAK",
+        "genes": [
+            "FAK",
+            "PYK2"
+        ],
+        "weblogo": "PK_TK_FAK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FAK (PTK2)",
+        "genes": [
+            "FAK"
+        ],
+        "weblogo": "PK_TK_FAK__FAK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PYK2 (PTK2B)",
+        "genes": [
+            "PYK2"
+        ],
+        "weblogo": "PK_TK_FAK__PYK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Fer",
+        "genes": [
+            "FER",
+            "FES"
+        ],
+        "weblogo": "PK_TK_Fer.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FER",
+        "genes": [
+            "FER"
+        ],
+        "weblogo": "PK_TK_Fer__FER.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FES",
+        "genes": [
+            "FES"
+        ],
+        "weblogo": "PK_TK_Fer__FES.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FGFR",
+        "genes": [
+            "FGFR1",
+            "FGFR2",
+            "FGFR3",
+            "FGFR4"
+        ],
+        "weblogo": "PK_TK_FGFR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FGFR1",
+        "genes": [
+            "FGFR1"
+        ],
+        "weblogo": "PK_TK_FGFR__FGFR1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FGFR2",
+        "genes": [
+            "FGFR2"
+        ],
+        "weblogo": "PK_TK_FGFR__FGFR2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FGFR3",
+        "genes": [
+            "FGFR3"
+        ],
+        "weblogo": "PK_TK_FGFR__FGFR3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FGFR4",
+        "genes": [
+            "FGFR4"
+        ],
+        "weblogo": "PK_TK_FGFR__FGFR4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "InsR",
+        "genes": [
+            "IGF1R",
+            "INSR",
+            "IRR"
+        ],
+        "weblogo": "PK_TK_InsR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "IGF1R",
+        "genes": [
+            "IGF1R"
+        ],
+        "weblogo": "PK_TK_InsR__IGF1R.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "INSR",
+        "genes": [
+            "INSR"
+        ],
+        "weblogo": "PK_TK_InsR__INSR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "IRR (INSRR)",
+        "genes": [
+            "IRR"
+        ],
+        "weblogo": "PK_TK_InsR__IRR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Jak",
+        "genes": [
+            "JAK1",
+            "JAK2",
+            "JAK3",
+            "TYK2"
+        ],
+        "weblogo": "PK_TK_Jak.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "JAK1",
+        "genes": [
+            "JAK1"
+        ],
+        "weblogo": "PK_TK_Jak__JAK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "JAK2",
+        "genes": [
+            "JAK2"
+        ],
+        "weblogo": "PK_TK_Jak__JAK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "JAK3",
+        "genes": [
+            "JAK3"
+        ],
+        "weblogo": "PK_TK_Jak__JAK3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TYK2",
+        "genes": [
+            "TYK2"
+        ],
+        "weblogo": "PK_TK_Jak__TYK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "JakB",
+        "genes": [
+            "JAK1_b",
+            "JAK2_b",
+            "JAK3_b",
+            "TYK2_b"
+        ],
+        "weblogo": "PK_TK_JakB.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "JAK1_b (JAK1)",
+        "genes": [
+            "JAK1_b"
+        ],
+        "weblogo": "PK_TK_JakB__JAK1-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "JAK2_b (JAK2)",
+        "genes": [
+            "JAK2_b"
+        ],
+        "weblogo": "PK_TK_JakB__JAK2-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "JAK3_b (JAK3)",
+        "genes": [
+            "JAK3_b"
+        ],
+        "weblogo": "PK_TK_JakB__JAK3-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TYK2_b (TYK2)",
+        "genes": [
+            "TYK2_b"
+        ],
+        "weblogo": "PK_TK_JakB__TYK2-b.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Lmr",
+        "genes": [
+            "LMR1",
+            "LMR2",
+            "LMR3"
+        ],
+        "weblogo": "PK_TK_Lmr.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LMR1 (AATK)",
+        "genes": [
+            "LMR1"
+        ],
+        "weblogo": "PK_TK_Lmr__LMR1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LMR2 (LMTK2)",
+        "genes": [
+            "LMR2"
+        ],
+        "weblogo": "PK_TK_Lmr__LMR2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LMR3 (LMTK3)",
+        "genes": [
+            "LMR3"
+        ],
+        "weblogo": "PK_TK_Lmr__LMR3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Met",
+        "genes": [
+            "MET",
+            "RON"
+        ],
+        "weblogo": "PK_TK_Met.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MET",
+        "genes": [
+            "MET"
+        ],
+        "weblogo": "PK_TK_Met__MET.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RON (MST1R)",
+        "genes": [
+            "RON"
+        ],
+        "weblogo": "PK_TK_Met__RON.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Musk",
+        "genes": [
+            "MUSK"
+        ],
+        "weblogo": "PK_TK_Musk.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MUSK",
+        "genes": [
+            "MUSK"
+        ],
+        "weblogo": "PK_TK_Musk__MUSK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PDGFR",
+        "genes": [
+            "FLT3",
+            "FMS",
+            "KIT",
+            "PDGFRa",
+            "PDGFRb"
+        ],
+        "weblogo": "PK_TK_PDGFR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FLT3",
+        "genes": [
+            "FLT3"
+        ],
+        "weblogo": "PK_TK_PDGFR__FLT3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FMS (CSF1R)",
+        "genes": [
+            "FMS"
+        ],
+        "weblogo": "PK_TK_PDGFR__FMS.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "KIT",
+        "genes": [
+            "KIT"
+        ],
+        "weblogo": "PK_TK_PDGFR__KIT.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PDGFRa (PDGFRA)",
+        "genes": [
+            "PDGFRa"
+        ],
+        "weblogo": "PK_TK_PDGFR__PDGFRa.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PDGFRb (PDGFRB)",
+        "genes": [
+            "PDGFRb"
+        ],
+        "weblogo": "PK_TK_PDGFR__PDGFRb.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Ret",
+        "genes": [
+            "RET"
+        ],
+        "weblogo": "PK_TK_Ret.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RET",
+        "genes": [
+            "RET"
+        ],
+        "weblogo": "PK_TK_Ret__RET.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Ror",
+        "genes": [
+            "ROR1",
+            "ROR2"
+        ],
+        "weblogo": "PK_TK_Ror.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ROR1",
+        "genes": [
+            "ROR1"
+        ],
+        "weblogo": "PK_TK_Ror__ROR1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ROR2",
+        "genes": [
+            "ROR2"
+        ],
+        "weblogo": "PK_TK_Ror__ROR2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Ryk",
+        "genes": [
+            "RYK"
+        ],
+        "weblogo": "PK_TK_Ryk.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RYK",
+        "genes": [
+            "RYK"
+        ],
+        "weblogo": "PK_TK_Ryk__RYK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Sev",
+        "genes": [
+            "ROS"
+        ],
+        "weblogo": "PK_TK_Sev.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ROS (ROS1)",
+        "genes": [
+            "ROS"
+        ],
+        "weblogo": "PK_TK_Sev__ROS.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Src",
+        "genes": [
+            "BLK",
+            "BRK",
+            "FGR",
+            "FRK",
+            "FYN",
+            "HCK",
+            "LCK",
+            "LYN",
+            "SRC",
+            "SRM",
+            "YES"
+        ],
+        "weblogo": "PK_TK_Src.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BLK",
+        "genes": [
+            "BLK"
+        ],
+        "weblogo": "PK_TK_Src__BLK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BRK (PTK6)",
+        "genes": [
+            "BRK"
+        ],
+        "weblogo": "PK_TK_Src__BRK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FGR",
+        "genes": [
+            "FGR"
+        ],
+        "weblogo": "PK_TK_Src__FGR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FRK",
+        "genes": [
+            "FRK"
+        ],
+        "weblogo": "PK_TK_Src__FRK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FYN",
+        "genes": [
+            "FYN"
+        ],
+        "weblogo": "PK_TK_Src__FYN.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "HCK",
+        "genes": [
+            "HCK"
+        ],
+        "weblogo": "PK_TK_Src__HCK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LCK",
+        "genes": [
+            "LCK"
+        ],
+        "weblogo": "PK_TK_Src__LCK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LYN",
+        "genes": [
+            "LYN"
+        ],
+        "weblogo": "PK_TK_Src__LYN.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SRC",
+        "genes": [
+            "SRC"
+        ],
+        "weblogo": "PK_TK_Src__SRC.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SRM (SRMS)",
+        "genes": [
+            "SRM"
+        ],
+        "weblogo": "PK_TK_Src__SRM.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "YES (YES1)",
+        "genes": [
+            "YES"
+        ],
+        "weblogo": "PK_TK_Src__YES.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Syk",
+        "genes": [
+            "SYK",
+            "ZAP70"
+        ],
+        "weblogo": "PK_TK_Syk.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SYK",
+        "genes": [
+            "SYK"
+        ],
+        "weblogo": "PK_TK_Syk__SYK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ZAP70",
+        "genes": [
+            "ZAP70"
+        ],
+        "weblogo": "PK_TK_Syk__ZAP70.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Tec",
+        "genes": [
+            "BMX",
+            "BTK",
+            "ITK",
+            "TEC",
+            "TXK"
+        ],
+        "weblogo": "PK_TK_Tec.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BMX",
+        "genes": [
+            "BMX"
+        ],
+        "weblogo": "PK_TK_Tec__BMX.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BTK",
+        "genes": [
+            "BTK"
+        ],
+        "weblogo": "PK_TK_Tec__BTK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ITK",
+        "genes": [
+            "ITK"
+        ],
+        "weblogo": "PK_TK_Tec__ITK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TEC",
+        "genes": [
+            "TEC"
+        ],
+        "weblogo": "PK_TK_Tec__TEC.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TXK",
+        "genes": [
+            "TXK"
+        ],
+        "weblogo": "PK_TK_Tec__TXK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Tie",
+        "genes": [
+            "TIE1",
+            "TIE2"
+        ],
+        "weblogo": "PK_TK_Tie.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TIE1",
+        "genes": [
+            "TIE1"
+        ],
+        "weblogo": "PK_TK_Tie__TIE1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TIE2 (TEK)",
+        "genes": [
+            "TIE2"
+        ],
+        "weblogo": "PK_TK_Tie__TIE2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Trk",
+        "genes": [
+            "TRKA",
+            "TRKB",
+            "TRKC"
+        ],
+        "weblogo": "PK_TK_Trk.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TRKA (NTRK1)",
+        "genes": [
+            "TRKA"
+        ],
+        "weblogo": "PK_TK_Trk__TRKA.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TRKB (NTRK2)",
+        "genes": [
+            "TRKB"
+        ],
+        "weblogo": "PK_TK_Trk__TRKB.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TRKC (NTRK3)",
+        "genes": [
+            "TRKC"
+        ],
+        "weblogo": "PK_TK_Trk__TRKC.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "VEGFR",
+        "genes": [
+            "FLT1",
+            "FLT4",
+            "KDR"
+        ],
+        "weblogo": "PK_TK_VEGFR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FLT1",
+        "genes": [
+            "FLT1"
+        ],
+        "weblogo": "PK_TK_VEGFR__FLT1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "FLT4",
+        "genes": [
+            "FLT4"
+        ],
+        "weblogo": "PK_TK_VEGFR__FLT4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "KDR",
+        "genes": [
+            "KDR"
+        ],
+        "weblogo": "PK_TK_VEGFR__KDR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TK-Unique",
+        "genes": [
+            "SuRTK106"
+        ],
+        "weblogo": "PK_TK_TK-Unique.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SuRTK106 (STYK1)",
+        "genes": [
+            "SuRTK106"
+        ],
+        "weblogo": "PK_TK_TK-Unique__SuRTK106.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TKL",
+        "genes": [
+            "ACTR2",
+            "ACTR2B",
+            "ALK1",
+            "ALK2",
+            "ALK4",
+            "ALK7",
+            "ANKRD3",
+            "ARAF",
+            "BMPR1A",
+            "BMPR1B",
+            "BMPR2",
+            "BRAF",
+            "DLK",
+            "HH498",
+            "ILK",
+            "IRAK1",
+            "IRAK2",
+            "IRAK3",
+            "IRAK4",
+            "KSR1",
+            "KSR2",
+            "LIMK1",
+            "LIMK2",
+            "LRRK1",
+            "LRRK2",
+            "LZK",
+            "MISR2",
+            "MLK1",
+            "MLK2",
+            "MLK3",
+            "MLK4",
+            "MLKL",
+            "RAF1",
+            "RIPK1",
+            "RIPK2",
+            "RIPK3",
+            "SgK288",
+            "TAK1",
+            "TESK1",
+            "TESK2",
+            "TGFbR1",
+            "TGFbR2",
+            "ZAK"
+        ],
+        "weblogo": "PK_TKL.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "IRAK",
+        "genes": [
+            "IRAK1",
+            "IRAK2",
+            "IRAK3",
+            "IRAK4"
+        ],
+        "weblogo": "PK_TKL_IRAK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "IRAK1",
+        "genes": [
+            "IRAK1"
+        ],
+        "weblogo": "PK_TKL_IRAK__IRAK1.png",
+        "uniprot": "P51617"
+    },
+    {
+        "fname": "IRAK2",
+        "genes": [
+            "IRAK2"
+        ],
+        "weblogo": "PK_TKL_IRAK__IRAK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "IRAK3",
+        "genes": [
+            "IRAK3"
+        ],
+        "weblogo": "PK_TKL_IRAK__IRAK3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "IRAK4",
+        "genes": [
+            "IRAK4"
+        ],
+        "weblogo": "PK_TKL_IRAK__IRAK4.png",
+        "uniprot": "Q9NWZ3"
+    },
+    {
+        "fname": "LISK",
+        "genes": [
+            "LIMK1",
+            "LIMK2",
+            "TESK1",
+            "TESK2"
+        ],
+        "weblogo": "PK_TKL_LISK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LIMK",
+        "genes": [
+            "LIMK1",
+            "LIMK2"
+        ],
+        "weblogo": "PK_TKL_LISK_LIMK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LIMK1",
+        "genes": [
+            "LIMK1"
+        ],
+        "weblogo": "PK_TKL_LISK_LIMK_LIMK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LIMK2",
+        "genes": [
+            "LIMK2"
+        ],
+        "weblogo": "PK_TKL_LISK_LIMK_LIMK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TESK",
+        "genes": [
+            "TESK1",
+            "TESK2"
+        ],
+        "weblogo": "PK_TKL_LISK_TESK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TESK1",
+        "genes": [
+            "TESK1"
+        ],
+        "weblogo": "PK_TKL_LISK_TESK_TESK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TESK2",
+        "genes": [
+            "TESK2"
+        ],
+        "weblogo": "PK_TKL_LISK_TESK_TESK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LRRK",
+        "genes": [
+            "LRRK1",
+            "LRRK2"
+        ],
+        "weblogo": "PK_TKL_LRRK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LRRK1",
+        "genes": [
+            "LRRK1"
+        ],
+        "weblogo": "PK_TKL_LRRK__LRRK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LRRK2",
+        "genes": [
+            "LRRK2"
+        ],
+        "weblogo": "PK_TKL_LRRK__LRRK2.png",
+        "uniprot": "Q5S007"
+    },
+    {
+        "fname": "MLK",
+        "genes": [
+            "DLK",
+            "HH498",
+            "ILK",
+            "LZK",
+            "MLK1",
+            "MLK2",
+            "MLK3",
+            "MLK4",
+            "TAK1",
+            "ZAK"
+        ],
+        "weblogo": "PK_TKL_MLK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "HH498",
+        "genes": [
+            "HH498"
+        ],
+        "weblogo": "PK_TKL_MLK_HH498.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "HH498 (TNNI3K)",
+        "genes": [
+            "HH498"
+        ],
+        "weblogo": "PK_TKL_MLK_HH498_HH498.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ILK",
+        "genes": [
+            "ILK"
+        ],
+        "weblogo": "PK_TKL_MLK_ILK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ILK",
+        "genes": [
+            "ILK"
+        ],
+        "weblogo": "PK_TKL_MLK_ILK_ILK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "LZK",
+        "genes": [
+            "DLK",
+            "LZK"
+        ],
+        "weblogo": "PK_TKL_MLK_LZK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "DLK (MAP3K12)",
+        "genes": [
+            "DLK"
+        ],
+        "weblogo": "PK_TKL_MLK_LZK_DLK.png",
+        "uniprot": "Q12852"
+    },
+    {
+        "fname": "LZK (MAP3K13)",
+        "genes": [
+            "LZK"
+        ],
+        "weblogo": "PK_TKL_MLK_LZK_LZK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MLK",
+        "genes": [
+            "MLK1",
+            "MLK2",
+            "MLK3",
+            "MLK4"
+        ],
+        "weblogo": "PK_TKL_MLK_MLK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MLK1 (MAP3K9)",
+        "genes": [
+            "MLK1"
+        ],
+        "weblogo": "PK_TKL_MLK_MLK_MLK1.png",
+        "uniprot": "P80192"
+    },
+    {
+        "fname": "MLK2 (MAP3K10)",
+        "genes": [
+            "MLK2"
+        ],
+        "weblogo": "PK_TKL_MLK_MLK_MLK2.png",
+        "uniprot": "Q02779"
+    },
+    {
+        "fname": "MLK3 (MAP3K11)",
+        "genes": [
+            "MLK3"
+        ],
+        "weblogo": "PK_TKL_MLK_MLK_MLK3.png",
+        "uniprot": "Q16584"
+    },
+    {
+        "fname": "MLK4 (MAP3K21)",
+        "genes": [
+            "MLK4"
+        ],
+        "weblogo": "PK_TKL_MLK_MLK_MLK4.png",
+        "uniprot": "Q5TCX8"
+    },
+    {
+        "fname": "TAK1",
+        "genes": [
+            "TAK1"
+        ],
+        "weblogo": "PK_TKL_MLK_TAK1.png",
+        "uniprot": "O43318"
+    },
+    {
+        "fname": "TAK1 (MAP3K7)",
+        "genes": [
+            "TAK1"
+        ],
+        "weblogo": "PK_TKL_MLK_TAK1_TAK1.png",
+        "uniprot": "O43318"
+    },
+    {
+        "fname": "ZAK",
+        "genes": [
+            "ZAK"
+        ],
+        "weblogo": "PK_TKL_MLK_ZAK.png",
+        "uniprot": "Q9NYL2"
+    },
+    {
+        "fname": "ZAK (MAP3K20)",
+        "genes": [
+            "ZAK"
+        ],
+        "weblogo": "PK_TKL_MLK_ZAK_ZAK.png",
+        "uniprot": "Q9NYL2"
+    },
+    {
+        "fname": "RAF",
+        "genes": [
+            "ARAF",
+            "BRAF",
+            "KSR1",
+            "KSR2",
+            "RAF1"
+        ],
+        "weblogo": "PK_TKL_RAF.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "KSR",
+        "genes": [
+            "KSR1"
+        ],
+        "weblogo": "PK_TKL_RAF_KSR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "KSR1",
+        "genes": [
+            "KSR1"
+        ],
+        "weblogo": "PK_TKL_RAF_KSR_KSR1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ARAF",
+        "genes": [
+            "ARAF"
+        ],
+        "weblogo": "PK_TKL_RAF__ARAF.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BRAF",
+        "genes": [
+            "BRAF"
+        ],
+        "weblogo": "PK_TKL_RAF__BRAF.png",
+        "uniprot": "P15056"
+    },
+    {
+        "fname": "KSR2",
+        "genes": [
+            "KSR2"
+        ],
+        "weblogo": "PK_TKL_RAF__KSR2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RAF1",
+        "genes": [
+            "RAF1"
+        ],
+        "weblogo": "PK_TKL_RAF__RAF1.png",
+        "uniprot": "P04049"
+    },
+    {
+        "fname": "RIPK",
+        "genes": [
+            "ANKRD3",
+            "RIPK1",
+            "RIPK2",
+            "RIPK3",
+            "SgK288"
+        ],
+        "weblogo": "PK_TKL_RIPK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ANKRD3 (RIPK4)",
+        "genes": [
+            "ANKRD3"
+        ],
+        "weblogo": "PK_TKL_RIPK__ANKRD3.png",
+        "uniprot": "P57078"
+    },
+    {
+        "fname": "RIPK1",
+        "genes": [
+            "RIPK1"
+        ],
+        "weblogo": "PK_TKL_RIPK__RIPK1.png",
+        "uniprot": "Q13546"
+    },
+    {
+        "fname": "RIPK2",
+        "genes": [
+            "RIPK2"
+        ],
+        "weblogo": "PK_TKL_RIPK__RIPK2.png",
+        "uniprot": "O43353"
+    },
+    {
+        "fname": "RIPK3",
+        "genes": [
+            "RIPK3"
+        ],
+        "weblogo": "PK_TKL_RIPK__RIPK3.png",
+        "uniprot": "Q9Y572"
+    },
+    {
+        "fname": "SgK288 (ANKK1)",
+        "genes": [
+            "SgK288"
+        ],
+        "weblogo": "PK_TKL_RIPK__SgK288.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "STKR",
+        "genes": [
+            "ACTR2",
+            "ACTR2B",
+            "ALK1",
+            "ALK2",
+            "ALK4",
+            "ALK7",
+            "BMPR1A",
+            "BMPR1B",
+            "BMPR2",
+            "MISR2",
+            "TGFbR1",
+            "TGFbR2"
+        ],
+        "weblogo": "PK_TKL_STKR.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "STKR1",
+        "genes": [
+            "ALK1",
+            "ALK2",
+            "ALK4",
+            "ALK7",
+            "BMPR1A",
+            "BMPR1B",
+            "TGFbR1"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ALK1 (ACVRL1)",
+        "genes": [
+            "ALK1"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR1_ALK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ALK2 (ACVR1)",
+        "genes": [
+            "ALK2"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR1_ALK2.png",
+        "uniprot": "Q04771"
+    },
+    {
+        "fname": "ALK4 (ACVR1B)",
+        "genes": [
+            "ALK4"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR1_ALK4.png",
+        "uniprot": "P36896"
+    },
+    {
+        "fname": "ALK7 (ACVR1C)",
+        "genes": [
+            "ALK7"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR1_ALK7.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BMPR1A",
+        "genes": [
+            "BMPR1A"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR1_BMPR1A.png",
+        "uniprot": "P36894"
+    },
+    {
+        "fname": "BMPR1B",
+        "genes": [
+            "BMPR1B"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR1_BMPR1B.png",
+        "uniprot": "O00238"
+    },
+    {
+        "fname": "TGFbR1 (TGFBR1)",
+        "genes": [
+            "TGFbR1"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR1_TGFbR1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "STKR2",
+        "genes": [
+            "ACTR2",
+            "ACTR2B",
+            "BMPR2",
+            "MISR2",
+            "TGFbR2"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ACTR2 (ACVR2A)",
+        "genes": [
+            "ACTR2"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR2_ACTR2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ACTR2B (ACVR2B)",
+        "genes": [
+            "ACTR2B"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR2_ACTR2B.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BMPR2",
+        "genes": [
+            "BMPR2"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR2_BMPR2.png",
+        "uniprot": "Q13873"
+    },
+    {
+        "fname": "MISR2 (AMHR2)",
+        "genes": [
+            "MISR2"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR2_MISR2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TGFbR2 (TGFBR2)",
+        "genes": [
+            "TGFbR2"
+        ],
+        "weblogo": "PK_TKL_STKR_STKR2_TGFbR2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TKL-Unique",
+        "genes": [
+            "MLKL"
+        ],
+        "weblogo": "PK_TKL_TKL-Unique.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MLKL",
+        "genes": [
+            "MLKL"
+        ],
+        "weblogo": "PK_TKL_TKL-Unique__MLKL.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Other",
+        "genes": [
+            "AAK1",
+            "AurA",
+            "AurB",
+            "AurC",
+            "BIKE",
+            "BUB1",
+            "BUBR1",
+            "CDC7",
+            "CLIK1",
+            "CLIK1L",
+            "CaMKK1",
+            "CaMKK2",
+            "Fused",
+            "GAK",
+            "GCN2",
+            "HRI",
+            "Haspin",
+            "IKKa",
+            "IKKb",
+            "IKKe",
+            "IRE1",
+            "IRE2",
+            "KIS",
+            "MOS",
+            "MPSK1",
+            "MYT1",
+            "NEK1",
+            "NEK10",
+            "NEK11",
+            "NEK2",
+            "NEK3",
+            "NEK4",
+            "NEK5",
+            "NEK6",
+            "NEK7",
+            "NEK8",
+            "NEK9",
+            "NRBP1",
+            "NRBP2",
+            "PAN3",
+            "PBK",
+            "PEK",
+            "PIK3R4",
+            "PINK1",
+            "PKR",
+            "PLK1",
+            "PLK2",
+            "PLK3",
+            "PLK4",
+            "PRPK",
+            "RNAseL",
+            "SBK",
+            "SCYL1",
+            "SCYL2",
+            "SCYL3",
+            "SgK069",
+            "SgK071",
+            "SgK110",
+            "SgK196",
+            "SgK223",
+            "SgK269",
+            "SgK307",
+            "SgK396",
+            "SgK424",
+            "SgK493",
+            "SgK496",
+            "Slob",
+            "TBCK",
+            "TBK1",
+            "TLK1",
+            "TLK2",
+            "TTK",
+            "ULK1",
+            "ULK2",
+            "ULK3",
+            "ULK4",
+            "Wee1",
+            "Wee1B",
+            "Wnk1",
+            "Wnk2",
+            "Wnk3",
+            "Wnk4"
+        ],
+        "weblogo": "PK_Other.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Aur",
+        "genes": [
+            "AurA",
+            "AurB",
+            "AurC"
+        ],
+        "weblogo": "PK_Other_Aur.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "AurA (AURKA)",
+        "genes": [
+            "AurA"
+        ],
+        "weblogo": "PK_Other_Aur__AurA.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "AurB (AURKB)",
+        "genes": [
+            "AurB"
+        ],
+        "weblogo": "PK_Other_Aur__AurB.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "AurC (AURKC)",
+        "genes": [
+            "AurC"
+        ],
+        "weblogo": "PK_Other_Aur__AurC.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BUB",
+        "genes": [
+            "BUB1",
+            "BUBR1"
+        ],
+        "weblogo": "PK_Other_BUB.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "BUB1",
+        "genes": [
+            "BUB1"
+        ],
+        "weblogo": "PK_Other_BUB__BUB1.png",
+        "uniprot": "O43683"
+    },
+    {
+        "fname": "BUBR1 (BUB1B)",
+        "genes": [
+            "BUBR1"
+        ],
+        "weblogo": "PK_Other_BUB__BUBR1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Bud32",
+        "genes": [
+            "PRPK"
+        ],
+        "weblogo": "",
+        "uniprot": "Q96S44"
+    },
+    {
+        "fname": "PRPK (TP53RK)",
+        "genes": [
+            "PRPK"
+        ],
+        "weblogo": "",
+        "uniprot": "Q96S44"
+    },
+    {
+        "fname": "CAMKK",
+        "genes": [
+            "CaMKK1",
+            "CaMKK2"
+        ],
+        "weblogo": "PK_Other_CAMKK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CAMKK-Meta",
+        "genes": [
+            "CaMKK1",
+            "CaMKK2"
+        ],
+        "weblogo": "PK_Other_CAMKK_CAMKK-Meta.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CaMKK1 (CAMKK1)",
+        "genes": [
+            "CaMKK1"
+        ],
+        "weblogo": "PK_Other_CAMKK_CAMKK-Meta_CaMKK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CaMKK2 (CAMKK2)",
+        "genes": [
+            "CaMKK2"
+        ],
+        "weblogo": "PK_Other_CAMKK_CAMKK-Meta_CaMKK2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CDC7",
+        "genes": [
+            "CDC7"
+        ],
+        "weblogo": "PK_Other_CDC7.png",
+        "uniprot": "O00311"
+    },
+    {
+        "fname": "CDC7",
+        "genes": [
+            "CDC7"
+        ],
+        "weblogo": "PK_Other_CDC7__CDC7.png",
+        "uniprot": "O00311"
+    },
+    {
+        "fname": "Dusty",
+        "genes": [
+            "SgK496"
+        ],
+        "weblogo": "PK_Other_Dusty.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK496 (DSTYK)",
+        "genes": [
+            "SgK496"
+        ],
+        "weblogo": "PK_Other_Dusty__SgK496.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Haspin",
+        "genes": [
+            "Haspin"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "Haspin (HASPIN)",
+        "genes": [
+            "Haspin"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "IKK",
+        "genes": [
+            "IKKa",
+            "IKKb",
+            "IKKe",
+            "TBK1"
+        ],
+        "weblogo": "PK_Other_IKK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "IKKa (CHUK)",
+        "genes": [
+            "IKKa"
+        ],
+        "weblogo": "PK_Other_IKK__IKKa.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "IKKb (IKBKB)",
+        "genes": [
+            "IKKb"
+        ],
+        "weblogo": "PK_Other_IKK__IKKb.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "IKKe (IKBKE)",
+        "genes": [
+            "IKKe"
+        ],
+        "weblogo": "PK_Other_IKK__IKKe.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TBK1",
+        "genes": [
+            "TBK1"
+        ],
+        "weblogo": "PK_Other_IKK__TBK1.png",
+        "uniprot": "Q9UHD2"
+    },
+    {
+        "fname": "IRE",
+        "genes": [
+            "IRE1",
+            "IRE2"
+        ],
+        "weblogo": "PK_Other_IRE.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "IRE1 (ERN1)",
+        "genes": [
+            "IRE1"
+        ],
+        "weblogo": "PK_Other_IRE__IRE1.png",
+        "uniprot": "O75460"
+    },
+    {
+        "fname": "IRE2 (ERN2)",
+        "genes": [
+            "IRE2"
+        ],
+        "weblogo": "PK_Other_IRE__IRE2.png",
+        "uniprot": "Q76MJ5"
+    },
+    {
+        "fname": "KIS",
+        "genes": [
+            "KIS"
+        ],
+        "weblogo": "PK_Other_KIS.png",
+        "uniprot": "Q63285"
+    },
+    {
+        "fname": "KIS (UHMK1)",
+        "genes": [
+            "KIS"
+        ],
+        "weblogo": "PK_Other_KIS__KIS.png",
+        "uniprot": "Q63285"
+    },
+    {
+        "fname": "MOS",
+        "genes": [
+            "MOS"
+        ],
+        "weblogo": "PK_Other_MOS.png",
+        "uniprot": "P00540"
+    },
+    {
+        "fname": "MOS",
+        "genes": [
+            "MOS"
+        ],
+        "weblogo": "PK_Other_MOS__MOS.png",
+        "uniprot": "P00540"
+    },
+    {
+        "fname": "NAK",
+        "genes": [
+            "AAK1",
+            "BIKE",
+            "GAK",
+            "MPSK1"
+        ],
+        "weblogo": "PK_Other_NAK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "AAK1",
+        "genes": [
+            "AAK1"
+        ],
+        "weblogo": "PK_Other_NAK__AAK1.png",
+        "uniprot": "Q2M2I8"
+    },
+    {
+        "fname": "BIKE (BMP2K)",
+        "genes": [
+            "BIKE"
+        ],
+        "weblogo": "PK_Other_NAK__BIKE.png",
+        "uniprot": "Q9NSY1"
+    },
+    {
+        "fname": "GAK",
+        "genes": [
+            "GAK"
+        ],
+        "weblogo": "PK_Other_NAK__GAK.png",
+        "uniprot": "O14976"
+    },
+    {
+        "fname": "MPSK1 (STK16)",
+        "genes": [
+            "MPSK1"
+        ],
+        "weblogo": "PK_Other_NAK__MPSK1.png",
+        "uniprot": "O75716"
+    },
+    {
+        "fname": "NEK",
+        "genes": [
+            "NEK1",
+            "NEK10",
+            "NEK11",
+            "NEK2",
+            "NEK3",
+            "NEK4",
+            "NEK5",
+            "NEK6",
+            "NEK7",
+            "NEK8",
+            "NEK9"
+        ],
+        "weblogo": "PK_Other_NEK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "NEK1",
+        "genes": [
+            "NEK1"
+        ],
+        "weblogo": "PK_Other_NEK__NEK1.png",
+        "uniprot": "Q96PY6"
+    },
+    {
+        "fname": "NEK2",
+        "genes": [
+            "NEK2"
+        ],
+        "weblogo": "PK_Other_NEK__NEK2.png",
+        "uniprot": "P51955"
+    },
+    {
+        "fname": "NEK3",
+        "genes": [
+            "NEK3"
+        ],
+        "weblogo": "PK_Other_NEK__NEK3.png",
+        "uniprot": "P51956"
+    },
+    {
+        "fname": "NEK4",
+        "genes": [
+            "NEK4"
+        ],
+        "weblogo": "PK_Other_NEK__NEK4.png",
+        "uniprot": "P51957"
+    },
+    {
+        "fname": "NEK5",
+        "genes": [
+            "NEK5"
+        ],
+        "weblogo": "PK_Other_NEK__NEK5.png",
+        "uniprot": "Q6P3R8"
+    },
+    {
+        "fname": "NEK6",
+        "genes": [
+            "NEK6"
+        ],
+        "weblogo": "PK_Other_NEK__NEK6.png",
+        "uniprot": "Q9HC98"
+    },
+    {
+        "fname": "NEK7",
+        "genes": [
+            "NEK7"
+        ],
+        "weblogo": "PK_Other_NEK__NEK7.png",
+        "uniprot": "Q8TDX7"
+    },
+    {
+        "fname": "NEK8",
+        "genes": [
+            "NEK8"
+        ],
+        "weblogo": "PK_Other_NEK__NEK8.png",
+        "uniprot": "Q86SG6"
+    },
+    {
+        "fname": "NEK9",
+        "genes": [
+            "NEK9"
+        ],
+        "weblogo": "PK_Other_NEK__NEK9.png",
+        "uniprot": "Q8TD19"
+    },
+    {
+        "fname": "NEK10",
+        "genes": [
+            "NEK10"
+        ],
+        "weblogo": "PK_Other_NEK__NEK10.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "NEK11",
+        "genes": [
+            "NEK11"
+        ],
+        "weblogo": "PK_Other_NEK__NEK11.png",
+        "uniprot": "Q8NG66"
+    },
+    {
+        "fname": "NKF1",
+        "genes": [
+            "SBK",
+            "SgK069",
+            "SgK110"
+        ],
+        "weblogo": "PK_Other_NKF1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SBK (SBK1)",
+        "genes": [
+            "SBK"
+        ],
+        "weblogo": "PK_Other_NKF1__SBK.png",
+        "uniprot": "Q52WX2"
+    },
+    {
+        "fname": "SgK069 (SBK2)",
+        "genes": [
+            "SgK069"
+        ],
+        "weblogo": "PK_Other_NKF1__SgK069.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK110 (SBK3)",
+        "genes": [
+            "SgK110"
+        ],
+        "weblogo": "PK_Other_NKF1__SgK110.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "NKF2",
+        "genes": [
+            "PINK1"
+        ],
+        "weblogo": "PK_Other_NKF2.png",
+        "uniprot": "E0W1I1"
+    },
+    {
+        "fname": "PINK1",
+        "genes": [
+            "PINK1"
+        ],
+        "weblogo": "PK_Other_NKF2__PINK1.png",
+        "uniprot": "E0W1I1"
+    },
+    {
+        "fname": "NKF3",
+        "genes": [
+            "SgK223",
+            "SgK269"
+        ],
+        "weblogo": "PK_Other_NKF3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK223 (PRAG1)",
+        "genes": [
+            "SgK223"
+        ],
+        "weblogo": "PK_Other_NKF3__SgK223.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK269 (PEAK1)",
+        "genes": [
+            "SgK269"
+        ],
+        "weblogo": "PK_Other_NKF3__SgK269.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "NKF4",
+        "genes": [
+            "CLIK1",
+            "CLIK1L"
+        ],
+        "weblogo": "PK_Other_NKF4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CLIK1 (STK35)",
+        "genes": [
+            "CLIK1"
+        ],
+        "weblogo": "PK_Other_NKF4__CLIK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "CLIK1L (PDIK1L)",
+        "genes": [
+            "CLIK1L"
+        ],
+        "weblogo": "PK_Other_NKF4__CLIK1L.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "NKF5",
+        "genes": [
+            "SgK307",
+            "SgK424"
+        ],
+        "weblogo": "PK_Other_NKF5.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK307 (TEX14)",
+        "genes": [
+            "SgK307"
+        ],
+        "weblogo": "PK_Other_NKF5__SgK307.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK424 (Tex14)",
+        "genes": [
+            "SgK424"
+        ],
+        "weblogo": "PK_Other_NKF5__SgK424.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "NRBP",
+        "genes": [
+            "NRBP1",
+            "NRBP2"
+        ],
+        "weblogo": "PK_Other_NRBP.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "NRBP1",
+        "genes": [
+            "NRBP1"
+        ],
+        "weblogo": "PK_Other_NRBP__NRBP1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "NRBP2",
+        "genes": [
+            "NRBP2"
+        ],
+        "weblogo": "PK_Other_NRBP__NRBP2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PAN3",
+        "genes": [
+            "PAN3"
+        ],
+        "weblogo": "PK_Other_PAN3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PAN3",
+        "genes": [
+            "PAN3"
+        ],
+        "weblogo": "PK_Other_PAN3__PAN3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PEK",
+        "genes": [
+            "GCN2",
+            "HRI",
+            "PEK",
+            "PKR"
+        ],
+        "weblogo": "PK_Other_PEK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "GCN2",
+        "genes": [
+            "GCN2"
+        ],
+        "weblogo": "PK_Other_PEK_GCN2.png",
+        "uniprot": "Q9P2K8"
+    },
+    {
+        "fname": "GCN2 (EIF2AK4)",
+        "genes": [
+            "GCN2"
+        ],
+        "weblogo": "PK_Other_PEK_GCN2_GCN2.png",
+        "uniprot": "Q9P2K8"
+    },
+    {
+        "fname": "PEK",
+        "genes": [
+            "PEK"
+        ],
+        "weblogo": "PK_Other_PEK_PEK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PEK (EIF2AK3)",
+        "genes": [
+            "PEK"
+        ],
+        "weblogo": "PK_Other_PEK_PEK_PEK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "HRI (EIF2AK1)",
+        "genes": [
+            "HRI"
+        ],
+        "weblogo": "PK_Other_PEK__HRI.png",
+        "uniprot": "Q9BQI3"
+    },
+    {
+        "fname": "PKR (EIF2AK2)",
+        "genes": [
+            "PKR"
+        ],
+        "weblogo": "PK_Other_PEK__PKR.png",
+        "uniprot": "P19525"
+    },
+    {
+        "fname": "PLK",
+        "genes": [
+            "PLK1",
+            "PLK2",
+            "PLK3",
+            "PLK4"
+        ],
+        "weblogo": "PK_Other_PLK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PLK1",
+        "genes": [
+            "PLK1"
+        ],
+        "weblogo": "PK_Other_PLK__PLK1.png",
+        "uniprot": "P53350"
+    },
+    {
+        "fname": "PLK2",
+        "genes": [
+            "PLK2"
+        ],
+        "weblogo": "PK_Other_PLK__PLK2.png",
+        "uniprot": "Q9NYY3"
+    },
+    {
+        "fname": "PLK3",
+        "genes": [
+            "PLK3"
+        ],
+        "weblogo": "PK_Other_PLK__PLK3.png",
+        "uniprot": "Q9H4B4"
+    },
+    {
+        "fname": "PLK4",
+        "genes": [
+            "PLK4"
+        ],
+        "weblogo": "PK_Other_PLK__PLK4.png",
+        "uniprot": "O00444"
+    },
+    {
+        "fname": "SCY1",
+        "genes": [
+            "SCYL1",
+            "SCYL2",
+            "SCYL3"
+        ],
+        "weblogo": "PK_Other_SCY1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SCYL1",
+        "genes": [
+            "SCYL1"
+        ],
+        "weblogo": "PK_Other_SCY1__SCYL1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SCYL2",
+        "genes": [
+            "SCYL2"
+        ],
+        "weblogo": "PK_Other_SCY1__SCYL2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SCYL3",
+        "genes": [
+            "SCYL3"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK071",
+        "genes": [
+            "SgK071"
+        ],
+        "weblogo": "PK_Other_SgK071.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK071 (STKLD1)",
+        "genes": [
+            "SgK071"
+        ],
+        "weblogo": "PK_Other_SgK071__SgK071.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK493",
+        "genes": [
+            "SgK493"
+        ],
+        "weblogo": "PK_Other_SgK493.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK493 (PKDCC)",
+        "genes": [
+            "SgK493"
+        ],
+        "weblogo": "PK_Other_SgK493__SgK493.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Slob",
+        "genes": [
+            "Slob"
+        ],
+        "weblogo": "PK_Other_Slob.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Slob (PXK)",
+        "genes": [
+            "Slob"
+        ],
+        "weblogo": "PK_Other_Slob__Slob.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TBCK",
+        "genes": [
+            "TBCK"
+        ],
+        "weblogo": "PK_Other_TBCK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TBCK",
+        "genes": [
+            "TBCK"
+        ],
+        "weblogo": "PK_Other_TBCK__TBCK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TLK",
+        "genes": [
+            "TLK1",
+            "TLK2"
+        ],
+        "weblogo": "PK_Other_TLK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "TLK1",
+        "genes": [
+            "TLK1"
+        ],
+        "weblogo": "PK_Other_TLK__TLK1.png",
+        "uniprot": "Q9UKI8"
+    },
+    {
+        "fname": "TLK2",
+        "genes": [
+            "TLK2"
+        ],
+        "weblogo": "PK_Other_TLK__TLK2.png",
+        "uniprot": "Q86UE8"
+    },
+    {
+        "fname": "TOPK",
+        "genes": [
+            "PBK"
+        ],
+        "weblogo": "PK_Other_TOPK.png",
+        "uniprot": "Q96KB5"
+    },
+    {
+        "fname": "PBK",
+        "genes": [
+            "PBK"
+        ],
+        "weblogo": "PK_Other_TOPK__PBK.png",
+        "uniprot": "Q96KB5"
+    },
+    {
+        "fname": "TTK",
+        "genes": [
+            "TTK"
+        ],
+        "weblogo": "PK_Other_TTK.png",
+        "uniprot": "P33981"
+    },
+    {
+        "fname": "TTK",
+        "genes": [
+            "TTK"
+        ],
+        "weblogo": "PK_Other_TTK__TTK.png",
+        "uniprot": "P33981"
+    },
+    {
+        "fname": "ULK",
+        "genes": [
+            "Fused",
+            "ULK1",
+            "ULK2",
+            "ULK3",
+            "ULK4"
+        ],
+        "weblogo": "PK_Other_ULK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Fused (STK36)",
+        "genes": [
+            "Fused"
+        ],
+        "weblogo": "PK_Other_ULK__Fused.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ULK1",
+        "genes": [
+            "ULK1"
+        ],
+        "weblogo": "PK_Other_ULK__ULK1.png",
+        "uniprot": "O75385"
+    },
+    {
+        "fname": "ULK2",
+        "genes": [
+            "ULK2"
+        ],
+        "weblogo": "PK_Other_ULK__ULK2.png",
+        "uniprot": "Q8IYT8"
+    },
+    {
+        "fname": "ULK3",
+        "genes": [
+            "ULK3"
+        ],
+        "weblogo": "PK_Other_ULK__ULK3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ULK4",
+        "genes": [
+            "ULK4"
+        ],
+        "weblogo": "PK_Other_ULK__ULK4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "VPS15",
+        "genes": [
+            "PIK3R4"
+        ],
+        "weblogo": "PK_Other_VPS15.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "PIK3R4",
+        "genes": [
+            "PIK3R4"
+        ],
+        "weblogo": "PK_Other_VPS15__PIK3R4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "WEE",
+        "genes": [
+            "MYT1",
+            "Wee1",
+            "Wee1B"
+        ],
+        "weblogo": "PK_Other_WEE.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "MYT1 (PKMYT1)",
+        "genes": [
+            "MYT1"
+        ],
+        "weblogo": "PK_Other_WEE__MYT1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Wee1 (WEE1)",
+        "genes": [
+            "Wee1"
+        ],
+        "weblogo": "PK_Other_WEE__Wee1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Wee1B (WEE2)",
+        "genes": [
+            "Wee1B"
+        ],
+        "weblogo": "PK_Other_WEE__Wee1B.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "WNK",
+        "genes": [
+            "Wnk1",
+            "Wnk2",
+            "Wnk3",
+            "Wnk4"
+        ],
+        "weblogo": "PK_Other_WNK.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Wnk1 (WNK1)",
+        "genes": [
+            "Wnk1"
+        ],
+        "weblogo": "PK_Other_WNK__Wnk1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Wnk2 (WNK2)",
+        "genes": [
+            "Wnk2"
+        ],
+        "weblogo": "PK_Other_WNK__Wnk2.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Wnk3 (WNK3)",
+        "genes": [
+            "Wnk3"
+        ],
+        "weblogo": "PK_Other_WNK__Wnk3.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Wnk4 (WNK4)",
+        "genes": [
+            "Wnk4"
+        ],
+        "weblogo": "PK_Other_WNK__Wnk4.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Other-Unique",
+        "genes": [
+            "RNAseL",
+            "SgK196",
+            "SgK396"
+        ],
+        "weblogo": "PK_Other_Other-Unique.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "RNAseL (RNASEL)",
+        "genes": [
+            "RNAseL"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK196 (POMK)",
+        "genes": [
+            "SgK196"
+        ],
+        "weblogo": "PK_Other_Other-Unique__SgK196.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "SgK396 (STK31)",
+        "genes": [
+            "SgK396"
+        ],
+        "weblogo": "PK_Other_Other-Unique__SgK396.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Atypical",
+        "genes": [
+            "ABR",
+            "ADCK1",
+            "ADCK2",
+            "ADCK3",
+            "ADCK4",
+            "ADCK5",
+            "ATM",
+            "ATR",
+            "AlphaK1",
+            "AlphaK2",
+            "AlphaK3",
+            "BAZ1A",
+            "BAZ1B",
+            "BCKDK",
+            "BCR",
+            "BLVRA",
+            "BRD2",
+            "BRD3",
+            "BRD4",
+            "BRDT",
+            "ChaK1",
+            "ChaK2",
+            "Col4A3BP",
+            "DNAPK",
+            "FASTK",
+            "FRAP",
+            "G11",
+            "GTF2F1",
+            "PDHK1",
+            "PDHK2",
+            "PDHK3",
+            "PDHK4",
+            "RIOK1",
+            "RIOK2",
+            "RIOK3",
+            "SMG1",
+            "TAF1",
+            "TAF1L",
+            "TIF1D",
+            "TIF1a",
+            "TIF1b",
+            "TIF1g",
+            "TRRAP",
+            "eEF2K"
+        ],
+        "weblogo": "PK_Atypical.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ABC1",
+        "genes": [
+            "ADCK1",
+            "ADCK2",
+            "ADCK3",
+            "ADCK4",
+            "ADCK5"
+        ],
+        "weblogo": "PK_Atypical_ABC1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ABC1-A",
+        "genes": [
+            "ADCK3",
+            "ADCK4"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "ADCK3 (COQ8A)",
+        "genes": [
+            "ADCK3"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "ADCK4 (COQ8B)",
+        "genes": [
+            "ADCK4"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "ABC1-B",
+        "genes": [
+            "ADCK1"
+        ],
+        "weblogo": "PK_Atypical_ABC1_ABC1-B.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ADCK1",
+        "genes": [
+            "ADCK1"
+        ],
+        "weblogo": "PK_Atypical_ABC1_ABC1-B_ADCK1.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ABC1-C",
+        "genes": [
+            "ADCK2"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "ADCK2",
+        "genes": [
+            "ADCK2"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "ABC1-D",
+        "genes": [
+            "ADCK5"
+        ],
+        "weblogo": "PK_Atypical_ABC1_ABC1-D.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "ADCK5",
+        "genes": [
+            "ADCK5"
+        ],
+        "weblogo": "PK_Atypical_ABC1_ABC1-D_ADCK5.png",
+        "uniprot": ""
+    },
+    {
+        "fname": "Alpha",
+        "genes": [
+            "AlphaK1",
+            "AlphaK2",
+            "AlphaK3",
+            "ChaK1",
+            "ChaK2",
+            "eEF2K"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "ChaK",
+        "genes": [
+            "ChaK1",
+            "ChaK2"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "ChaK1 (TRPM7)",
+        "genes": [
+            "ChaK1"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "ChaK2 (TRPM6)",
+        "genes": [
+            "ChaK2"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "AlphaK1 (ALPK1)",
+        "genes": [
+            "AlphaK1"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "AlphaK2 (ALPK2)",
+        "genes": [
+            "AlphaK2"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "AlphaK3 (ALPK3)",
+        "genes": [
+            "AlphaK3"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "eEF2K",
+        "genes": [
+            "eEF2K"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "eEF2K (EEF2K)",
+        "genes": [
+            "eEF2K"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BAZ",
+        "genes": [
+            "BAZ1A",
+            "BAZ1B"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BAZ1A",
+        "genes": [
+            "BAZ1A"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BAZ1B",
+        "genes": [
+            "BAZ1B"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BCR",
+        "genes": [
+            "ABR",
+            "BCR"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "ABR",
+        "genes": [
+            "ABR"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BCR",
+        "genes": [
+            "BCR"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BLVRA",
+        "genes": [
+            "BLVRA"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BLVRA",
+        "genes": [
+            "BLVRA"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BRD",
+        "genes": [
+            "BRD2",
+            "BRD3",
+            "BRD4",
+            "BRDT"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BRD2",
+        "genes": [
+            "BRD2"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BRD3",
+        "genes": [
+            "BRD3"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BRD4",
+        "genes": [
+            "BRD4"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BRDT",
+        "genes": [
+            "BRDT"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "Col4A3BP",
+        "genes": [
+            "Col4A3BP"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "Col4A3BP (COL4A3BP)",
+        "genes": [
+            "Col4A3BP"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "FAST",
+        "genes": [
+            "FASTK"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "FASTK",
+        "genes": [
+            "FASTK"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "G11",
+        "genes": [
+            "G11"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "G11 (STK19)",
+        "genes": [
+            "G11"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "GTF2F1",
+        "genes": [
+            "GTF2F1"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "GTF2F1",
+        "genes": [
+            "GTF2F1"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "PDHK",
+        "genes": [
+            "BCKDK",
+            "PDHK1",
+            "PDHK2",
+            "PDHK3",
+            "PDHK4"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "BCKDK",
+        "genes": [
+            "BCKDK"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "PDHK1 (PDK1)",
+        "genes": [
+            "PDHK1"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "PDHK2 (PDK2)",
+        "genes": [
+            "PDHK2"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "PDHK3 (PDK3)",
+        "genes": [
+            "PDHK3"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "PDHK4 (PDK4)",
+        "genes": [
+            "PDHK4"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "PIKK",
+        "genes": [
+            "ATM",
+            "ATR",
+            "DNAPK",
+            "FRAP",
+            "SMG1",
+            "TRRAP"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "ATM",
+        "genes": [
+            "ATM"
+        ],
+        "weblogo": "",
+        "uniprot": "Q13315"
+    },
+    {
+        "fname": "ATM",
+        "genes": [
+            "ATM"
+        ],
+        "weblogo": "",
+        "uniprot": "Q13315"
+    },
+    {
+        "fname": "ATR",
+        "genes": [
+            "ATR"
+        ],
+        "weblogo": "",
+        "uniprot": "Q13535"
+    },
+    {
+        "fname": "ATR",
+        "genes": [
+            "ATR"
+        ],
+        "weblogo": "",
+        "uniprot": "Q13535"
+    },
+    {
+        "fname": "DNAPK",
+        "genes": [
+            "DNAPK"
+        ],
+        "weblogo": "",
+        "uniprot": "P78527"
+    },
+    {
+        "fname": "DNAPK (PRKDC)",
+        "genes": [
+            "DNAPK"
+        ],
+        "weblogo": "",
+        "uniprot": "P78527"
+    },
+    {
+        "fname": "FRAP",
+        "genes": [
+            "FRAP"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "FRAP (MTOR)",
+        "genes": [
+            "FRAP"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "SMG1",
+        "genes": [
+            "SMG1"
+        ],
+        "weblogo": "",
+        "uniprot": "Q96Q15"
+    },
+    {
+        "fname": "SMG1",
+        "genes": [
+            "SMG1"
+        ],
+        "weblogo": "",
+        "uniprot": "Q96Q15"
+    },
+    {
+        "fname": "TRRAP",
+        "genes": [
+            "TRRAP"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "TRRAP",
+        "genes": [
+            "TRRAP"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "RIO",
+        "genes": [
+            "RIOK1",
+            "RIOK2",
+            "RIOK3"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "RIO1",
+        "genes": [
+            "RIOK1"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "RIOK1",
+        "genes": [
+            "RIOK1"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "RIO2",
+        "genes": [
+            "RIOK2"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "RIOK2",
+        "genes": [
+            "RIOK2"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "RIO3",
+        "genes": [
+            "RIOK3"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "RIOK3",
+        "genes": [
+            "RIOK3"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "TAF1",
+        "genes": [
+            "TAF1",
+            "TAF1L"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "TAF1",
+        "genes": [
+            "TAF1"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "TAF1L",
+        "genes": [
+            "TAF1L"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "TIF1",
+        "genes": [
+            "TIF1D",
+            "TIF1a",
+            "TIF1b",
+            "TIF1g"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "TIF1a (TRIM24)",
+        "genes": [
+            "TIF1a"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "TIF1b (TRIM28)",
+        "genes": [
+            "TIF1b"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "TIF1D (TRIM66)",
+        "genes": [
+            "TIF1D"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    },
+    {
+        "fname": "TIF1g (TRIM33)",
+        "genes": [
+            "TIF1g"
+        ],
+        "weblogo": "",
+        "uniprot": ""
+    }
+]
