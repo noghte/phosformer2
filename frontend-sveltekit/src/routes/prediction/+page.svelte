@@ -56,7 +56,7 @@
         if (subtrade.length !== 15) {
             subtradeError = "Subtrade should be 15 characters long.";
         } else if (
-            ![...subtrade].every((char) => allowedCharacters.includes(char))
+            ![...subtrade].every((char) => aminoAcids.includes(char))
         ) {
             subtradeError =
                 "Subtrade should contain only the allowed characters: L, A, G, V, S, E, R, T, I, D, P, K, Q, N, F, Y, M, H, W, C, X, B, U, Z, O.";
