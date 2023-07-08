@@ -4,15 +4,18 @@
     import TreeView from "svelte-tree-view";
     import kinaseData from "$lib/kinase_data.json";
 
+    import Fa from "svelte-fa/src/fa.svelte";
+    import { faTrash } from "@fortawesome/free-solid-svg-icons";
+
     const dispatch = createEventDispatcher();
 
     // let a = 0.8;
     // let b = 0.15;
     let predResponse = null;
-    let subtradeOpen = false;
-    let subtrade = "ABCDEFGTABCDEFG";
-    let subtradeError;
-    let selectedSubtrades = [];
+    let SubstrateOpen = false;
+    let substrates = ["PSVEPPLSQETFSDL"];
+    let substrateErrors = new Array(substrates.length).fill("");
+    // let selectedSubstrates = [];
     let kinaseOpen = false;
     const aminoAcids = [
         "L",
@@ -47,49 +50,86 @@
 
     let treeData;
     let processing = false;
-
+    let files;
+    function handleFileUpload() {
+    if (files && files[0]) {
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            const substratesFromFile = event.target.result.split('\n');
+            substrates = [...substrates, ...substratesFromFile];
+            substrateErrors = new Array(substrates.length).fill("");
+            substrates.forEach((_, index) => validateSubstrate(index));
+        };
+        reader.readAsText(files[0]);
+    }
+}
     // Reactive statement that runs whenever the binding values change
     $: {
         predResponse = null;
-        // Subtrade validation
-        subtrade = subtrade.toUpperCase();
-        if (subtrade.length !== 15) {
-            subtradeError = "Subtrade should be 15 characters long.";
-        } else if (
-            ![...subtrade].every((char) => aminoAcids.includes(char))
-        ) {
-            subtradeError =
-                "Subtrade should contain only the allowed characters: L, A, G, V, S, E, R, T, I, D, P, K, Q, N, F, Y, M, H, W, C, X, B, U, Z, O.";
-        } else if (subtrade.charAt(7) !== "T") {
-            subtradeError = "Subtrade should have a T in the middle.";
-        } else {
-            subtradeError = "";
-        }
+        // Substrate validation
+        // Substrate = Substrate.toUpperCase();
+        // if (Substrate.length !== 15) {
+        //     SubstrateError = "Substrate should be 15 characters long.";
+        // } else if (![...Substrate].every((char) => aminoAcids.includes(char))) {
+        //     SubstrateError =
+        //         "Substrate should contain only the allowed characters: L, A, G, V, S, E, R, T, I, D, P, K, Q, N, F, Y, M, H, W, C, X, B, U, Z, O.";
+        // } else if (Substrate.charAt(7) !== "T") {
+        //     SubstrateError = "Substrate should have a T or S in the middle.";
+        // } else {
+        //     SubstrateError = "";
+        // }
 
         // Kinase validation
         kinaseError = "";
+
+        if (files) {
+        handleFileUpload();
+        files = null;  // Reset the files variable to prevent the reactive statement from re-running
     }
-    // function handleSubtradeInput(event) {
-    //     subtrade = event.target.value;
-    //     dispatch("input", subtrade);
+    }
+    // function handleSubstrateInput(event) {
+    //     Substrate = event.target.value;
+    //     dispatch("input", Substrate);
     // }
-    function handleSubtradeInput(event) {
-        selectedSubtrades = Array.from(event.target.selectedOptions).map(
-            (option) => option.value
-        );
-        dispatch("input", selectedSubtrades);
+    function validateSubstrate(index) {
+        let substrate = substrates[index];
+        if (substrate.length !== 15) {
+            substrateErrors[index] = "Substrate should be 15 characters long.";
+        } else if (![...substrate].every((char) => aminoAcids.includes(char))) {
+            substrateErrors[index] =
+                "Substrate should contain only the allowed characters: L, A, G, V, S, E, R, T, I, D, P, K, Q, N, F, Y, M, H, W, C, X, B, U, Z, O.";
+        } else if (substrate.charAt(7) !== "T" && substrate.charAt(7) !== "S") {
+            substrateErrors[index] =
+                "Substrate should have a T or S in the middle.";
+        } else {
+            substrateErrors[index] = "";
+        }
+    }
+    function handleSubstrateInput(event, index) {
+        substrates[index] = event.target.value.toUpperCase();
+        validateSubstrate(index);
+    }
+    function addSubstrate() {
+        substrates = [...substrates, ""];
+        substrateErrors = [...substrateErrors, ""];
+        validateSubstrate(substrates.length - 1);
+    }
+    function handleDeleteClick(index) {
+        deleteSubstrate(index);
+        dispatch("click");
+    }
+
+    function deleteSubstrate(index) {
+        substrates = substrates.filter((_, i) => i !== index);
+        substrateErrors = substrateErrors.filter((_, i) => i !== index);
     }
 
     function handleKinaseInput(event) {
         kinase = event.target.value;
         dispatch("input", kinase);
     }
-    function abbrevate(str) {
-        if (str.length > 25) {
-            return str.slice(0, 25) + "...";
-        } else {
-            return str;
-        }
+    function abbreviate(str) {
+        return str.length > 25 ? str.slice(0, 25) + "..." : str;
     }
 
     async function predict() {
@@ -98,7 +138,7 @@
             `${PUBLIC_FLASK_SERVER_ADDRESS}/api/predict`,
             {
                 method: "POST",
-                body: JSON.stringify({ kinase, subtrade }),
+                body: JSON.stringify({ kinase, Substrate }),
                 headers: {
                     "content-type": "application/json",
                 },
@@ -125,15 +165,15 @@
 
 <div class="flex">
     <div class="p-2 bg-white rounded w-1/2">
-        <p class="text-blue-800 font-bold text-md">Subtrade</p>
+        <p class="text-blue-800 font-bold text-md">Substrates</p>
 
-        {#if !subtradeOpen}
+        {#if !SubstrateOpen}
             <div class="flex justify-between items-center">
-                <div class="ml-2">{subtrade}</div>
+                <div class="ml-2">{substrates[0]}</div>
                 <button
                     type="button"
                     class="btn bg-gray-200 hover:bg-gray-300 px-4 py-2 font-medium rounded"
-                    on:click={() => (subtradeOpen = !subtradeOpen)}
+                    on:click={() => (SubstrateOpen = !SubstrateOpen)}
                 >
                     Edit
                 </button>
@@ -141,62 +181,65 @@
         {/if}
 
         <!-- container after clicked "EDIT" -->
-        {#if subtradeOpen}
+        {#if SubstrateOpen}
             <div x-show="open" class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <!-- <select
-                        bind:value={subtrade}
-                        on:change|preventDefault={handleSubtradeInput}
-                        class=" bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
-                    > -->
-                    <select
-                        multiple
-                        bind:value={selectedSubtrades}
-                        class="bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
-                    >
-                        {#each aminoAcids as item}
-                            <option value={item.value}>{item.name}</option>
-                        {/each}
-                    </select>
-
-                    <!-- {#each aminoAcids as item}
-                            <option value={item.value}
-                                >{item.name}</option
-                            >
-                        {/each}
-                    </select> -->
-
-                    <input
-                        type="text"
-                        bind:value={subtrade}
-                        on:input|preventDefault={handleSubtradeInput}
-                        class="flex-grow bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
-                    />
-
-                    {#if subtradeError !== ""}
-                        <!-- <div class="ml-2 text-red-500">❌ </div> -->
-                        <p class="text-sm text-gray-500">
-                            {subtradeError}
-                        </p>
-                    {/if}
-                </div>
-
-                <div class="flex justify-center items-center space-x-2">
-                    <button
-                        type="button"
-                        on:click={() =>
-                            subtradeError === ""
-                                ? (subtradeOpen = false)
-                                : (subtradeOpen = true)}
-                        class="btn bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 font-medium rounded"
-                    >
-                        Save
-                    </button>
+                <div class="flex flex-col items-start">
+                    {#each substrates as substrate, index (index)}
+                        <div class="flex items-center mb-2 w-full">
+                            <input
+                                type="text"
+                                bind:value={substrate}
+                                on:input|preventDefault={(event) =>
+                                    handleSubstrateInput(event, index)}
+                                class="flex-grow bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
+                            />
+                            <!-- <button on:click={() => deleteSubstrate(index)}>Delete</button> -->
+                            <div on:click={() => handleDeleteClick(index)} style="cursor: pointer;">
+                                <Fa icon={faTrash} />
+                            </div>
+                            
+                            {#if substrateErrors[index]}
+                                <p class="text-red-500">
+                                    {substrateErrors[index]}
+                                </p>
+                            {/if}
+                        </div>
+                    {/each}
+                    <div class="flex items-center">
+                        <button
+                            class="btn bg-gray-200 hover:bg-gray-300 px-4 py-2 font-medium rounded mr-2"
+                            on:click={addSubstrate}
+                            disabled={substrateErrors.some((error) => error)}
+                        >
+                            Add
+                        </button>
+                        <input type="file" id="file" bind:files={files} style="display: none;" />
+                        <button
+                            class="btn bg-gray-200 hover:bg-gray-300 px-4 py-2 font-medium rounded"
+                            on:click={() => document.getElementById('file').click()}
+                        >
+                            Upload File
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
         {/if}
     </div>
 </div>
+
+<!-- <div class="flex justify-center items-center space-x-2">
+    <button
+        type="button"
+        on:click={() =>
+            SubstrateError === ""
+                ? (SubstrateOpen = false)
+                : (SubstrateOpen = true)}
+        class="btn bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 font-medium rounded"
+    >
+        Save
+    </button>
+</div> -->
 
 <div class="flex">
     <div class="p-2 bg-white rounded w-1/2">
@@ -204,7 +247,7 @@
 
         {#if !kinaseOpen}
             <div class="flex justify-between items-center">
-                <div class="ml-2">{abbrevate(kinase)}</div>
+                <div class="ml-2">{abbreviate(kinase)}</div>
                 <button
                     type="button"
                     class="btn bg-gray-200 hover:bg-gray-300 px-4 py-2 font-medium rounded"
