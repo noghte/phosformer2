@@ -137,7 +137,7 @@
     processing = true;
     try {
         const response = await fetch(
-            `${PUBLIC_FLASK_SERVER_ADDRESS}/api/predict`,
+            `https://phosformer.lunovid.com/api/predict`,
             {
                 method: "POST",
                 mode: 'cors', 
