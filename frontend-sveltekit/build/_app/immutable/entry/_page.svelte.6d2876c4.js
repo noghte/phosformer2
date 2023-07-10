@@ -1,4 +1,4 @@
-import{S as Dt,i as Vt,s as Nt,k as e,a as b,q as n,M as Mt,l as a,h as i,c as g,m as r,r as l,n as s,N as It,p as Bt,E as t,b as wt,G as St}from"../chunks/index.a2fc30a7.js";function Wt(ct){let m,Z,j,_,c,p,w,y,dt,F,h,S,K,O,k,Y,z,D,u,V,E,ft,T,o,N,$,H,J,Q,U,X,tt,et,M,at,st,v,B,it,rt,P,G,x,ot,mt=`@article{
+import{S as Dt,i as Vt,s as Nt,k as e,a as b,q as n,M as Mt,l as a,h as i,c as g,m as r,r as l,n as s,N as It,p as Bt,E as t,b as wt,G as St}from"../chunks/index.741ab857.js";function Wt(ct){let m,Z,j,_,c,p,w,y,dt,F,h,S,K,O,k,Y,z,D,u,V,E,ft,T,o,N,$,H,J,Q,U,X,tt,et,M,at,st,v,B,it,rt,P,G,x,ot,mt=`@article{
 						zhou_2023, 
 						title={Phosformer: an explainable transformer model for protein kinase-specific phosphorylation predictions}, 
 						volume={39}, 

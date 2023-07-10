@@ -1,7 +1,7 @@
 <script>
     import { createEventDispatcher, onMount } from "svelte";
     import { PUBLIC_FLASK_SERVER_ADDRESS } from "$env/static/public";
-    import TreeView from "svelte-tree-view";
+    // import TreeView from "svelte-tree-view";
     import kinaseData from "$lib/kinase_data.json";
 
     import Fa from "svelte-fa/src/fa.svelte";
@@ -133,21 +133,33 @@
     }
 
     async function predict() {
-        processing = true;
+    processing = true;
+    try {
         const response = await fetch(
             `${PUBLIC_FLASK_SERVER_ADDRESS}/api/predict`,
             {
                 method: "POST",
-                body: JSON.stringify({ kinase, Substrate }),
+                mode: 'cors', 
+                body: JSON.stringify({ kinase, substrates }),
                 headers: {
                     "content-type": "application/json",
                 },
             }
         );
 
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
         predResponse = await response.json();
+        console.log("predResponse", predResponse);
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+    } finally {
         processing = false;
     }
+}
+
 
     onMount(async () => {
         treeData = kinaseData.reduce((acc, item) => {
@@ -165,7 +177,7 @@
 
 <div class="flex">
     <div class="p-2 bg-white rounded w-1/2">
-        <p class="text-blue-800 font-bold text-md">Substrates</p>
+        <p class="text-blue-800 font-bold text-md">Substrate Sequence</p>
 
         {#if !SubstrateOpen}
             <div class="flex justify-between items-center">
@@ -243,7 +255,7 @@
 
 <div class="flex">
     <div class="p-2 bg-white rounded w-1/2">
-        <p class="text-blue-800 font-bold text-md">Kinase</p>
+        <p class="text-blue-800 font-bold text-md">Kinase Sequences</p>
 
         {#if !kinaseOpen}
             <div class="flex justify-between items-center">
@@ -374,12 +386,11 @@
                 <div class="text-center sm:text-left">
                     <!-- <h1 class="text-gray-700 font-bold tracking-wider">Result</h1> -->
                     <p class="text-gray-700 text-lg">
-                        With a confidence of
+                        With a score of
                         <span class="font-bold"
-                            >{parseFloat(predResponse.confidence).toFixed(
+                            >{parseFloat(predResponse.probability).toFixed(
                                 4
-                            )}</span
-                        >, the prediction is
+                            )}</span>, the prediction is
                         <span class="font-bold">{predResponse.result}</span>.
                     </p>
                 </div>

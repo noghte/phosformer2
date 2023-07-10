@@ -53,8 +53,8 @@
             <p class="mb-2 overflow-auto break-words"><strong>Uniprot:</strong> ${data.uniprot ?? "N/A"}</p>
             <p class="mb-2 overflow-auto break-words"><strong>Specificity:</strong> ${data.specificity ?? "N/A"}</p>
             <p class="mb-2 overflow-auto break-words"><strong>Family:</strong> ${data.family ?? "N/A"}</p>
-            <p class="mb-2 overflow-auto break-words"><strong>Kinase Domain:</strong><span class="text-sm"> ${data.kinase_domain ?? "N/A"}</span></p>
-            <p class="mb-2 text-sm italic">Click on the image to view the weblogo.</p>
+            <p class="mb-2 overflow-auto break-words"><strong>Kinase Sequence:</strong><span class="text-sm"> ${data.kinase_domain ?? "N/A"}</span></p>
+            <p class="mb-2 text-sm italic">Click on the image to view the substrate specificity logo.</p>
         </div>
     `;
 
