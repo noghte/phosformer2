@@ -1,6 +1,6 @@
 <script>
     import { createEventDispatcher, onMount } from "svelte";
-    import { PUBLIC_FLASK_SERVER_ADDRESS } from "$env/static/public";
+    // import { PUBLIC_FLASK_SERVER_ADDRESS } from "$env/static/public";
     // import TreeView from "svelte-tree-view";
     import kinaseData from "$lib/kinase_data.json";
 
@@ -8,7 +8,8 @@
     import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
     const dispatch = createEventDispatcher();
-
+    // const PUBLIC_FLASK_SERVER_ADDRESS = "http://localhost:5200"; // for local testing
+    const PUBLIC_FLASK_SERVER_ADDRESS = ""; // it should be empty on Netlify
     // let a = 0.8;
     // let b = 0.15;
     let predResponse = null;

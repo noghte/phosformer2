@@ -26,12 +26,12 @@ Project description ...
 ## Meeting 1
 
 ### Saber
-- Subtrade 
+- Substrate 
     - ✅ Should be all characters. 
     - 🔲 It should be one of 20 types of amino acids.
         - Each letter should be one the 20 letters.
-        - Users can enter multiple subtrades by adding textboxes.
-    - ✅ Make it possible to input multiple subtrades.
+        - Users can enter multiple substrates by adding textboxes.
+    - ✅ Make it possible to input multiple substrates.
         - ❓ What about the UI?
 
 - Kinase input

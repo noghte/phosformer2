@@ -1,3 +1,326 @@
 2023-06-26 15:34:32,992 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5200
 2023-06-26 15:34:32,992 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 20:41:28,707 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 20:41:28,708 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 20:50:01,779 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 20:50:01,780 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 20:50:01,783 - INFO -  * Restarting with stat
+2023-07-08 21:45:19,403 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 21:45:19,404 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 21:45:19,408 - INFO -  * Restarting with stat
+2023-07-08 21:45:37,773 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 21:45:37,773 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 21:46:08,953 - INFO - 127.0.0.1 - - [08/Jul/2023 21:46:08] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 21:46:29,056 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 's': 'PSVEPPLSQETFSDL'}
+2023-07-08 21:48:26,979 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 21:48:26,979 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 21:57:31,780 - INFO - 127.0.0.1 - - [08/Jul/2023 21:57:31] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 21:57:35,245 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 21:58:16,007 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 21:58:16,008 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 21:58:57,063 - INFO - 127.0.0.1 - - [08/Jul/2023 21:58:57] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 21:59:19,799 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 21:59:30,926 - ERROR - Exception on /api/predict [POST]
+Traceback (most recent call last):
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/sabersoleymani/workspace/prokino/phosformer-projects/phosformer2/backend-flask/app.py", line 93, in predict
+    output = run_model(substrates, kinases,
+  File "/Users/sabersoleymani/workspace/prokino/phosformer-projects/phosformer2/backend-flask/app.py", line 35, in run_model
+    ids = tokenizer(substrates, kinases, padding=True, return_tensors='pt')
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 2561, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 2637, in _call_one
+    raise TypeError(
+TypeError: when tokenizing batches of text, `text_pair` must be a list or tuple with the same length as `text`.
+2023-07-08 21:59:30,932 - INFO - 127.0.0.1 - - [08/Jul/2023 21:59:30] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2023-07-08 22:00:27,973 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 22:00:27,974 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 22:02:05,120 - INFO - 127.0.0.1 - - [08/Jul/2023 22:02:05] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:02:05,137 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:02:07,469 - ERROR - Exception on /api/predict [POST]
+Traceback (most recent call last):
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/sabersoleymani/workspace/prokino/phosformer-projects/phosformer2/backend-flask/app.py", line 93, in predict
+    output = run_model(substrates, kinases,
+  File "/Users/sabersoleymani/workspace/prokino/phosformer-projects/phosformer2/backend-flask/app.py", line 35, in run_model
+    ids = tokenizer(substrates, kinases, padding=True, return_tensors='pt')
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 2561, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/transformers/tokenization_utils_base.py", line 2637, in _call_one
+    raise TypeError(
+TypeError: when tokenizing batches of text, `text_pair` must be a list or tuple with the same length as `text`.
+2023-07-08 22:02:07,480 - INFO - 127.0.0.1 - - [08/Jul/2023 22:02:07] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2023-07-08 22:02:31,260 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 22:02:31,261 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 22:02:41,686 - INFO - 127.0.0.1 - - [08/Jul/2023 22:02:41] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:02:41,710 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:02:59,027 - INFO - Output: {'probability': array([9.506299e-05], dtype=float32), 'classifier_attn_outputs': tensor([[[-0.3877, -0.5277,  0.5760,  ...,  0.5870,  0.1901, -0.3655],
+         [-0.3874, -0.5277,  0.5760,  ...,  0.5867,  0.1898, -0.3654],
+         [-0.3878, -0.5277,  0.5761,  ...,  0.5867,  0.1903, -0.3657],
+         ...,
+         [-0.3895, -0.5281,  0.5778,  ...,  0.5892,  0.1931, -0.3679],
+         [-0.3867, -0.5275,  0.5760,  ...,  0.5864,  0.1900, -0.3655],
+         [-0.3866, -0.5277,  0.5757,  ...,  0.5870,  0.1895, -0.3654]]]), 'classifier_attn_output_weights': [tensor([[0.0045, 0.0050, 0.0050,  ..., 0.0063, 0.0063, 0.0085],
+        [0.0045, 0.0049, 0.0049,  ..., 0.0062, 0.0063, 0.0084],
+        [0.0045, 0.0050, 0.0050,  ..., 0.0062, 0.0063, 0.0084],
+        ...,
+        [0.0050, 0.0052, 0.0052,  ..., 0.0063, 0.0060, 0.0078],
+        [0.0045, 0.0050, 0.0049,  ..., 0.0062, 0.0062, 0.0082],
+        [0.0045, 0.0050, 0.0050,  ..., 0.0062, 0.0062, 0.0083]])]}
+2023-07-08 22:02:59,029 - ERROR - Exception on /api/predict [POST]
+Traceback (most recent call last):
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/sabersoleymani/workspace/prokino/phosformer-projects/phosformer2/backend-flask/app.py", line 102, in predict
+    return jsonify(output)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/json/__init__.py", line 342, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/json/provider.py", line 309, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=mimetype
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/json/provider.py", line 230, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/json/provider.py", line 122, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Tensor is not JSON serializable
+2023-07-08 22:02:59,036 - INFO - 127.0.0.1 - - [08/Jul/2023 22:02:59] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2023-07-08 22:03:11,321 - INFO - 127.0.0.1 - - [08/Jul/2023 22:03:11] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:03:11,339 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:07:06,383 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 22:07:06,383 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 22:07:51,342 - INFO - 127.0.0.1 - - [08/Jul/2023 22:07:51] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:07:51,366 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:07:58,545 - INFO - Output: [9.506299e-05]
+2023-07-08 22:07:58,546 - ERROR - Exception on /api/predict [POST]
+Traceback (most recent call last):
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/sabersoleymani/workspace/prokino/phosformer-projects/phosformer2/backend-flask/app.py", line 103, in predict
+    j = json.dumps(output["probability"])
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ndarray is not JSON serializable
+2023-07-08 22:07:58,551 - INFO - 127.0.0.1 - - [08/Jul/2023 22:07:58] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2023-07-08 22:08:11,278 - INFO - 127.0.0.1 - - [08/Jul/2023 22:08:11] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:08:11,297 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:09:38,566 - INFO - Output: [9.506299e-05]
+2023-07-08 22:09:38,569 - ERROR - Exception on /api/predict [POST]
+Traceback (most recent call last):
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/sabersoleymani/workspace/prokino/phosformer-projects/phosformer2/backend-flask/app.py", line 103, in predict
+    j = json.dumps(output["probability"].tolist())
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ndarray is not JSON serializable
+2023-07-08 22:09:38,576 - INFO - 127.0.0.1 - - [08/Jul/2023 22:09:38] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2023-07-08 22:09:47,575 - INFO - 127.0.0.1 - - [08/Jul/2023 22:09:47] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:09:47,596 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:10:14,454 - INFO - Output: [9.506299e-05]
+2023-07-08 22:10:14,455 - ERROR - Exception on /api/predict [POST]
+Traceback (most recent call last):
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/sabersoleymani/workspace/prokino/phosformer-projects/phosformer2/backend-flask/app.py", line 103, in predict
+    j = json.dumps(output["probability"].tolist())
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ndarray is not JSON serializable
+2023-07-08 22:10:14,459 - INFO - 127.0.0.1 - - [08/Jul/2023 22:10:14] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2023-07-08 22:11:08,300 - INFO - 127.0.0.1 - - [08/Jul/2023 22:11:08] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:11:08,314 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:12:42,296 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 22:12:42,297 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 22:12:59,958 - INFO - 127.0.0.1 - - [08/Jul/2023 22:12:59] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:12:59,980 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:13:03,505 - INFO - Output: [9.506299e-05]
+2023-07-08 22:13:03,506 - ERROR - Exception on /api/predict [POST]
+Traceback (most recent call last):
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/sabersoleymani/workspace/prokino/phosformer-projects/phosformer2/backend-flask/app.py", line 103, in predict
+    j = json.dump(output["probability"].tolist())
+TypeError: dump() missing 1 required positional argument: 'fp'
+2023-07-08 22:13:03,509 - INFO - 127.0.0.1 - - [08/Jul/2023 22:13:03] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2023-07-08 22:13:49,807 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 22:13:49,808 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 22:14:08,936 - INFO - 127.0.0.1 - - [08/Jul/2023 22:14:08] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:14:08,959 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:14:12,429 - INFO - Output: [9.506299e-05]
+2023-07-08 22:16:49,234 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 22:16:49,235 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 22:17:09,205 - INFO - 127.0.0.1 - - [08/Jul/2023 22:17:09] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:17:09,252 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:17:12,693 - INFO - Output: [9.506299e-05]
+2023-07-08 22:17:30,900 - INFO - 127.0.0.1 - - [08/Jul/2023 22:17:30] "POST /api/predict HTTP/1.1" 200 -
+2023-07-08 22:21:46,348 - INFO - 127.0.0.1 - - [08/Jul/2023 22:21:46] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:21:46,372 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:21:50,105 - INFO - Output: [9.506299e-05]
+2023-07-08 22:21:50,106 - INFO - 127.0.0.1 - - [08/Jul/2023 22:21:50] "POST /api/predict HTTP/1.1" 200 -
+2023-07-08 22:30:36,234 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 22:30:36,235 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 22:30:43,090 - INFO - 127.0.0.1 - - [08/Jul/2023 22:30:43] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:30:43,113 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:30:46,565 - INFO - Output: [9.506299e-05]
+2023-07-08 22:30:46,567 - INFO - 127.0.0.1 - - [08/Jul/2023 22:30:46] "POST /api/predict HTTP/1.1" 200 -
+2023-07-08 22:31:30,799 - INFO - 127.0.0.1 - - [08/Jul/2023 22:31:30] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:31:30,812 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:31:34,260 - INFO - Output: [9.506299e-05]
+2023-07-08 22:31:54,509 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-08 22:31:54,510 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 22:32:41,866 - INFO - 127.0.0.1 - - [08/Jul/2023 22:32:41] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:32:41,879 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:32:45,397 - INFO - Output: [9.506299e-05]
+2023-07-08 22:32:51,591 - INFO - 127.0.0.1 - - [08/Jul/2023 22:32:51] "POST /api/predict HTTP/1.1" 200 -
+2023-07-08 22:33:10,053 - INFO - 127.0.0.1 - - [08/Jul/2023 22:33:10] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-08 22:33:10,077 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-08 22:33:13,677 - INFO - Output: [9.506299e-05]
+2023-07-08 22:33:13,678 - INFO - 127.0.0.1 - - [08/Jul/2023 22:33:13] "POST /api/predict HTTP/1.1" 200 -
+2023-07-09 00:56:02,548 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-09 00:56:02,549 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-09 00:56:16,789 - INFO - 127.0.0.1 - - [09/Jul/2023 00:56:16] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-09 00:56:16,802 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-09 00:56:20,357 - INFO - Output: [9.506299e-05]
+2023-07-09 00:56:20,358 - INFO - 127.0.0.1 - - [09/Jul/2023 00:56:20] "POST /api/predict HTTP/1.1" 200 -
+2023-07-09 00:58:09,413 - INFO - 127.0.0.1 - - [09/Jul/2023 00:58:09] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-09 00:58:09,451 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-09 00:58:13,177 - INFO - Output: [9.506299e-05]
+2023-07-09 00:58:13,178 - INFO - 127.0.0.1 - - [09/Jul/2023 00:58:13] "POST /api/predict HTTP/1.1" 200 -
+2023-07-09 01:02:17,158 - INFO - 127.0.0.1 - - [09/Jul/2023 01:02:17] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-09 01:02:17,173 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-09 01:02:20,864 - INFO - Output: [9.506299e-05]
+2023-07-09 01:02:20,865 - INFO - 127.0.0.1 - - [09/Jul/2023 01:02:20] "POST /api/predict HTTP/1.1" 200 -
+2023-07-09 01:02:41,116 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5200
+2023-07-09 01:02:41,117 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-09 01:03:16,194 - INFO - 127.0.0.1 - - [09/Jul/2023 01:03:16] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-09 01:03:16,223 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-09 01:03:19,674 - INFO - 127.0.0.1 - - [09/Jul/2023 01:03:19] "POST /api/predict HTTP/1.1" 200 -
+2023-07-09 23:31:22,050 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5200
+ * Running on http://192.168.1.5:5200
+2023-07-09 23:31:22,051 - INFO - [33mPress CTRL+C to quit[0m
+2023-07-09 23:33:18,095 - INFO - 127.0.0.1 - - [09/Jul/2023 23:33:18] "OPTIONS /api/predict HTTP/1.1" 200 -
+2023-07-09 23:33:18,118 - INFO - Received prediction request: {'kinase': 'HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC', 'substrates': ['PSVEPPLSQETFSDL']}
+2023-07-09 23:33:22,047 - ERROR - Exception on /api/predict [POST]
+Traceback (most recent call last):
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/sabersoleymani/workspace/prokino/phosformer-projects/phosformer2/backend-flask/app.py", line 113, in predict
+    print("Response=", json.dumps(response))
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/sabersoleymani/opt/anaconda3/envs/phosformer/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+2023-07-09 23:33:22,055 - INFO - 127.0.0.1 - - [09/Jul/2023 23:33:22] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -

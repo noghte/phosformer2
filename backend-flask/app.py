@@ -1,96 +1,120 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask import Flask, request, jsonify, abort
+#from flask_cors import CORS
 import logging
 import torch
 from tokenization_esm import EsmTokenizer
 from modeling_esm import EsmForSequenceClassificationMHACustom
 import numpy as np
 import pandas as pd
+import json
 
 app = Flask(__name__)
-CORS(app) 
+
+# CORS is handled by nginx
+#CORS(app, resources={r"/api/*": {"origins": "*", "allow_headers": ["Content-Type"]}})
+
+
+#development
+#model_dir = 'backend-flask/model'
+#production
+model_dir = 'model'
 
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-model_dir = 'backend-flask/model'
 
 
-# TODO: make the model local
-# from transformers import AutoTokenizer, EsmForProteinFolding
-# tokenizer = AutoTokenizer.from_pretrained("facebook/esmfold_v1")
-# model = EsmForProteinFolding.from_pretrained("facebook/esmfold_v1", low_cpu_mem_usage=True)
+tokenizer = EsmTokenizer.from_pretrained(model_dir)
+model = EsmForSequenceClassificationMHACustom.from_pretrained(model_dir, num_labels=2)
 
-# tokenizer = EsmTokenizer.from_pretrained(model_dir)
-# model = EsmForSequenceClassificationMHACustom.from_pretrained(model_dir, num_labels=2)
-
-# def run_model(peptides, kinases, model=model, tokenizer=tokenizer, device='cuda:1', batch_size=50, output_hidden_states=True, output_attentions=True):
-#     torch.cuda.empty_cache()
+def run_model(substrates, kinases, model=model, tokenizer=tokenizer, device='cuda:1', batch_size=50, output_hidden_states=True, output_attentions=True):
+    torch.cuda.empty_cache()
     
-#     model.eval()
-#     model = model.to(device)
+    model.eval()
+    model = model.to(device)
+    print("s=",type(substrates))
+    print("k=",type(kinases))
 
-#     ids = tokenizer(peptides, kinases, padding=True, return_tensors='pt')
-#     ids = ids.to(device)
-#     output = dict()
-#     with torch.no_grad():
-#         results, classifier_attn_outputs, classifier_attn_output_weights = model(ids['input_ids'], 
-#                         attention_mask=ids['attention_mask'], 
-#                         output_hidden_states=output_hidden_states, 
-#                         output_attentions=output_attentions)
+    ids = tokenizer(substrates[0], kinases, padding=True, return_tensors='pt')
+    ids = ids.to(device)
+    output = dict()
+    with torch.no_grad():
+        results, classifier_attn_outputs, classifier_attn_output_weights = model(ids['input_ids'], 
+                        attention_mask=ids['attention_mask'], 
+                        output_hidden_states=output_hidden_states, 
+                        output_attentions=output_attentions)
 
-#         attention_mask = ids['attention_mask'].cpu().type(torch.bool)
+        attention_mask = ids['attention_mask'].cpu().type(torch.bool)
 
-#         output['probability'] = results['logits'].softmax(1)[:,1].cpu().numpy()
+        output['probability'] = results['logits'].softmax(1)[:,1].cpu().numpy()
 
-#         if output_hidden_states:
-#             last_embeddings = results['hidden_states'][-1].cpu().numpy()
-#             output['embedding'] = [i[m] for i, m in zip(last_embeddings, attention_mask)]
+        if output_hidden_states:
+            last_embeddings = results['hidden_states'][-1].cpu().numpy()
+            output['embedding'] = [i[m] for i, m in zip(last_embeddings, attention_mask)]
 
-#         if output_attentions:
-#             last_attentions = results['attentions'][-1].cpu().numpy()
-#             output['attention'] = [i[:,m,:][:,:,m] for i, m in zip(last_attentions, attention_mask)]
+        if output_attentions:
+            last_attentions = results['attentions'][-1].cpu().numpy()
+            output['attention'] = [i[:,m,:][:,:,m] for i, m in zip(last_attentions, attention_mask)]
 
-#         classifier_attn_outputs = classifier_attn_outputs.cpu()
-#         output['classifier_attn_outputs'] = classifier_attn_outputs
+        classifier_attn_outputs = classifier_attn_outputs.cpu()
+        output['classifier_attn_outputs'] = classifier_attn_outputs
 
-#         classifier_attn_output_weights = classifier_attn_output_weights.cpu()
-#         output['classifier_attn_output_weights'] = [i[:,m[16:]] for i, m in zip(classifier_attn_output_weights, attention_mask)]
+        classifier_attn_output_weights = classifier_attn_output_weights.cpu()
+        output['classifier_attn_output_weights'] = [i[:,m[16:]] for i, m in zip(classifier_attn_output_weights, attention_mask)]
 
-#     return output
-
-@app.route('/api/predict', methods=['POST'])
-def predict():
-    if request.method == 'POST':
-        data = request.get_json()
-        kinases = data.get('kinase')
-        peptides = data.get('subtrade')
-        
-        # For development purposes, return a dummy response
-        output = {
-            'result': 'dummy prediction',
-            'confidence': 0.99
-        }
-        
-        app.logger.info(f'Received prediction request: {data}')
-        app.logger.info(f'Output: {output}')
-
-        return jsonify(output)
+    return output
 
 # @app.route('/api/predict', methods=['POST'])
 # def predict():
 #     if request.method == 'POST':
 #         data = request.get_json()
 #         kinases = data.get('kinase')
-#         peptides = data.get('subtrade')
-#         logging.info(f'Received prediction request: {data}')
-#         output = run_model(peptides, kinases, 
-#             model=model, 
-#             tokenizer=tokenizer, 
-#             output_hidden_states=False,
-#             output_attentions=False,
-#             batch_size=1, 
-#             )
-#         logging.info(f'Output: {output}')   
+#         peptides = data.get('substrate')
+#         # For development purposes, return a dummy response
+#         output = {
+#             'result': 'dummy prediction',
+#             'probability': 0.99
+#         }
+        
+#         app.logger.info(f'Received prediction request: {data}')
+#         app.logger.info(f'Output: {output}')
+
 #         return jsonify(output)
 
+@app.route('/api/')
+def test():
+    return 'Server is running!'
+
+
+@app.route('/api/predict', methods=['POST'])
+def predict():
+    # origin = request.headers.get('Origin')
+    # print("Origin=", origin)
+    # if origin != 'https://phosformer.netlify.app':
+    #     abort(403)  # Forbidden
+
+    print("pre-post")
+    if request.method == 'POST':
+        data = request.get_json()
+        kinases = data.get('kinase')
+        substrates = data.get('substrates')
+        logging.info(f'Received prediction request: {data}')
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        print("Device=",device)
+        output = run_model(substrates, kinases, 
+            model=model, 
+            device=device,
+            tokenizer=tokenizer, 
+            output_hidden_states=False,
+            output_attentions=False,
+            batch_size=1, 
+            )
+
+        op = output["probability"].tolist()
+        result = op[0] > 0.5
+        res = {"probability":op, "result": result}
+        print("Response=", res)
+        return jsonify(res)
+        # j = json.dump(output["probability"].tolist())  
+        # return j#jsonify(output["probability"][0])
+
 if __name__ == '__main__':
-    app.run(debug=False, port=5200)
+    app.run(debug=False, host="0.0.0.0", port=5200)
