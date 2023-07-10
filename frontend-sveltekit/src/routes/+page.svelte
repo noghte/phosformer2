@@ -95,11 +95,11 @@
 				class="p-6 max-w-fit bg-white rounded-xl shadow-md flex items-left float-left space-x-16"
 			>
 				<div class="flex-shrink-0">
-					<img
+					<!-- <img
 						class="h-32 w-22"
 						src="/m_bioinfo_39_2cover.jpeg"
 						alt="Bioinformatics journal cover"
-					/>
+					/> -->
 				</div>
 				<div>
 					<div class="text-lg font-medium text-black">
@@ -108,7 +108,7 @@
 					Zhongliang Zhou, Wayland Yeung, Saber Soleymani, Nathan Gravel,
 					Mariah Salcedo, Sheng Li, & Natarajan Kannan (2023).<br />
 					Phosformer-ST: explainable machine learning uncovers the kinase-substrate interaction landscape <br />
-					Bioinformatics, 39(2).
+					<!-- Bioinformatics, 39(2). -->
 					<p class="text-sm font-small text-gray-600">Under Review</p>
 
 					<!-- <p class="text-sm font-small text-gray-600">https://doi.org/10.1093/bioinformatics/btad046</p> -->
