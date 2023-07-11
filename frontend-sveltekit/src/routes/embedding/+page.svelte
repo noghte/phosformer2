@@ -1,24 +1,25 @@
 <script>
     import { onMount } from "svelte";
     import * as d3 from "d3";
-    import Fa from "svelte-fa/src/fa.svelte";
-    import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+    // import Fa from "svelte-fa/src/fa.svelte";
+    // import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
     // import * as proteins from "./proteins.js";
     // import * as genesNfamily from "./genesNfamily.json";
     import kinaseData from "$lib/kinase_data.json";
 
     let container;
-    const initialZoomLevel = 1.2;
 
-    function getImagePath(id) {
-        let data = kinaseData.find((item) => item.gene === id);
-        if (data) {
-            return "/weblogos/" + data.weblogo;
+    function getImagePaths(id) {
+        let matchedData = kinaseData.filter((item) => item.gene.toLowerCase() === id.toLowerCase());
+        console.log(matchedData);
+        if (matchedData.length > 0) {
+            return matchedData.map((data) => "/weblogos/" + data.weblogo);
         } else {
-            console.log("No matching gene found for id: " + id);
-            return "/weblogos/empty.png";
+            console.log("No matching genes found for id: " + id);
+            return ["/weblogos/empty.png"];
         }
     }
+
     function get_id(idHtml) {
         let idParts = idHtml.split("_");
         let id = idParts[idParts.length - 1]; //eg., MYO3A
@@ -27,18 +28,21 @@
     }
     function handleClick(event) {
         const id = get_id(event.target.id);
-        const imagePath = getImagePath(id);
-        console.log("imagepath", imagePath);
+        const imagePaths = getImagePaths(id);
+        console.log("imagepaths", imagePaths);
         let imageDiv = document.getElementById("weblogo_container");
         imageDiv.innerHTML = ""; // clear the container
-        let newImg = document.createElement("img");
-        newImg.src = imagePath;
-        newImg.style.width = "100%";
-        newImg.style.height = "100%";
-        newImg.alt = id;
-        imageDiv.appendChild(newImg);
 
-        //Scroll to a div after the new image
+        imagePaths.forEach((imagePath) => {
+            let newImg = document.createElement("img");
+            newImg.src = imagePath;
+            newImg.style.width = "100%";
+            newImg.style.height = "100%";
+            newImg.alt = id;
+            imageDiv.appendChild(newImg);
+        });
+
+        // Scroll to a div after the new image
         let emptyDiv = document.createElement("div");
         imageDiv.appendChild(emptyDiv);
         emptyDiv.scrollIntoView({ behavior: "smooth" });
@@ -47,7 +51,7 @@
     function handleHoverEnter(event) {
         const hoverDiv = document.querySelector("#hover-div");
         let id = get_id(event.target.id);
-        let data = kinaseData.find((item) => item.gene === id) || {};
+        let data = kinaseData.find((item) => item.gene.toLowerCase() === id.toLowerCase()) || {};
         // const hasUniprot = data.uniprot && data.uniprot !== "N/A";
 
         const cardHTML = `
@@ -65,7 +69,7 @@
             <p class="mb-2 overflow-auto break-words"><strong>Kinase Sequence:</strong><span class="text-sm"> ${
                 data.kinase_domain ?? "N/A"
             }</span></p>
-            <p class="mb-2 text-sm italic">Scroll below to view the substrate specificity logo.</p>
+            <p class="mb-2 text-sm italic">Click and scroll below to view the substrate specificity logo.</p>
         </div>
     `;
 
@@ -131,11 +135,11 @@
             container.querySelectorAll("circle, text").forEach((element) => {
                 // Apply disabled style if hasUniprot is false
                 let id = get_id(element.id);
-                let data = kinaseData.find((item) => item.gene === id) || {};
+                let data = kinaseData.find((item) => item.gene.toLowerCase() === id.toLowerCase()) || {};
 
                 if (data.uniprot) {
                     if (element.nodeName.toLowerCase() === "circle")
-                        element.setAttribute("fill","#c2f2bd"); //green
+                        element.setAttribute("fill", "#c2f2bd"); //green
                     element.setAttribute("class", "hover-element");
                     element.addEventListener("click", handleClick);
                     element.addEventListener("mouseenter", handleHoverEnter);
@@ -202,7 +206,7 @@
     .zoom-slider-container {
         display: flex;
         align-items: center;
-        z-index:10;
+        z-index: 10;
     }
 
     .icon-container {
