@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, abort
-#from flask_cors import CORS
+from flask_cors import CORS
 import logging
 import torch
 from tokenization_esm import EsmTokenizer
@@ -7,11 +7,17 @@ from modeling_esm import EsmForSequenceClassificationMHACustom
 import numpy as np
 import pandas as pd
 import json
+import os
 
 app = Flask(__name__)
 
-# CORS is handled by nginx
-#CORS(app, resources={r"/api/*": {"origins": "*", "allow_headers": ["Content-Type"]}})
+env = os.environ['FLASK_ENV'] if 'FLASK_ENV' in os.environ else "production"
+print(env)
+
+# in production CORS is handled by nginx
+if env == 'development': 
+    print("CORS enabled by flask")
+    CORS(app, resources={r"/api/*": {"origins": "*", "allow_headers": ["Content-Type"]}})
 
 
 #development
@@ -25,15 +31,15 @@ logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s 
 tokenizer = EsmTokenizer.from_pretrained(model_dir)
 model = EsmForSequenceClassificationMHACustom.from_pretrained(model_dir, num_labels=2)
 
-def run_model(substrates, kinases, model=model, tokenizer=tokenizer, device='cuda:1', batch_size=50, output_hidden_states=True, output_attentions=True):
+def run_model(substrate, kinases, model=model, tokenizer=tokenizer, device='cuda:1', batch_size=50, output_hidden_states=True, output_attentions=True):
     torch.cuda.empty_cache()
     
     model.eval()
     model = model.to(device)
-    print("s=",type(substrates))
+    print("s=",type(substrate))
     print("k=",type(kinases))
 
-    ids = tokenizer(substrates[0], kinases, padding=True, return_tensors='pt')
+    ids = tokenizer(substrate, kinases, padding=True, return_tensors='pt')
     ids = ids.to(device)
     output = dict()
     with torch.no_grad():
@@ -93,24 +99,27 @@ def predict():
 
     print("pre-post")
     if request.method == 'POST':
+        res = []
         data = request.get_json()
         kinases = data.get('kinase')
         substrates = data.get('substrates')
         logging.info(f'Received prediction request: {data}')
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print("Device=",device)
-        output = run_model(substrates, kinases, 
-            model=model, 
-            device=device,
-            tokenizer=tokenizer, 
-            output_hidden_states=False,
-            output_attentions=False,
-            batch_size=1, 
-            )
+        substrates = substrates[:100]
+        for substrate in substrates:
+            output = run_model(substrate, kinases, 
+                model=model, 
+                device=device,
+                tokenizer=tokenizer, 
+                output_hidden_states=False,
+                output_attentions=False,
+                batch_size=1, 
+                )
 
-        op = output["probability"].tolist()
-        result = op[0] > 0.5
-        res = {"probability":op, "result": result}
+            op = output["probability"].tolist()
+            result = op[0] > 0.5
+            res.append({"substrate":substrate, "probability":op, "result": result})
         print("Response=", res)
         return jsonify(res)
         # j = json.dump(output["probability"].tolist())  

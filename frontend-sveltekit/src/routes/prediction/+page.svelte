@@ -8,10 +8,6 @@
     import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
     const dispatch = createEventDispatcher();
-    // const PUBLIC_FLASK_SERVER_ADDRESS = "http://localhost:5200"; // for local testing
-    const PUBLIC_FLASK_SERVER_ADDRESS = ""; // it should be empty on Netlify
-    // let a = 0.8;
-    // let b = 0.15;
     let predResponse = null;
     let SubstrateOpen = false;
     let substrates = ["PSVEPPLSQETFSDL"];
@@ -136,8 +132,11 @@
     async function predict() {
     processing = true;
     try {
+        const api_endpoint = "https://phosformer.lunovid.com/api/predict";
+        // const api_endpoint = "http://localhost:5200/api/predict";
+
         const response = await fetch(
-            `https://phosformer.lunovid.com/api/predict`,
+            api_endpoint,
             {
                 method: "POST",
                 mode: 'cors', 
@@ -178,7 +177,17 @@
 
 <div class="flex">
     <div class="p-2 bg-white rounded w-1/2">
-        <p class="text-blue-800 font-bold text-md">Substrate Sequence</p>
+        <div class="w-full flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-0">
+        <div class="text-center sm:text-left">
+            <h1 class="text-blue-800 font-bold text-md pt-2">Substrate Sequence</h1>
+              <div class="text-gray-500 pl-5">
+                <ul>
+                    <li>Click on the Edit button to edit, add, or remove substrates. You can enter substrates manually or upload a text file that has one substrate in each line.</li>
+                </ul>
+              </div>
+        </div>
+    </div>
+        <!-- <p class="text-blue-800 font-bold text-md pt-2">Substrate Sequence</p> -->
 
         {#if !SubstrateOpen}
             <div class="flex justify-between items-center">
@@ -254,10 +263,19 @@
     </button>
 </div> -->
 
+
+
 <div class="flex">
     <div class="p-2 bg-white rounded w-1/2">
-        <p class="text-blue-800 font-bold text-md">Kinase Sequences</p>
+    <div class="text-center sm:text-left">
 
+        <h1 class="text-blue-800 font-bold text-md pt-2">Kinase Sequences</h1>
+        <div class="text-gray-500 pl-5">
+            <ul>
+                <li>Click on the Edit button to select or enter the kinase sequences.</li>
+            </ul>
+          </div>
+</div>
         {#if !kinaseOpen}
             <div class="flex justify-between items-center">
                 <div class="ml-2">{abbreviate(kinase)}</div>
@@ -386,15 +404,16 @@
                 </div>
                 <div class="text-center sm:text-left">
                     <!-- <h1 class="text-gray-700 font-bold tracking-wider">Result</h1> -->
-                    <p class="text-gray-700 text-lg">
-                        With a score of
-                        <span class="font-bold"
-                            >{parseFloat(predResponse.probability).toFixed(
-                                4
-                            )}</span>, the prediction is
-                        <span class="font-bold">{predResponse.result}</span>.
-                    </p>
+                    {#each predResponse as response}
+                      <div class="text-gray-700 text-lg">
+                        <span class="font-normal font-mono">{response.substrate}</span>: with a score of
+                        <span class="font-bold">{parseFloat(response.probability).toFixed(4)}</span>,
+                        the prediction is
+                        <span class="font-bold">{response.result}</span>.
+                      </div>
+                    {/each}
                 </div>
+                  
             </div>
             <!-- <div><button class="bg-blue-500 py-2 px-4 text-white font-bold rounded-md hover:bg-blue-600">Enable</button>
 		</div> -->
