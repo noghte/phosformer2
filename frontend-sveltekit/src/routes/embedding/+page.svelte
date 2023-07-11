@@ -202,6 +202,7 @@
     .zoom-slider-container {
         display: flex;
         align-items: center;
+        z-index:10;
     }
 
     .icon-container {

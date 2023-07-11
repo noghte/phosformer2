@@ -127,3 +127,7 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=False, host="0.0.0.0", port=5200)
+    # tmux new-session -s phos
+    # detach: Ctrl+b and then d.
+    # tmux attach-session -t phos
+    # Run with python app.py
