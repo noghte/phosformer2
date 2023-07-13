@@ -184,7 +184,7 @@
         "weblogo": "AGC_GRK_GRK5_GRK5_P34947.png"
     },
     {
-        "gene": "GRK3",
+        "gene": "BARK2/GRK3",
         "uniprot": "P35626",
         "specificity": "Acidophilic",
         "family": "AGC / GRK",
@@ -200,7 +200,7 @@
         "weblogo": "AGC_GRK_GRK6_GRK6_P43250.png"
     },
     {
-        "gene": "GRK1",
+        "gene": "RHODK/GRK1",
         "uniprot": "Q15835",
         "specificity": "Acidophilic",
         "family": "AGC / GRK",
@@ -464,7 +464,7 @@
         "weblogo": "AGC_RSK_KS6A2_RSK3_Q15349.png"
     },
     {
-        "gene": "P90RSK",
+        "gene": "RSK1/p90RSK",
         "uniprot": "Q15418",
         "specificity": "Basophilic",
         "family": "AGC / RSK",
@@ -1056,7 +1056,7 @@
         "weblogo": "CMGC_CDK_CDK14_CDK14_O94921.png"
     },
     {
-        "gene": "CDK1",
+        "gene": "CDC2/CDK1",
         "uniprot": "P06493",
         "specificity": "Pro-directed",
         "family": "CMGC / CDK",
@@ -1768,7 +1768,7 @@
         "weblogo": "Other_PEK_E2AK1_HRI_Q9BQI3.png"
     },
     {
-        "gene": "PERK",
+        "gene": "PERK/PEK",
         "uniprot": "Q9NZJ5",
         "specificity": "EIF2AK/TLK",
         "family": "Other / PEK",
@@ -1904,7 +1904,7 @@
         "weblogo": "STE_NIK_M3K14_NIK_Q99558.png"
     },
     {
-        "gene": "MEKK6",
+        "gene": "MEKK6/MAP3K6",
         "uniprot": "O95382",
         "specificity": "NEK/ASK",
         "family": "STE / STE11",
@@ -1912,7 +1912,7 @@
         "weblogo": "STE_STE11_M3K6_MEKK6_O95382.png"
     },
     {
-        "gene": "MEKK1",
+        "gene": "MEKK1/MAP3K1",
         "uniprot": "Q13233",
         "specificity": "MAP3K",
         "family": "STE / STE11",
@@ -1936,7 +1936,7 @@
         "weblogo": "STE_STE11_M3K15_MAP3K15_Q6ZN16.png"
     },
     {
-        "gene": "ASK1",
+        "gene": "ASK/MAP3K5",
         "uniprot": "Q99683",
         "specificity": "NEK/ASK",
         "family": "STE / STE11",
@@ -1944,7 +1944,7 @@
         "weblogo": "STE_STE11_M3K5_ASK1_Q99683.png"
     },
     {
-        "gene": "MEKK3",
+        "gene": "MEKK3/MAP3K3",
         "uniprot": "Q99759",
         "specificity": "MAP3K",
         "family": "STE / STE11",
@@ -1952,7 +1952,7 @@
         "weblogo": "STE_STE11_M3K3_MEKK3_Q99759.png"
     },
     {
-        "gene": "MEKK2",
+        "gene": "MEKK2/MAP3K2",
         "uniprot": "Q9Y2U5",
         "specificity": "MAP3K",
         "family": "STE / STE11",
@@ -2176,7 +2176,7 @@
         "weblogo": "STE_STE20_STK24_MST3_Q9Y6E0.png"
     },
     {
-        "gene": "MEK2",
+        "gene": "MEK2/MAP2K2",
         "uniprot": "P36507",
         "specificity": "Assorted",
         "family": "STE / STE7",
@@ -2184,7 +2184,7 @@
         "weblogo": "STE_STE7_MP2K2_MEK2_P36507.png"
     },
     {
-        "gene": "MEK1",
+        "gene": "MEK1/MAP2K1",
         "uniprot": "Q02750",
         "specificity": "Assorted",
         "family": "STE / STE7",
@@ -2416,7 +2416,7 @@
         "weblogo": "PIPK__PI5L1_PIP5KL1_Q5T9C9.png"
     },
     {
-        "gene": "STRADB",
+        "gene": "STLK6",
         "uniprot": "Q9C0K7",
         "specificity": "Predicted",
         "family": "STE / STE20",
@@ -2464,7 +2464,7 @@
         "weblogo": "PIPK__PI51B_PIP5K1B_O14986.png"
     },
     {
-        "gene": "RSKR",
+        "gene": "SgK494",
         "uniprot": "Q96LW2",
         "specificity": "Predicted",
         "family": "AGC / RSKR",
@@ -2496,7 +2496,7 @@
         "weblogo": "TKL_LIMK_LIMK2_LIMK2_P53671.png"
     },
     {
-        "gene": "PRAG1",
+        "gene": "SgK223",
         "uniprot": "Q86YV5",
         "specificity": "Predicted",
         "family": "Other / NKF3",
@@ -2512,7 +2512,7 @@
         "weblogo": "Other_SCY1_PACE1_SCYL3_Q8IZE3.png"
     },
     {
-        "gene": "POMK",
+        "gene": "SgK196",
         "uniprot": "Q9H5K3",
         "specificity": "Predicted",
         "family": "Other / POMK",
@@ -2536,7 +2536,7 @@
         "weblogo": "CMGC_CDKL_CDKL5_CDKL5_O76039.png"
     },
     {
-        "gene": "BUB1B",
+        "gene": "BubR1",
         "uniprot": "O60566",
         "specificity": "Predicted",
         "family": "Other / BUB",
@@ -2560,7 +2560,7 @@
         "weblogo": "PIKK__PI4KB_PI4KB_Q9UBF8.png"
     },
     {
-        "gene": "RPS6KL1",
+        "gene": "RSKL2",
         "uniprot": "Q9Y6S9",
         "specificity": "Predicted",
         "family": "AGC / RSKL",
@@ -2576,7 +2576,7 @@
         "weblogo": "AGC_MAST_MAST2_MAST2_Q6P0Q8.png"
     },
     {
-        "gene": "PKDCC",
+        "gene": "SgK493",
         "uniprot": "Q504Y2",
         "specificity": "Predicted",
         "family": "Other / SgK493",
@@ -2584,7 +2584,7 @@
         "weblogo": "Other_SgK493_PKDCC_PKDCC_Q504Y2.png"
     },
     {
-        "gene": "TNNI3K",
+        "gene": "HH498",
         "uniprot": "Q59H18",
         "specificity": "Predicted",
         "family": "TKL / MLK",
@@ -2592,7 +2592,7 @@
         "weblogo": "TKL_MLK_TNI3K_TNNI3K_Q59H18.png"
     },
     {
-        "gene": "CDC42BPG",
+        "gene": "DMPK2",
         "uniprot": "Q6DT37",
         "specificity": "Predicted",
         "family": "AGC / DMPK",
@@ -2616,7 +2616,7 @@
         "weblogo": "Other_TBCK_TBCK_TBCK_Q8TEA7.png"
     },
     {
-        "gene": "STK36",
+        "gene": "Fused",
         "uniprot": "Q9NRP7",
         "specificity": "Predicted",
         "family": "Other / ULK",
@@ -2624,7 +2624,7 @@
         "weblogo": "Other_ULK_STK36_STK36_Q9NRP7.png"
     },
     {
-        "gene": "AMHR2",
+        "gene": "MISR2",
         "uniprot": "Q16671",
         "specificity": "Predicted",
         "family": "TKL / STKR",
@@ -2640,7 +2640,7 @@
         "weblogo": "PIKK__PI4KA_PI4KA_P42356.png"
     },
     {
-        "gene": "TRIB3",
+        "gene": "Trb3",
         "uniprot": "Q96RU7",
         "specificity": "Predicted",
         "family": "CAMK / Trbl",
@@ -2648,7 +2648,7 @@
         "weblogo": "CAMK_Trbl_TRIB3_TRIB3_Q96RU7.png"
     },
     {
-        "gene": "SBK3",
+        "gene": "SgK110",
         "uniprot": "P0C264",
         "specificity": "Predicted",
         "family": "Other / NKF1",
@@ -2664,7 +2664,7 @@
         "weblogo": "CAMK_PSK_KPSH1_PSKH1_P11801.png"
     },
     {
-        "gene": "STK40",
+        "gene": "SgK495",
         "uniprot": "Q8N2I9",
         "specificity": "Predicted",
         "family": "CAMK / SgK495",
@@ -2680,7 +2680,7 @@
         "weblogo": "PIKK__TRRAP_TRRAP_Q9Y4A5.png"
     },
     {
-        "gene": "CAMKV",
+        "gene": "VACAMKL",
         "uniprot": "Q8NCB2",
         "specificity": "Predicted",
         "family": "CAMK / CAMKV",
@@ -2704,7 +2704,7 @@
         "weblogo": "TKL_LRRK_LRRK1_LRRK1_Q38SD2.png"
     },
     {
-        "gene": "STKLD1",
+        "gene": "SgK071",
         "uniprot": "Q8NE28",
         "specificity": "Predicted",
         "family": "Other / SgK071",
@@ -2712,7 +2712,7 @@
         "weblogo": "Other_SgK071_STKL1_STKLD1_Q8NE28.png"
     },
     {
-        "gene": "CDK20",
+        "gene": "CCRK",
         "uniprot": "Q8IZL9",
         "specificity": "Predicted",
         "family": "CMGC / CDK",
@@ -2720,7 +2720,7 @@
         "weblogo": "CMGC_CDK_CDK20_CDK20_Q8IZL9.png"
     },
     {
-        "gene": "PEAK1",
+        "gene": "SgK269",
         "uniprot": "Q9H792",
         "specificity": "Predicted",
         "family": "Other / NKF3",
@@ -2728,7 +2728,7 @@
         "weblogo": "Other_NKF3_PEAK1_PEAK1_Q9H792.png"
     },
     {
-        "gene": "WEE2",
+        "gene": "Wee1B",
         "uniprot": "P0C1S8",
         "specificity": "Predicted",
         "family": "Other / WEE",
@@ -2752,7 +2752,7 @@
         "weblogo": "Other_SCY1_SCYL2_SCYL2_Q6P3W7.png"
     },
     {
-        "gene": "CDK11B",
+        "gene": "PITSLRE",
         "uniprot": "P21127",
         "specificity": "Predicted",
         "family": "CMGC / CDK",
@@ -2816,7 +2816,7 @@
         "weblogo": "TKL_TESK_TESK2_TESK2_Q96S53.png"
     },
     {
-        "gene": "PDIK1L",
+        "gene": "CLIK1L",
         "uniprot": "Q8N165",
         "specificity": "Predicted",
         "family": "Other / NKF4",
@@ -2832,7 +2832,7 @@
         "weblogo": "RIO__RIOK3_RIOK3_O14730.png"
     },
     {
-        "gene": "MAPK4",
+        "gene": "ERK4",
         "uniprot": "P31152",
         "specificity": "Predicted",
         "family": "CMGC / MAPK",
@@ -2840,7 +2840,7 @@
         "weblogo": "CMGC_MAPK_MK04_MAPK4_P31152.png"
     },
     {
-        "gene": "STK17B",
+        "gene": "DRAK2",
         "uniprot": "O94768",
         "specificity": "Predicted",
         "family": "CAMK / DAPK",
@@ -2848,7 +2848,7 @@
         "weblogo": "CAMK_DAPK_ST17B_STK17B_O94768.png"
     },
     {
-        "gene": "STRADA",
+        "gene": "STLK5",
         "uniprot": "Q7RTN6",
         "specificity": "Predicted",
         "family": "STE / STE20",
@@ -2856,7 +2856,7 @@
         "weblogo": "STE_STE20_STRAA_STRADA_Q7RTN6.png"
     },
     {
-        "gene": "ACVR1C",
+        "gene": "ALK7",
         "uniprot": "Q8NER5",
         "specificity": "Predicted",
         "family": "TKL / STKR",
@@ -2872,7 +2872,7 @@
         "weblogo": "FAM20__FA20A_FAM20A_Q96MK3.png"
     },
     {
-        "gene": "MAP3K13",
+        "gene": "LZK",
         "uniprot": "O43283",
         "specificity": "Predicted",
         "family": "TKL / MLK",
@@ -2960,7 +2960,7 @@
         "weblogo": "TKL_MLK_ILK_ILK_Q13418.png"
     },
     {
-        "gene": "STK32A",
+        "gene": "YANK1",
         "uniprot": "Q8WU08",
         "specificity": "Predicted",
         "family": "AGC / YANK",
@@ -3040,7 +3040,7 @@
         "weblogo": "AGC_SGK_SGK2_SGK2_Q9HBY8.png"
     },
     {
-        "gene": "PKMYT1",
+        "gene": "MYT1",
         "uniprot": "Q99640",
         "specificity": "Predicted",
         "family": "Other / WEE",
@@ -3048,7 +3048,7 @@
         "weblogo": "Other_WEE_PMYT1_PKMYT1_Q99640.png"
     },
     {
-        "gene": "OBSCN",
+        "gene": "Obscn",
         "uniprot": "Q5VST9",
         "specificity": "Predicted",
         "family": "CAMK / Trio",
@@ -3056,7 +3056,7 @@
         "weblogo": "CAMK_Trio_OBSCN_OBSCN_Q5VST9-1.png"
     },
     {
-        "gene": "ANKK1",
+        "gene": "SgK288",
         "uniprot": "Q8NFD2",
         "specificity": "Predicted",
         "family": "TKL / RIPK",
@@ -3080,7 +3080,7 @@
         "weblogo": "Other_RNAseL_RN5A_RNASEL_Q05823.png"
     },
     {
-        "gene": "SBK2",
+        "gene": "SgK069",
         "uniprot": "P0C263",
         "specificity": "Predicted",
         "family": "Other / NKF1",
@@ -3096,7 +3096,7 @@
         "weblogo": "IPK__IP3KC_ITPKC_Q96DU7.png"
     },
     {
-        "gene": "DCLK3",
+        "gene": "DCAMKL3",
         "uniprot": "Q9C098",
         "specificity": "Predicted",
         "family": "CAMK / DCAMKL",
@@ -3104,7 +3104,7 @@
         "weblogo": "CAMK_DCAMKL_DCLK3_DCLK3_Q9C098.png"
     },
     {
-        "gene": "MAPK6",
+        "gene": "ERK3",
         "uniprot": "Q16659",
         "specificity": "Predicted",
         "family": "CMGC / MAPK",
@@ -3144,7 +3144,7 @@
         "weblogo": "CK1_VRK_VRK3_VRK3_Q8IV63.png"
     },
     {
-        "gene": "CDK15",
+        "gene": "PFTAIRE2",
         "uniprot": "Q96Q40",
         "specificity": "Predicted",
         "family": "CMGC / CDK",
@@ -3152,7 +3152,7 @@
         "weblogo": "CMGC_CDK_CDK15_CDK15_Q96Q40.png"
     },
     {
-        "gene": "PXK",
+        "gene": "Slob",
         "uniprot": "Q7Z7A4",
         "specificity": "Predicted",
         "family": "Other / Slob",
@@ -3224,7 +3224,7 @@
         "weblogo": "STE_STE20_NRK_NRK_Q7Z2Y5.png"
     },
     {
-        "gene": "STK35",
+        "gene": "CLIK1",
         "uniprot": "Q8TDR2",
         "specificity": "Predicted",
         "family": "Other / NKF4",
@@ -3240,7 +3240,7 @@
         "weblogo": "TKL_RAF_ARAF_ARAF_P10398.png"
     },
     {
-        "gene": "KALRN",
+        "gene": "Trad",
         "uniprot": "O60229",
         "specificity": "Predicted",
         "family": "CAMK / Trio",
@@ -3264,7 +3264,7 @@
         "weblogo": "Other_NRBP_NRBP2_NRBP2_Q9NSY0.png"
     },
     {
-        "gene": "TRIB1",
+        "gene": "Trb1",
         "uniprot": "Q96RU8",
         "specificity": "Predicted",
         "family": "CAMK / Trbl",
@@ -3344,7 +3344,7 @@
         "weblogo": "PIPK__PI51C_PIP5K1C_O60331.png"
     },
     {
-        "gene": "OBSCN",
+        "gene": "Obscn~b",
         "uniprot": "Q5VST9",
         "specificity": "Predicted",
         "family": "CAMK / Trio",
@@ -3360,7 +3360,7 @@
         "weblogo": "EKI__EKI2_ETNK2_Q9NVF9.png"
     },
     {
-        "gene": "TEX14",
+        "gene": "SgK424",
         "uniprot": "Q8IWB6",
         "specificity": "Predicted",
         "family": "Other / NKF5",
@@ -3408,7 +3408,7 @@
         "weblogo": "Other_ULK_ULK4_ULK4_Q96C45.png"
     },
     {
-        "gene": "ACVRL1",
+        "gene": "ALK1",
         "uniprot": "P37023",
         "specificity": "Predicted",
         "family": "TKL / STKR",
@@ -3416,7 +3416,7 @@
         "weblogo": "TKL_STKR_ACVL1_ACVRL1_P37023.png"
     },
     {
-        "gene": "RPS6KC1",
+        "gene": "RSKL1",
         "uniprot": "Q96S38",
         "specificity": "Predicted",
         "family": "AGC / RSKL",
@@ -3488,7 +3488,7 @@
         "weblogo": "PIKK__PK3CD_PIK3CD_O00329.png"
     },
     {
-        "gene": "SPEG",
+        "gene": "SPEG~b",
         "uniprot": "Q15772",
         "specificity": "Predicted",
         "family": "CAMK / Trio",
@@ -3504,7 +3504,7 @@
         "weblogo": "TKL_RAF_KSR1_KSR1_Q8IVT5.png"
     },
     {
-        "gene": "TRIB2",
+        "gene": "Trb2",
         "uniprot": "Q92519",
         "specificity": "Predicted",
         "family": "CAMK / Trbl",
