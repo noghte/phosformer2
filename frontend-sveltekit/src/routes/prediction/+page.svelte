@@ -49,17 +49,17 @@
     let processing = false;
     let files;
     function handleFileUpload() {
-    if (files && files[0]) {
-        const reader = new FileReader();
-        reader.onload = (event) => {
-            const substratesFromFile = event.target.result.split('\n');
-            substrates = [...substrates, ...substratesFromFile];
-            substrateErrors = new Array(substrates.length).fill("");
-            substrates.forEach((_, index) => validateSubstrate(index));
-        };
-        reader.readAsText(files[0]);
+        if (files && files[0]) {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                const substratesFromFile = event.target.result.split("\n");
+                substrates = [...substrates, ...substratesFromFile];
+                substrateErrors = new Array(substrates.length).fill("");
+                substrates.forEach((_, index) => validateSubstrate(index));
+            };
+            reader.readAsText(files[0]);
+        }
     }
-}
     // Reactive statement that runs whenever the binding values change
     $: {
         predResponse = null;
@@ -80,9 +80,9 @@
         kinaseError = "";
 
         if (files) {
-        handleFileUpload();
-        files = null;  // Reset the files variable to prevent the reactive statement from re-running
-    }
+            handleFileUpload();
+            files = null; // Reset the files variable to prevent the reactive statement from re-running
+        }
     }
     // function handleSubstrateInput(event) {
     //     Substrate = event.target.value;
@@ -130,36 +130,58 @@
     }
 
     async function predict() {
-    processing = true;
-    try {
-        const api_endpoint = "https://phosformer.lunovid.com/api/predict";
-        // const api_endpoint = "http://localhost:5200/api/predict";
+        processing = true;
+        try {
+            const api_endpoint = "https://phosformer.lunovid.com/api/predict";
+            // const api_endpoint = "http://localhost:5200/api/predict";
 
-        const response = await fetch(
-            api_endpoint,
-            {
+            const response = await fetch(api_endpoint, {
                 method: "POST",
-                mode: 'cors', 
+                mode: "cors",
                 body: JSON.stringify({ kinase, substrates }),
                 headers: {
                     "content-type": "application/json",
                 },
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
-        );
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            predResponse = await response.json();
+            console.log("predResponse", predResponse);
+        } catch (error) {
+            console.error(
+                "There was a problem with the fetch operation:",
+                error
+            );
+        } finally {
+            processing = false;
         }
-
-        predResponse = await response.json();
-        console.log("predResponse", predResponse);
-    } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
-    } finally {
-        processing = false;
     }
-}
 
+    function createCSV() {
+        let csvContent = "data:text/csv;charset=utf-8,";
+        csvContent += "Kinase,Substrate,PredictionScore\n"; // Header
+
+        predResponse.forEach((response) => {
+            let row = `${kinase},${response.substrate},${parseFloat(
+                response.probability
+            ).toFixed(4)}`;
+            csvContent += row + "\n"; // Add row with line break
+        });
+
+        return encodeURI(csvContent);
+    }
+    function downloadCSV() {
+        const csvData = createCSV();
+        const a = document.createElement("a");
+        a.href = csvData;
+        a.download = "results.csv";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
 
     onMount(async () => {
         treeData = kinaseData.reduce((acc, item) => {
@@ -177,16 +199,25 @@
 
 <div class="flex">
     <div class="p-2 bg-white rounded w-1/2">
-        <div class="w-full flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-0">
-        <div class="text-center sm:text-left">
-            <h1 class="text-blue-800 font-bold text-md pt-2">Substrate Sequence</h1>
-              <div class="text-gray-500 pl-5">
-                <ul>
-                    <li>Click on the Edit button to edit, add, or remove substrates. You can enter substrates manually or upload a text file that has one substrate in each line.</li>
-                </ul>
-              </div>
+        <div
+            class="w-full flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-0"
+        >
+            <div class="text-center sm:text-left">
+                <h1 class="text-blue-800 font-bold text-md pt-2">
+                    Substrate Sequence
+                </h1>
+                <div class="text-gray-500 pl-5">
+                    <ul>
+                        <li>
+                            Click on the Edit button to edit, add, or remove
+                            substrates. You can enter substrates manually or
+                            upload a text file that has one substrate in each
+                            line.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
         <!-- <p class="text-blue-800 font-bold text-md pt-2">Substrate Sequence</p> -->
 
         {#if !SubstrateOpen}
@@ -216,10 +247,13 @@
                                 class="flex-grow bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
                             />
                             <!-- <button on:click={() => deleteSubstrate(index)}>Delete</button> -->
-                            <div on:click={() => handleDeleteClick(index)} style="cursor: pointer;">
+                            <div
+                                on:click={() => handleDeleteClick(index)}
+                                style="cursor: pointer;"
+                            >
                                 <Fa icon={faTrash} />
                             </div>
-                            
+
                             {#if substrateErrors[index]}
                                 <p class="text-red-500">
                                     {substrateErrors[index]}
@@ -235,15 +269,20 @@
                         >
                             Add
                         </button>
-                        <input type="file" id="file" bind:files={files} style="display: none;" />
+                        <input
+                            type="file"
+                            id="file"
+                            bind:files
+                            style="display: none;"
+                        />
                         <button
                             class="btn bg-gray-200 hover:bg-gray-300 px-4 py-2 font-medium rounded"
-                            on:click={() => document.getElementById('file').click()}
+                            on:click={() =>
+                                document.getElementById("file").click()}
                         >
                             Upload File
                         </button>
                     </div>
-                    
                 </div>
             </div>
         {/if}
@@ -263,19 +302,21 @@
     </button>
 </div> -->
 
-
-
 <div class="flex">
     <div class="p-2 bg-white rounded w-1/2">
-    <div class="text-center sm:text-left">
-
-        <h1 class="text-blue-800 font-bold text-md pt-2">Kinase Sequences</h1>
-        <div class="text-gray-500 pl-5">
-            <ul>
-                <li>Click on the Edit button to select or enter the kinase sequences.</li>
-            </ul>
-          </div>
-</div>
+        <div class="text-center sm:text-left">
+            <h1 class="text-blue-800 font-bold text-md pt-2">
+                Kinase Sequences
+            </h1>
+            <div class="text-gray-500 pl-5">
+                <ul>
+                    <li>
+                        Click on the Edit button to select or enter the kinase
+                        sequences.
+                    </li>
+                </ul>
+            </div>
+        </div>
         {#if !kinaseOpen}
             <div class="flex justify-between items-center">
                 <div class="ml-2">{abbreviate(kinase)}</div>
@@ -381,6 +422,7 @@
   <div>Loading...</div>
 {/if} -->
 {#if predResponse}
+
     <div class="w-full flex justify-center items-center">
         <div
             class="w-1/2 bg-blue-100 rounded-lg shadow-sm p-5 border-dashed border border-blue-500 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0"
@@ -405,15 +447,29 @@
                 <div class="text-center sm:text-left">
                     <!-- <h1 class="text-gray-700 font-bold tracking-wider">Result</h1> -->
                     {#each predResponse as response}
-                      <div class="text-gray-700 text-lg">
-                        <span class="font-normal font-mono">{response.substrate}</span>: with a score of
-                        <span class="font-bold">{parseFloat(response.probability).toFixed(4)}</span>,
-                        the prediction is
-                        <span class="font-bold">{response.result}</span>.
-                      </div>
+                        <div class="text-gray-700 text-lg">
+                            <span class="font-normal font-mono"
+                                >{response.substrate}</span
+                            >: with a score of
+                            <span class="font-bold"
+                                >{parseFloat(response.probability).toFixed(
+                                    4
+                                )}</span
+                            >, the prediction is
+                            <span class="font-bold">{response.result}</span>.
+                        </div>
                     {/each}
-                </div>
-                  
+                    <button
+                    on:click={downloadCSV}
+                    type="button"
+                    class="bg-blue-800 h-max w-max rounded-lg text-white hover:bg-blue-900"
+                >
+                    <div class="flex items-center justify-center m-[8px]">
+                        <!-- <div class="h-5 w-5 border-t-transparent border-solid rounded-none border-white border-1"></div> -->
+                        <div class="ml-2">Download CSV</div>
+                    </div></button
+                >
+</div>
             </div>
             <!-- <div><button class="bg-blue-500 py-2 px-4 text-white font-bold rounded-md hover:bg-blue-600">Enable</button>
 		</div> -->
