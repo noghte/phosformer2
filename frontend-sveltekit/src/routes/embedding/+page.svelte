@@ -1,14 +1,14 @@
 <script>
     import { onMount } from "svelte";
     import * as d3 from "d3";
-    // import Fa from "svelte-fa/src/fa.svelte";
-    // import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-    // import * as proteins from "./proteins.js";
-    // import * as genesNfamily from "./genesNfamily.json";
     import kinaseData from "$lib/kinase_data.json";
 
     let container;
+    let showHelpModal = false;
 
+    function toggleHelpModal() {
+        showHelpModal = !showHelpModal;
+    }
     function getImagePaths(id) {
         let matchedData = kinaseData.filter((item) => item.gene.toLowerCase() === id.toLowerCase());
         console.log(matchedData);
@@ -179,6 +179,15 @@
         <div id="svg-container" bind:this={container} class="w-full relative">
             <!-- SVG content here -->
         </div>
+        <button on:click={toggleHelpModal} class="help-button">Demo</button>
+        {#if showHelpModal}
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close" on:click={toggleHelpModal}>&times;</span>
+                <iframe width="672" height="378" src="https://www.youtube.com/embed/L-A62rS_gH0?si=7TCy29a7dc4LN8sp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        {/if}
 
         <div
             id="hover-div"
@@ -209,7 +218,53 @@
         z-index: 10;
     }
 
-    .icon-container {
-        margin-right: 10px;
+ .help-button {
+        background-color: #4a90e2; /* A shade of blue matching your bg-blue-50 */
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        position: absolute;
+        margin-top: 40pt;
+        margin-left: 10pt;
+    }
+    .help-button:hover {
+        background-color: #3a7fd5; /* Darker shade on hover */
+    }
+
+    .modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Ensure it's above all other content */
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 770px; 
+    }
+
+    .close {
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        color: #aaa;
+        cursor: pointer;
+    }
+    .close:hover {
+        color: black;
     }
 </style>
