@@ -184,6 +184,8 @@
     }
 
     onMount(async () => {
+            // Sort the JSON data by the "gene" key
+        kinaseData.sort((a, b) => a.gene.localeCompare(b.gene));
         treeData = kinaseData.reduce((acc, item) => {
             const family = item.family;
             const kinaseDomain = item["kinase domain"];
