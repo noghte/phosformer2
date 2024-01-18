@@ -49,33 +49,76 @@
     let processing = false;
     let files;
     function handleFileUpload() {
-        if (files && files[0]) {
-            const reader = new FileReader();
-            reader.onload = (event) => {
-                const substratesFromFile = event.target.result.split("\n");
-                substrates = [...substrates, ...substratesFromFile];
-                substrateErrors = new Array(substrates.length).fill("");
-                substrates.forEach((_, index) => validateSubstrate(index));
-            };
-            reader.readAsText(files[0]);
+    if (files && files[0]) {
+        substrates = []; // Clear existing substrates
+        substrateErrors = []; // Clear existing substrate errors
+
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            const allLines = event.target.result.split(/\r?\n/); // Split the file into lines
+            let currentHeader = null;
+            let currentSeq = "";
+            let firstSequenceRead = false; // Flag to indicate the first sequence has been read
+
+            allLines.forEach((line) => {
+                if (firstSequenceRead) {
+                    return; // Skip remaining lines after the first sequence is read
+                }
+
+                if (line.startsWith(">")) { // FASTA header line
+                    if (currentHeader === null) {
+                        currentHeader = line.substring(1); // Save the first header
+                    } else {
+                        firstSequenceRead = true; // Set flag when next header is found
+                        return; // Skip further processing
+                    }
+                } else {
+                    currentSeq += line; // Append to the current sequence
+                }
+            });
+
+            if (currentSeq) { // Process the first sequence
+                extractMers(currentSeq);
+            }
+        };
+        reader.readAsText(files[0]);
+    }
+}
+
+
+// function extractMers(sequence) {
+//     const aminoAcids = "LAGVSETIDPKQNFRYMHWCXBUZO"; // Allowed amino acids
+
+//     for (let i = 7; i < sequence.length - 7; i++) {
+//         // Adjust for 15-mer length
+//         const mer = sequence.substring(i - 7, i + 8);
+//         // Check for valid Mers
+//         if (mer.length === 15 && (mer[7] === "T" || mer[7] === "S") && [...mer].every((char) => aminoAcids.includes(char))) {
+//             console.log(mer);
+//             substrates.push(mer); // Add valid mer to substrates
+//             substrateErrors.push(""); // Initialize substrate error
+//         }
+//     }
+// }
+
+function extractMers(sequence) {
+    const aminoAcids = "LAGVSETIDPKQNFRYMHWCXBUZO"; // Allowed amino acids
+    let newSubstrates = [];
+
+    for (let i = 7; i < sequence.length - 7; i++) {
+        const mer = sequence.substring(i - 7, i + 8);
+        if (mer.length === 15 && (mer[7] === "T" || mer[7] === "S") && [...mer].every((char) => aminoAcids.includes(char))) {
+            newSubstrates.push(mer);
         }
     }
+
+    substrates = newSubstrates; // Reassign to trigger update
+    substrateErrors = new Array(substrates.length).fill("");
+}
+
     // Reactive statement that runs whenever the binding values change
     $: {
         predResponse = null;
-        // Substrate validation
-        // Substrate = Substrate.toUpperCase();
-        // if (Substrate.length !== 15) {
-        //     SubstrateError = "Substrate should be 15 characters long.";
-        // } else if (![...Substrate].every((char) => aminoAcids.includes(char))) {
-        //     SubstrateError =
-        //         "Substrate should contain only the allowed characters: L, A, G, V, S, E, R, T, I, D, P, K, Q, N, F, Y, M, H, W, C, X, B, U, Z, O.";
-        // } else if (Substrate.charAt(7) !== "T") {
-        //     SubstrateError = "Substrate should have a T or S in the middle.";
-        // } else {
-        //     SubstrateError = "";
-        // }
-
         // Kinase validation
         kinaseError = "";
 
@@ -184,7 +227,7 @@
     }
 
     onMount(async () => {
-            // Sort the JSON data by the "gene" key
+        // Sort the JSON data by the "gene" key
         kinaseData.sort((a, b) => a.gene.localeCompare(b.gene));
         treeData = kinaseData.reduce((acc, item) => {
             const family = item.family;
@@ -239,7 +282,7 @@
         {#if SubstrateOpen}
             <div x-show="open" class="flex justify-between items-center">
                 <div class="flex flex-col items-start">
-                    {#each substrates as substrate, index (index)}
+                    <!-- {#each substrates as substrate, index (index)}
                         <div class="flex items-center mb-2 w-full">
                             <input
                                 type="text"
@@ -248,7 +291,6 @@
                                     handleSubstrateInput(event, index)}
                                 class="flex-grow bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
                             />
-                            <!-- <button on:click={() => deleteSubstrate(index)}>Delete</button> -->
                             <div
                                 on:click={() => handleDeleteClick(index)}
                                 style="cursor: pointer;"
@@ -262,18 +304,25 @@
                                 </p>
                             {/if}
                         </div>
-                    {/each}
+                    {/each} -->
+                    {#each substrates as substrate, index (`${substrate}-${index}`)}
+                        <div>
+        {substrate}
+    </div>
+{/each}
+
                     <div class="flex items-center">
-                        <button
+                        <!-- <button
                             class="btn bg-gray-200 hover:bg-gray-300 px-4 py-2 font-medium rounded mr-2"
                             on:click={addSubstrate}
                             disabled={substrateErrors.some((error) => error)}
                         >
                             Add
-                        </button>
+                        </button> -->
                         <input
                             type="file"
                             id="file"
+                            accept=".fasta, .fa, .fna, .ffn, .faa, .frn"
                             bind:files
                             style="display: none;"
                         />
@@ -282,7 +331,7 @@
                             on:click={() =>
                                 document.getElementById("file").click()}
                         >
-                            Upload File
+                            Upload Fasta Sequene
                         </button>
                     </div>
                 </div>
@@ -308,7 +357,7 @@
     <div class="p-2 bg-white rounded w-1/2">
         <div class="text-center sm:text-left">
             <h1 class="text-blue-800 font-bold text-md pt-2">
-                Kinase Sequences
+                Kinase Sequences (Gene Name based on the user selection)
             </h1>
             <div class="text-gray-500 pl-5">
                 <ul>
@@ -424,7 +473,6 @@
   <div>Loading...</div>
 {/if} -->
 {#if predResponse}
-
     <div class="w-full flex justify-center items-center">
         <div
             class="w-1/2 bg-blue-100 rounded-lg shadow-sm p-5 border-dashed border border-blue-500 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0"
@@ -462,16 +510,16 @@
                         </div>
                     {/each}
                     <button
-                    on:click={downloadCSV}
-                    type="button"
-                    class="bg-blue-800 h-max w-max rounded-lg text-white hover:bg-blue-900"
-                >
-                    <div class="flex items-center justify-center m-[8px]">
-                        <!-- <div class="h-5 w-5 border-t-transparent border-solid rounded-none border-white border-1"></div> -->
-                        <div class="ml-2">Download CSV</div>
-                    </div></button
-                >
-</div>
+                        on:click={downloadCSV}
+                        type="button"
+                        class="bg-blue-800 h-max w-max rounded-lg text-white hover:bg-blue-900"
+                    >
+                        <div class="flex items-center justify-center m-[8px]">
+                            <!-- <div class="h-5 w-5 border-t-transparent border-solid rounded-none border-white border-1"></div> -->
+                            <div class="ml-2">Download CSV</div>
+                        </div></button
+                    >
+                </div>
             </div>
             <!-- <div><button class="bg-blue-500 py-2 px-4 text-white font-bold rounded-md hover:bg-blue-600">Enable</button>
 		</div> -->
