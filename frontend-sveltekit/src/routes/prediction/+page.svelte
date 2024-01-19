@@ -1,16 +1,3 @@
-<style>
-    /* Add custom styles or media queries here */
-    @media screen and (min-width: 1024px) {
-      .responsive-flex {
-        display: flex;
-      }
-      .flex-child {
-        flex: 1; /* Adjust this value as needed */
-        /* Ensure there's a margin only on the right side of the first child */
-        margin-right: 1rem;
-      }
-    }
-  </style>
 <script>
   import { createEventDispatcher, onMount } from "svelte";
   // import { PUBLIC_FLASK_SERVER_ADDRESS } from "$env/static/public";
@@ -21,7 +8,7 @@
   import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
   const dispatch = createEventDispatcher();
-  const MAX_MERS = 30; 
+  const MAX_MERS = 100;
   let currentSeq = "";
   let predResponse = null;
   let SubstrateOpen = true;
@@ -120,7 +107,11 @@
     const aminoAcids = "LAGVSETIDPKQNFRYMHWCXBUZO"; // Allowed amino acids
     let newSubstrates = [];
 
-    for (let i = 7; i < sequence.length - 7 && newSubstrates.length < MAX_MERS; i++) {
+    for (
+      let i = 7;
+      i < sequence.length - 7 && newSubstrates.length < MAX_MERS;
+      i++
+    ) {
       const mer = sequence.substring(i - 7, i + 8);
       if (
         mer.length === 15 &&
@@ -212,31 +203,31 @@
       const api_endpoint = "https://phosformer.lunovid.com/api/predict";
       // const api_endpoint = "http://localhost:5200/api/predict";
 
-       // Extract only the Mers from the substrates to send to the server
-       const mersToSend = substrates.slice(0, MAX_MERS).map(s => s.mer); // Send only up to the first 30 Mers
+      // Extract only the Mers from the substrates to send to the server
+      const mersToSend = substrates.slice(0, MAX_MERS).map((s) => s.mer); // Send only up to the first 30 Mers
 
-        const response = await fetch(api_endpoint, {
-            method: "POST",
-            mode: "cors",
-            body: JSON.stringify({ kinase, substrates: mersToSend }),
-            headers: {
-                "content-type": "application/json",
-            },
-        });
+      const response = await fetch(api_endpoint, {
+        method: "POST",
+        mode: "cors",
+        body: JSON.stringify({ kinase, substrates: mersToSend }),
+        headers: {
+          "content-type": "application/json",
+        },
+      });
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       const jsonResponse = await response.json();
-        // add start and end positions to the prediction response
-        predResponse = jsonResponse.map((res, index) => {
-            return {
-                ...res,
-                startPos: substrates[index].startPos,
-                endPos: substrates[index].endPos
-            };
-        });
+      // add start and end positions to the prediction response
+      predResponse = jsonResponse.map((res, index) => {
+        return {
+          ...res,
+          startPos: substrates[index].startPos,
+          endPos: substrates[index].endPos,
+        };
+      });
 
       console.log("predResponse", predResponse);
     } catch (error) {
@@ -329,13 +320,16 @@
             class="bg-gray-100 rounded p-2 border focus:outline-none focus:border-blue-500 w-full"
           />
           {#if substrates.length > 0}
-          <div class="flex-child p-2 bg-white rounded">
-              <h2 class="text-lg font-semibold mb-2">Extracted 15-Mers (limit: 30)</h2>
+            <div class="flex-child p-2 bg-white rounded">
+              <h2 class="text-lg font-semibold mb-2">
+                Extracted 15-Mers (limit: 100)
+              </h2>
               <table class="min-w-full bg-white">
                 <thead>
                   <tr>
                     <th class="py-2 px-4 bg-blue-200 border">Start Position</th>
-                    <th class="py-2 px-4 bg-blue-200 border">15-Mer Sequence</th>
+                    <th class="py-2 px-4 bg-blue-200 border">15-Mer Sequence</th
+                    >
                     <th class="py-2 px-4 bg-blue-200 border">End Position</th>
                   </tr>
                 </thead>
@@ -518,7 +512,10 @@
             </thead>
             <tbody>
               {#each predResponse as response}
-                <tr>
+              <tr class:bg-green-200={parseFloat(response.probability) >= 0.8}
+              class:bg-green-100={parseFloat(response.probability) >= 0.5 && parseFloat(response.probability) < 0.8}
+              class:bg-gray-300={parseFloat(response.probability) < 0.3}
+              class:bg-gray-200={parseFloat(response.probability) >= 0.3 && parseFloat(response.probability) < 0.5}>
                   <td class="py-2 px-4 border">{response.startPos}</td>
                   <td class="py-2 px-4 border">{response.substrate}</td>
                   <td class="py-2 px-4 border">{response.endPos}</td>
@@ -547,3 +544,18 @@
     </div>
   </div>
 {/if}
+
+<style>
+  /* Add custom styles or media queries here */
+  @media screen and (min-width: 1024px) {
+    .responsive-flex {
+      display: flex;
+    }
+    .flex-child {
+      flex: 1; /* Adjust this value as needed */
+      /* Ensure there's a margin only on the right side of the first child */
+      margin-right: 1rem;
+    }
+  }
+
+</style>
