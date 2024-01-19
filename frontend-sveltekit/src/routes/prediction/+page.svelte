@@ -21,6 +21,7 @@
   import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
   const dispatch = createEventDispatcher();
+  const MAX_MERS = 30; 
   let currentSeq = "";
   let predResponse = null;
   let SubstrateOpen = true;
@@ -119,7 +120,7 @@
     const aminoAcids = "LAGVSETIDPKQNFRYMHWCXBUZO"; // Allowed amino acids
     let newSubstrates = [];
 
-    for (let i = 7; i < sequence.length - 7; i++) {
+    for (let i = 7; i < sequence.length - 7 && newSubstrates.length < MAX_MERS; i++) {
       const mer = sequence.substring(i - 7, i + 8);
       if (
         mer.length === 15 &&
@@ -212,7 +213,7 @@
       // const api_endpoint = "http://localhost:5200/api/predict";
 
        // Extract only the Mers from the substrates to send to the server
-       const mersToSend = substrates.map(s => s.mer);
+       const mersToSend = substrates.slice(0, MAX_MERS).map(s => s.mer); // Send only up to the first 30 Mers
 
         const response = await fetch(api_endpoint, {
             method: "POST",
@@ -329,7 +330,7 @@
           />
           {#if substrates.length > 0}
           <div class="flex-child p-2 bg-white rounded">
-              <h2 class="text-lg font-semibold mb-2">Extracted 15-Mers:</h2>
+              <h2 class="text-lg font-semibold mb-2">Extracted 15-Mers (limit: 30)</h2>
               <table class="min-w-full bg-white">
                 <thead>
                   <tr>
@@ -508,7 +509,9 @@
           <table class="min-w-full bg-white">
             <thead>
               <tr>
+                <th class="py-2 px-4 bg-blue-200 border">Start Position</th>
                 <th class="py-2 px-4 bg-blue-200 border">Substrate</th>
+                <th class="py-2 px-4 bg-blue-200 border">End Position</th>
                 <th class="py-2 px-4 bg-blue-200 border">Prediction Score</th>
                 <th class="py-2 px-4 bg-blue-200 border">Result</th>
               </tr>
@@ -516,15 +519,16 @@
             <tbody>
               {#each predResponse as response}
                 <tr>
+                  <td class="py-2 px-4 border">{response.startPos}</td>
                   <td class="py-2 px-4 border">{response.substrate}</td>
-                  <td class="py-2 px-4 border"
-                    >{parseFloat(response.probability).toFixed(4)}</td
-                  >
+                  <td class="py-2 px-4 border">{response.endPos}</td>
+                  <td class="py-2 px-4 border">{parseFloat(response.probability).toFixed(4)}</td>
                   <td class="py-2 px-4 border">{response.result}</td>
                 </tr>
               {/each}
             </tbody>
           </table>
+          
 
           <button
             on:click={downloadCSV}
