@@ -8,14 +8,14 @@
   import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
   const dispatch = createEventDispatcher();
-  const MAX_MERS = 100;
+  const MAX_MERS = 200;
   let currentSeq = "";
   let predResponse = null;
   let SubstrateOpen = true;
   let substrates = []; //"PSVEPPLSQETFSDL"
   let substrateErrors = new Array(substrates.length).fill("");
   // let selectedSubstrates = [];
-  let kinaseOpen = false;
+  let kinaseOpen = true;
   const aminoAcids = [
     "L",
     "A",
@@ -196,11 +196,15 @@
   function abbreviate(str) {
     return str.length > 25 ? str.slice(0, 25) + "..." : str;
   }
+  function kinase_status(str) {
+    return str.length > 0 ? "" : "No Kinase Selected";
+  }
 
   async function predict() {
     processing = true;
     try {
-      const api_endpoint = "https://phosformer.lunovid.com/api/predict";
+      const api_endpoint = "http://172.22.150.196:8010/api/predict";
+      // const api_endpoint = "https://phosformer.lunovid.com/api/predict";
       // const api_endpoint = "http://localhost:5200/api/predict";
 
       // Extract only the Mers from the substrates to send to the server
@@ -275,9 +279,9 @@
     // console.log(treeData);
   });
 </script>
-
+<section class="py-8 bg-white flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
 <div class="responsive-flex flex-col">
-  <div class="flex-child p-2 bg-white rounded">
+  <div class="flex-child bg-white rounded">
     <div
       class="w-full flex flex-col sm:flex-row justify-between items-center gap-1 sm:gap-0"
     >
@@ -322,7 +326,7 @@
           {#if substrates.length > 0}
             <div class="flex-child p-2 bg-white rounded">
               <h2 class="text-lg font-semibold mb-2">
-                Extracted 15-Mers (limit: 100)
+                Extracted 15-Mers (limit: {MAX_MERS})
               </h2>
               <table class="min-w-full bg-white">
                 <thead>
@@ -365,41 +369,46 @@
 </div> -->
 
 <div class="flex">
-  <div class="p-2 bg-white rounded w-1/2">
+  <div class="bg-white rounded w-1/2">
     <div class="text-center sm:text-left">
       <h1 class="text-blue-800 font-bold text-md pt-2">
-        Kinase Sequences (Gene Name based on the user selection)
+        Kinase Sequences
       </h1>
-      <div class="text-gray-500 pl-5">
+      <!-- <div class="text-gray-500 pl-5">
         <ul>
           <li>Select a kinase from the list or paste a sequence.</li>
         </ul>
-      </div>
+      </div> -->
     </div>
-    {#if !kinaseOpen}
+    <!-- {#if !kinaseOpen}
       <div class="flex justify-between items-center">
-        <div class="ml-2">{abbreviate(kinase)}</div>
+        <div class="ml-2">{kinase_status(kinase)}</div>
         <button
           type="button"
           class="btn bg-gray-200 hover:bg-gray-300 px-4 py-2 font-medium rounded"
           on:click={() => (kinaseOpen = !kinaseOpen)}
         >
-          Edit
+          Select Kinase
         </button>
       </div>
-    {/if}
+    {/if} -->
 
     <!-- container after clicked "EDIT" -->
     {#if kinaseOpen}
       <div x-show="open" class="flex justify-between items-center">
+  
         <div class="flex items-center">
           <!-- <TreeView
                     data={treeData}
                 /> -->
+          
           <div class="flex items-center">
+            <div class="flex flex-col">
+              <span class="text-gray-700">Select a kinase from the list or paste a sequence.</span>
+          
             <select
               bind:value={kinase}
-              class=" bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
+              class="w-1/3 mb-2 bg-blue-800 text-white font-bold rounded-lg hover:bg-blue-900 focus:border-blue-900 focus:outline-none p-[10px]"
             >
               {#each kinaseData as item}
                 <option value={item.kinase_domain}
@@ -417,7 +426,7 @@
               class="flex-grow bg-gray-100 rounded p-2 mr-4 border focus:outline-none focus:border-blue-500"
             />
           </div>
-
+        </div>
           <!-- <input
                         type="text"
                         bind:value={kinase}
@@ -432,16 +441,16 @@
           {/if}
         </div>
 
-        <div class="flex justify-center items-center space-x-2">
+        <!-- <div class="flex justify-center items-center space-x-2">
           <button
             type="button"
             on:click={() =>
               kinaseError === "" ? (kinaseOpen = false) : (kinaseOpen = true)}
             class="btn bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 font-medium rounded"
           >
-            Save
+            Confirm
           </button>
-        </div>
+        </div> -->
       </div>
     {/if}
   </div>
@@ -544,7 +553,7 @@
     </div>
   </div>
 {/if}
-
+</section>
 <style>
   /* Add custom styles or media queries here */
   @media screen and (min-width: 1024px) {

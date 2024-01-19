@@ -37,7 +37,7 @@
 </main> -->
 
 <!-- component -->
-<section class="py-20 bg-white">
+<section class="py-10 bg-white">
 	<div class="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
 		<!-- <div class="relative">
             <h2 class="w-full text-3xl font-bold text-center sm:text-4xl md:text-5xl"> Level Up Your Designs</h2>

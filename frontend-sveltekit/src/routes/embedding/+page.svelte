@@ -161,7 +161,9 @@
     });
 </script>
 
-<div class="zoom-slider-container absolute top-20 left-0 m-4">
+<section class="py-10">
+
+<div class="zoom-slider-container absolute top-27 left-0 m-5">
     <!-- <Fa icon={faMagnifyingGlass} class="icon-container" /> -->
     Zoom
     <input
@@ -200,7 +202,7 @@
         <!-- Put your second row content here -->
     </div>
 </div>
-
+</section>
 <style>
     #svg-container {
         overflow: hidden;
