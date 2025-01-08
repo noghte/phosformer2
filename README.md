@@ -1,104 +1,80 @@
-# Phosformer version 2
+# Phosformer: An Explainable Transformer Model for Protein Kinase-Specific Phosphorylation Prediction
 
-Project description ...
+## Description
 
-## Questions
+Phosformer, developed at [Kannan Lab](http://esbg.bmb.uga.edu/), is a cutting-edge tool designed for highly accurate and kinase-specific prediction of protein phosphorylation sites. This innovative method employs transformer neural networks and incorporates explainability features to enhance the understanding of phosphorylation events. 
 
-- Coral data
-    - Should we use kinase_data.json? The nodes that are not in the kinase_data.json should be removed from the tree.
-    - Which branches to disable? If there is no node at the end of the branch, remove the branch.
-- Kinase domain validation rules?
-    - Check the kinase domain to be in the list of amino acids.
-- Kinase domain input types?
-    - TreeView
-    - AutoComplete search
-- Server-side code for prediction?
-- Embedding map
-    - HTML file
-- Hover data over kinase
+**Key Features:**
 
-## Meeting 2 (6/19/2023)
+* **High Accuracy:** Phosformer outperforms other methods in kinase-specific phosphorylation prediction.
+* **Explainability:** The model provides insights into the decision-making process, highlighting the crucial residues and kinase-substrate relationships that drive phosphorylation.
+* **User-Friendly Interface:** The accompanying web server offers an intuitive platform for easy access and utilization of Phosformer's capabilities.
 
-- ❓ How to find the weblogo in Embedding? Currently, it reads data from `routes/embedding/proteins.js`
-    - One solution could be having an updated `genesNfamily.js`.
-    - Another solution could be having uniprot id in the `proteins.js` file.
+## Using Phosformer
 
-## Meeting 1
+You can access and utilize Phosformer in two ways:
 
-### Saber
-- Substrate 
-    - ✅ Should be all characters. 
-    - 🔲 It should be one of 20 types of amino acids.
-        - Each letter should be one the 20 letters.
-        - Users can enter multiple substrates by adding textboxes.
-    - ✅ Make it possible to input multiple substrates.
-        - ❓ What about the UI?
+1. **Web Server:** Visit the Phosformer web server at [http://esbg.bmb.uga.edu/phosformer](http://esbg.bmb.uga.edu/phosformer) for direct access to the tool's functionalities.
 
-- Kinase input
-    - ✅ Users can choose a uniprot from kinase_domain.json
-    - ✅ If users edit the kinase domain, it should show it is not related to the selected uniprot.
+2. **Local Installation:**
 
-- Coral on the left
-    - ❓ When clicking on the tree, it should show weblogos.
-- 🔲 Add contents to the paper:
-    - https://www.overleaf.com/1485332243jwrpvyhxsxhn
-    - Section 3.6
-- Weblogos
-    - Will be shown when user clicks on the tree.
-    - Users should be able to download the weblogo.
+   * **Prerequisites:**
+     * Ensure you have `conda` installed. You can download it from [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
+     * Install `npm`: [https://docs.npmjs.com/downloading-and-installing-node-js-and-npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
+   * **Clone the repository:**
+     ```bash
+     git clone https://github.com/noghte/phosformer2.git
+     ```
+   * **Navigate to the project directory:**
+     ```bash
+     cd phosformer2 
+     ```
 
-### Zhongliang
-    - weblogo address or uniprot id in one of the json files that Saber emailed.
-    - ✅ the list of amino acids.
-        - 
-        ```
-        ```
-    - ✅ adding gene name to kinase_data.json
-    - ✅ paper draft
-    - ✅ html file
-    - ✅ weblogos
-    - ✅ server-side code
+   * **Set up the environment and install dependencies:**
+     * Create a conda environment:
+       ```bash
+       conda create -n phosformer python=3.9 
+       ```
+     * Activate the environment:
+       ```bash
+       conda activate phosformer
+       ```
+     * Install Python dependencies:
+       ```bash
+       cd backend-flask
+       pip install -r requirements.txt
+       cd ..
+       ```
+     * Install Node.js dependencies:
+       ```bash
+       cd frontend-sveltekit
+       npm install
+       cd ..
+       ```
 
----
+   * **Run the application:**
+     ```bash
+     ./run.sh
+     ```
 
-## Backend
+## Publication
 
-```bash
-cd backend
-pip install -r requirements.txt
-python app.py
-```
+For a detailed description of the Phosformer methodology and performance, please refer to our publication:
+
+Zhou, Z., Yeung, W., Gravel, N., Salcedo, M., Soleymani, S., Li, S., & Kannan, N. (2023). Phosformer: An explainable transformer model for protein kinase-specific phosphorylation prediction. *Bioinformatics*, 39(2), btad046. [https://doi.org/10.1093/bioinformatics/btad046](https://doi.org/10.1093/bioinformatics/btad046)
 
 
-## Frontend
+### BibTeX for Citation
 
-### Running the app
-
-- After cloning the repo, run `npm install` to install dependencies.
-- Run `npm run dev` to start the development server. 
-    - It will run on port `5177` by default.
-    - You can run the app on a different port by modifying `"dev": "vite dev --port 5177"` in the `package.json` file.
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-### Deploying the app
-
-#### Netlify
-Look at the [Netlify docs](https://docs.netlify.com/integrations/frameworks/sveltekit/#deployment) for deploying SvelteKit apps on Netlify.
-
-In a nutshell, the `@sveltejs/adapter-netlify` is already configured in the `svelte.config.js` file, and the configuration for Netlify is in the `netlify.toml` file.
-
-> NOTE: if server-side rendering is not needed, use a custom server. See below.
-
-#### Custom servers (e.g., a VM)
-- Copy the contents of the `build` folder, package.json, and package-lock.json to the server. All in the same folder.
-- Run `npm install --omit=dev` on the server.
-- Change contents of `ecosystem.config.cjs` to your needs.
-    - PORT number should match the port you are using in nginx or any other reverse proxy.
-- On ther server, install pm2 or any other process manager to run the app. For example, `pm2 start ecosystem.config.cjs` to start the app.
-
+```bibtex
+@article{zhou2023phosformer,
+  title={Phosformer: an explainable transformer model for protein kinase-specific phosphorylation prediction},
+  author={Zhou, Zhongliang and Yeung, Wayland and Gravel, Nathan and Salcedo, Mariah and Soleymani, Saber and Li, Sheng and Kannan, Natarajan},
+  journal={Bioinformatics},
+  volume={39},
+  number={2},
+  pages={btad046},
+  year={2023},
+  publisher={Oxford University Press}
+}
