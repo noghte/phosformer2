@@ -204,7 +204,7 @@
     processing = true;
     try {
       // const api_endpoint = "http://172.22.150.196:8010/api/predict";
-      const api_endpoint = "https://phosformer.lunovid.com/api/predict";
+      const api_endpoint = "http://172.22.150.196:5200/api/predict";
       // const api_endpoint = "http://localhost:5200/api/predict";
 
       // Extract only the Mers from the substrates to send to the server
