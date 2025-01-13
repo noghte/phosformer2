@@ -304,3 +304,13 @@ TypeError: Object of type Response is not JSON serializable
 2023-07-11 16:07:07,879 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 2023-07-11 16:07:07,879 - INFO - [33mPress CTRL+C to quit[0m
+2024-01-19 13:06:32,745 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5200
+ * Running on http://172.20.163.231:5200
+2024-01-19 13:06:32,746 - INFO - [33mPress CTRL+C to quit[0m
+2024-01-19 13:11:30,701 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5200
+ * Running on http://172.20.163.231:5200
+2024-01-19 13:11:30,702 - INFO - [33mPress CTRL+C to quit[0m

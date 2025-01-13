@@ -14,10 +14,13 @@ Phosformer, developed at [Kannan Lab](http://esbg.bmb.uga.edu/), is a cutting-ed
 
 You can access and utilize Phosformer in two ways:
 
-1. **Web Server:** Visit the Phosformer web server at [http://esbg.bmb.uga.edu/phosformer](http://esbg.bmb.uga.edu/phosformer) for direct access to the tool's functionalities.
+### Using Web Server (Recommended) 
 
-2. **Local Installation:**
+Visit the Phosformer web server at [http://esbg.bmb.uga.edu/phosformer](http://esbg.bmb.uga.edu/phosformer) for direct access to the tool's functionalities.
 
+### Local Installation
+
+#### On Backend Server
    * **Prerequisites:**
      * Ensure you have `conda` installed. You can download it from [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
      * Install `npm`: [https://docs.npmjs.com/downloading-and-installing-node-js-and-npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
@@ -34,7 +37,7 @@ You can access and utilize Phosformer in two ways:
    * **Set up the environment and install dependencies:**
      * Create a conda environment:
        ```bash
-       conda create -n phosformer python=3.9 
+       conda create -n phosformer python=3.8
        ```
      * Activate the environment:
        ```bash
@@ -46,17 +49,106 @@ You can access and utilize Phosformer in two ways:
        pip install -r requirements.txt
        cd ..
        ```
-     * Install Node.js dependencies:
-       ```bash
-       cd frontend-sveltekit
-       npm install
-       cd ..
-       ```
 
    * **Run the application:**
      ```bash
      ./run.sh
      ```
+- Running Phosformer a service in background
+
+Create the following files:
+
+1. Systemd service file for Gunicorn
+```
+# /etc/systemd/system/phosformer.service
+[Unit]
+Description=Gunicorn instance to serve Phosformer Flask application
+After=network.target
+
+[Service]
+User=delf
+Group=delf
+WorkingDirectory=/var/www/phosformer
+Environment="PATH=/home/delf/miniconda3/envs/phosformer/bin"
+ExecStart=/home/delf/miniconda3/envs/phosformer/bin/gunicorn --workers 3 --bind 0.0.0.0:5200 wsgi:app
+
+[Install]
+WantedBy=multi-user.target
+```
+
+2. Nginx configuration
+```
+# /etc/nginx/sites-available/phosformer
+server {
+    listen 80;
+    server_name <SERVER_IP_ADDRESS>;
+
+    location / {
+        proxy_pass http://127.0.0.1:5200;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+3. WSGI entry point
+```
+# /var/www/phosformer/wsgi.py
+from app import app
+
+if __name__ == "__main__":
+    app.run()
+```
+
+
+Run:
+```
+sudo systemctl enable phosformer
+sudo systemctl start phosformer
+```
+
+To test:
+```bash
+curl -X POST http://<IP>:5200/api/predict -H "Content-Type: application/json" -d '{"kinase":"HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC","substrates":["DIATERATRHRYNAV","RHRYNAVTGEWLDDE","EVLIKMASQPFGRGA","AMRECFRTKKLSNFL","CFRTKKLSNFLHAQQ","AQQWKGASNYVAKRY"]}'
+```
+
+#### On Frontend Server
+
+- Install `nvm`
+- `nvm install 18.12.1`
+- `sudo npm install pm2 -g`
+- `sudo nano /etc/nginx/sites-available/phosformer_frontend`:
+```
+server {
+    listen 80;
+    server_name your_domain.com;  # Or your server's IP address
+
+    location / {
+        root /var/www/phosformer_frontend;
+        index index.html;
+        try_files $uri $uri/ /index.html;
+    }
+}
+```
+- Set permissions
+```bash
+sudo chown -R WEB_USER:WEB_USER /var/www/phosformer_frontend
+sudo chmod -R 755 /var/www/phosformer_frontend
+```
+
+- `sudo ln -s /etc/nginx/sites-available/phosformer_frontend /etc/nginx/sites-enabled/`
+- Test configurations: `sudo nginx -t`
+- `sudo systemctl reload nginx`
+- Run `publish.sh` (or copy `build` contents and `ecosystem.config.cjs` to `/var/www/phosformer_frontend`)
+- In `/var/www/phosformer_frontend`, run `pm2 start ecosystem.config.cjs`
+
+NOTE: If the UI does not load correctly (static files not loading), move static files to correct location:
+```bash
+mv client/* .
+rm -r client/
+```
 
 ## Publication
 

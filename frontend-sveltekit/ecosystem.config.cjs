@@ -8,7 +8,7 @@ module.exports = {
         autorestart: true,
         env: {
           NODE_ENV: 'production',
-            PORT: 5177
+            PORT: 8085
         }
       }
     ]

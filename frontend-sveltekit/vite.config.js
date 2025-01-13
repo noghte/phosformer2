@@ -19,7 +19,7 @@ export default defineConfig({
         }},
 	server: {
         hmr: {
-            clientPort: 5177
+            clientPort: 8085
         },
         fs: {
             allow: ['fonts']
