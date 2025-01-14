@@ -80,33 +80,45 @@ WantedBy=multi-user.target
 ```
 # /etc/nginx/sites-available/phosformer
 server {
-    listen 5200;
-    server_name <SERVER_ADDRESS>;
+    listen 80;
+    server_name sites.sabersol.com;
 
+    # Enable detailed error logging for debugging
+    error_log /var/log/nginx/error.log debug;
+
+    # Serve static index.html at root
     location / {
-        proxy_pass http://127.0.0.1:5200;
+        root /path/static;  # Directory with your static website files
+        index index.html;
+        autoindex off;  # Disable directory listing
+        try_files $uri $uri/ =404;  # Ensure requests are routed correctly
+    }
+
+    # Proxy requests to the app at /phosformer
+    location /phosformer {
+        try_files $uri @proxy_to_app;
+    }
+
+    location @proxy_to_app {
+        proxy_pass http://localhost:8085;  # Backend application (PM2)
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
         proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_cache_bypass $http_upgrade;
+    }
 
-        # CORS headers
-        add_header 'Access-Control-Allow-Origin' '*' always;
-        add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, DELETE, PUT' always;
-        add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization' always;
-        add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range' always;
+    # Handle static files under /phosformer/_app/
+    location /phosformer/_app/ {
+        alias /var/www/phosformer_frontend/_app/;  # Directory for app static files
+        try_files $uri =404;
+        add_header Cache-Control "public, max-age=31536000, immutable";  # Cache control for static files
+    }
 
-        # Preflight requests
-        if ($request_method = 'OPTIONS') {
-            add_header 'Access-Control-Allow-Origin' '*';
-            add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, DELETE, PUT';
-            add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization';
-	    add_header 'Access-Control-Allow-Private-Network' 'true';
-            add_header 'Access-Control-Max-Age' 1728000;
-            add_header 'Content-Type' 'text/plain; charset=utf-8';
-            add_header 'Content-Length' 0;
-            return 204;
-        }
+    # Handle other static assets under /phosformer
+    location /phosformer/ {
+        # Only proxy to the backend for /phosformer requests
+        try_files $uri @proxy_to_app;
     }
 }
 ```
