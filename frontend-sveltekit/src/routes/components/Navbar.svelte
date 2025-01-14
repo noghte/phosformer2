@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     let open = true; 
 </script>
 
@@ -6,11 +7,11 @@
     <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
       <div  class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
-          <a href="/" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+          <a href="{base}/" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
             <img
             class="object-scale-down"
             style="width: 50%;"
-            src="/phosformer_logo.png"
+            src="{base}/phosformer_logo.png"
             alt="Phosformer-st logo"
           />
           </a>
@@ -22,12 +23,12 @@
           </button>
         </div>
         <nav :class="{{ 'flex': open, 'hidden': !open }}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-          <a class="nav-link" href="/">Home</a>
-          <a class="nav-link" href="/prediction">Prediction</a>
-          <a class="nav-link" href="/embedding">Kinase Tree</a>
-          <a class="nav-link" href="/umap">UMap</a>
-          <a class="nav-link" href="/contact">Contact</a>
-        </nav>
+          <a class="nav-link" href="{base}/">Home</a>
+          <a class="nav-link" href="{base}/prediction">Prediction</a>
+          <a class="nav-link" href="{base}/embedding">Kinase Tree</a>
+          <a class="nav-link" href="{base}/umap">UMap</a>
+          <a class="nav-link" href="{base}/contact">Contact</a>
+      </nav>
       </div>
     </div>
   </div>

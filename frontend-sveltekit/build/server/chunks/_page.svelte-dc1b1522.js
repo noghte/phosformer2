@@ -1,4 +1,5 @@
 import { c as create_ssr_component, b as add_attribute, e as escape } from './index-26be9cd2.js';
+import { b as base } from './paths-8f997e33.js';
 
 const description = "Phosformer-ST: explainable machine learning uncovers the kinase-substrate interaction landscape";
 const title = "Phosformer-ST Predictions";
@@ -9,7 +10,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 <section class="py-10 bg-white"><div class="flex flex-col px-8 mx-auto space-y-12 max-w-7xl xl:px-12">
-		<div class="flex flex-col mb-8 animated fadeIn sm:flex-row"><div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last"><a href="/figure1.png"><img class="rounded-lg shadow-xl" src="/phosformer-st.png" alt="Phosformer-st architecture snapshot"></a></div>
+		<div class="flex flex-col mb-8 animated fadeIn sm:flex-row"><div class="flex items-center mb-8 sm:w-1/2 md:w-5/12 sm:order-last"><a href="/figure1.png"><img class="rounded-lg shadow-xl" src="${escape(base, true) + "/phosformer-st.png"}" alt="Phosformer-st architecture snapshot"></a></div>
 			<div class="flex flex-col justify-center mt-5 mb-8 md:mt-0 sm:w-1/2 md:w-7/12 sm:pr-16">
 				<h3 class="mt-2 text-2xl sm:text-left md:text-4xl">Phosformer-ST
 				</h3>
@@ -47,9 +48,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 					</div></div>
 			</div>
 
-		<div class="flex flex-col mb-8 animated fadeIn sm:flex-row"><div class="flex items-center mb-8 sm:w-1/2 md:w-5/12"><a href="/figure3.png"><img class="rounded-lg shadow-xl" src="/figure3.png" alt="Figure 3 of the paper"></a>
+		<div class="flex flex-col mb-8 animated fadeIn sm:flex-row"><div class="flex items-center mb-8 sm:w-1/2 md:w-5/12"><a href="/figure3.png"><img class="rounded-lg shadow-xl" src="${escape(base, true) + "/figure3.png"}" alt="Figure 3 of the paper"></a>
 				</div></div></div></section>`;
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-0f437edd.js.map
+//# sourceMappingURL=_page.svelte-dc1b1522.js.map

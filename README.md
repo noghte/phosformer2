@@ -16,7 +16,7 @@ You can access and utilize Phosformer in two ways:
 
 ### Using Web Server (Recommended) 
 
-Visit the Phosformer web server at [http://esbg.bmb.uga.edu/phosformer](http://esbg.bmb.uga.edu/phosformer) for direct access to the tool's functionalities.
+Visit the Phosformer web server at [http://sites.sabersol.com/phosformer](http://sites.sabersol.com/phosformer) for direct access to the tool's functionalities.
 
 ### Local Installation
 
@@ -80,8 +80,8 @@ WantedBy=multi-user.target
 ```
 # /etc/nginx/sites-available/phosformer
 server {
-    listen 80;
-    server_name <SERVER_IP_ADDRESS>;
+    listen 5200;
+    server_name <SERVER_ADDRESS>;
 
     location / {
         proxy_pass http://127.0.0.1:5200;
@@ -89,6 +89,24 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
+
+        # CORS headers
+        add_header 'Access-Control-Allow-Origin' '*' always;
+        add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, DELETE, PUT' always;
+        add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization' always;
+        add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range' always;
+
+        # Preflight requests
+        if ($request_method = 'OPTIONS') {
+            add_header 'Access-Control-Allow-Origin' '*';
+            add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, DELETE, PUT';
+            add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization';
+	    add_header 'Access-Control-Allow-Private-Network' 'true';
+            add_header 'Access-Control-Max-Age' 1728000;
+            add_header 'Content-Type' 'text/plain; charset=utf-8';
+            add_header 'Content-Length' 0;
+            return 204;
+        }
     }
 }
 ```
@@ -113,6 +131,10 @@ To test:
 ```bash
 curl -X POST http://<IP>:5200/api/predict -H "Content-Type: application/json" -d '{"kinase":"HLEDIATERATRHRYNAVTGEWLDDEVLIKMASQPFGRGAMRECFRTKKLSNFLHAQQWKGASNYVAKRYIEPVDRDVYFEDVRLQMEAKLWGEEYNRHKPPKQVDIMQMCIIELKDRPGKPLFHLEHYIEGKYIKYNSNSGFVRDDNIRLTPQAFSHFTFERSGHQLIVVDIQGVGDLYTDPQIHTETGTDFGDGNLGVRGMALFFYSHACNRIC","substrates":["DIATERATRHRYNAV","RHRYNAVTGEWLDDE","EVLIKMASQPFGRGA","AMRECFRTKKLSNFL","CFRTKKLSNFLHAQQ","AQQWKGASNYVAKRY"]}'
 ```
+
+- Enable SSL:
+- `sudo apt-get install certbot python3-certbot-nginx`
+- `sudo certbot --nginx -d <SERVER_ADDRESS>`
 
 #### On Frontend Server
 

@@ -15,10 +15,19 @@ env = os.environ['FLASK_ENV'] if 'FLASK_ENV' in os.environ else "production"
 print(env)
 
 # in production CORS is handled by nginx
-if env == 'development': 
-    print("CORS enabled by flask")
-    CORS(app, resources={r"/api/*": {"origins": "*", "allow_headers": ["Content-Type"]}})
+# if env == 'development': 
+#     print("CORS enabled by flask")
+#     CORS(app, resources={r"/api/*": {"origins": "*", "allow_headers": ["Content-Type"]}})
 
+CORS(app, resources={
+    r"/api/*": {
+        "origins": "*",
+        "methods": ["GET", "POST", "OPTIONS"],
+        "allow_headers": ["Content-Type"],
+        "expose_headers": ["Access-Control-Allow-Private-Network"],
+        "allow_private_network": True
+    }
+})
 
 #development
 #model_dir = 'backend-flask/model'
