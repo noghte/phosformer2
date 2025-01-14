@@ -1,7 +1,6 @@
 <script>
 	// import { onMount } from 'svelte';
 	// import Prediction from './components/Prediction.svelte';
-    import { base } from '$app/paths';
 	const description =
 		"Phosformer-ST: explainable machine learning uncovers the kinase-substrate interaction landscape";
 	const title = "Phosformer-ST Predictions";
@@ -50,7 +49,7 @@
 			><a href="/figure1.png">
 				<img
 					class="rounded-lg shadow-xl"
-					src="{base}/phosformer-st.png"
+					src="/phosformer-st.png"
 					alt="Phosformer-st architecture snapshot"
 				/>
 			</a>
@@ -98,7 +97,7 @@
 				<div class="flex-shrink-0">
 					<!-- <img
 						class="h-32 w-22"
-						src="{base}/m_bioinfo_39_2cover.jpeg"
+						src="/m_bioinfo_39_2cover.jpeg"
 						alt="Bioinformatics journal cover"
 					/> -->
 				</div>
@@ -123,7 +122,7 @@
 				<a href="/figure3.png">
 				<img
 					class="rounded-lg shadow-xl"
-					src="{base}/figure3.png"
+					src="/figure3.png"
 					alt="Figure 3 of the paper"
 				/>
 			</a>
