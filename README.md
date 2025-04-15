@@ -16,7 +16,7 @@ You can access and utilize Phosformer in two ways:
 
 ### Using Web Server (Recommended) 
 
-Visit the Phosformer web server at [http://sites.sabersol.com/phosformer](http://sites.sabersol.com/phosformer) for direct access to the tool's functionalities.
+Visit the Phosformer web server at [https://esbg.bmb.uga.edu/phosformer/](https://esbg.bmb.uga.edu/phosformer) for direct access to the tool's functionalities.
 
 ### Local Installation
 
@@ -81,7 +81,7 @@ WantedBy=multi-user.target
 # /etc/nginx/sites-available/phosformer
 server {
     listen 80;
-    server_name sites.sabersol.com;
+    server_name SERVER_ADDRESS_or_URL;
 
     # Enable detailed error logging for debugging
     error_log /var/log/nginx/error.log debug;
@@ -148,8 +148,23 @@ curl -X POST http://<IP>:5200/api/predict -H "Content-Type: application/json" -d
 - `sudo apt-get install certbot python3-certbot-nginx`
 - `sudo certbot --nginx -d <SERVER_ADDRESS>`
 
-#### On Frontend Server
+#### Setting up a Frontend Server
 
+On the server:
+- Create a directory for frontend files (e.g., `/var/www/phosformer_frontend`)
+- Set permissions
+```bash
+sudo chown -R WEB_USER:WEB_USER /var/www/phosformer_frontend
+sudo chmod -R 755 /var/www/phosformer_frontend
+```
+
+From local computer:
+```bash
+npm run build
+scp -r ./build/*  package.json ecosystem.config.cjs WEB-USER@SERVER-ADDRESS:/var/www/phosformer_frontend/
+```
+
+On the server:
 - Install `nvm`
 - `nvm install 18.12.1`
 - `sudo npm install pm2 -g`
@@ -159,30 +174,22 @@ server {
     listen 80;
     server_name your_domain.com;  # Or your server's IP address
 
-    location / {
-        root /var/www/phosformer_frontend;
-        index index.html;
-        try_files $uri $uri/ /index.html;
+    location /phosformer/ {
+        proxy_pass http://localhost:8085/;  # Backend application (PM2)
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade; 
     }
 }
-```
-- Set permissions
-```bash
-sudo chown -R WEB_USER:WEB_USER /var/www/phosformer_frontend
-sudo chmod -R 755 /var/www/phosformer_frontend
 ```
 
 - `sudo ln -s /etc/nginx/sites-available/phosformer_frontend /etc/nginx/sites-enabled/`
 - Test configurations: `sudo nginx -t`
 - `sudo systemctl reload nginx`
-- Run `publish.sh` (or copy `build` contents and `ecosystem.config.cjs` to `/var/www/phosformer_frontend`)
 - In `/var/www/phosformer_frontend`, run `pm2 start ecosystem.config.cjs`
 
-NOTE: If the UI does not load correctly (static files not loading), move static files to correct location:
-```bash
-mv client/* .
-rm -r client/
-```
 
 ## Publication
 

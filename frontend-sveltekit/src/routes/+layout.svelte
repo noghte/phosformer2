@@ -1,6 +1,7 @@
 <script>
-    import "../app.css";
+import '$lib/app.css';
 	import Navbar from './components/Navbar.svelte';
+	import { base } from '$app/paths';
 
     // import Navbar from "/components/Navbar.svelte";
 //     export async function load({ cookies }) {
@@ -22,6 +23,10 @@
 
 <Navbar />
 
+<nav>
+	<a href="{base}/">Home</a>
+	<a href="{base}/about">About</a>
+</nav>
 
 <slot />
 

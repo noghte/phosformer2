@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	// import { onMount } from 'svelte';
 	// import Prediction from './components/Prediction.svelte';
 	const description =
@@ -49,7 +50,7 @@
 			><a href="/figure1.png">
 				<img
 					class="rounded-lg shadow-xl"
-					src="/phosformer-st.png"
+					src="{base}/phosformer-st.png"
 					alt="Phosformer-st architecture snapshot"
 				/>
 			</a>
@@ -122,7 +123,7 @@
 				<a href="/figure3.png">
 				<img
 					class="rounded-lg shadow-xl"
-					src="/figure3.png"
+					src="{base}/figure3.png"
 					alt="Figure 3 of the paper"
 				/>
 			</a>

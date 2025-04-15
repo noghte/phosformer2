@@ -11,7 +11,7 @@
             <img
             class="object-scale-down"
             style="width: 50%;"
-            src="/phosformer_logo.png"
+            src="{base}/phosformer_logo.png"
             alt="Phosformer-st logo"
           />
           </a>
@@ -22,13 +22,14 @@
             </svg>
           </button>
         </div>
+        // Navbar.svelte
         <nav :class="{{ 'flex': open, 'hidden': !open }}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-          <a class="nav-link" href="/">Home</a>
-          <a class="nav-link" href="/prediction">Prediction</a>
-          <a class="nav-link" href="/embedding">Kinase Tree</a>
-          <a class="nav-link" href="/umap">UMap</a>
-          <a class="nav-link" href="/contact">Contact</a>
-      </nav>
+          <a class="nav-link" href="{base}/">Home</a>
+          <a class="nav-link" href="{base}/prediction">Prediction</a>
+          <a class="nav-link" href="{base}/embedding">Kinase Tree</a>
+          <a class="nav-link" href="{base}/umap">UMap</a>
+          <a class="nav-link" href="{base}/contact">Contact</a>
+        </nav>
       </div>
     </div>
   </div>

@@ -1,4 +1,5 @@
-build/*
+frontend-sveltekit/build/
+app.log
 .DS_Store
 node_modules
 dist
